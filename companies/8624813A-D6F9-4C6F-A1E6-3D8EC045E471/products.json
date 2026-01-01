@@ -1,3 +1,10 @@
 [
-
+  {
+    "name" : "mama",
+    "description" : "mamaa",
+    "stock" : 11,
+    "barcode" : "1",
+    "id" : "C1253ACC-479A-4C81-9657-9717046A4BB8",
+    "price" : 123
+  }
 ]
