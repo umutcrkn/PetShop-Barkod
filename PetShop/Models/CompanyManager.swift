@@ -247,6 +247,28 @@ class CompanyManager: ObservableObject {
         }
     }
     
+    /// Firmayı sil (admin için)
+    func deleteCompany(_ company: Company) async throws {
+        // Eğer silinen firma şu anki firma ise, currentCompany'yi temizle
+        if currentCompany?.id == company.id {
+            await MainActor.run {
+                currentCompany = nil
+                UserDefaults.standard.removeObject(forKey: currentCompanyIdKey)
+            }
+        }
+        
+        // Firmayı listeden kaldır
+        await MainActor.run {
+            companies.removeAll { $0.id == company.id }
+        }
+        
+        // GitHub'a kaydet
+        try await saveCompaniesToGitHub()
+        
+        // Firma veritabanını silmek için GitHub'dan dosyaları sil (opsiyonel - GitHub API dosya silmeyi desteklemiyor, sadece boş içerik yazabiliriz)
+        // Not: GitHub API dosya silmeyi doğrudan desteklemiyor, bu yüzden sadece companies listesinden kaldırıyoruz
+    }
+    
     // MARK: - Company Data Path
     
     /// Firma için data path'i döndür

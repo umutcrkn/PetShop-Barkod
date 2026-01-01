@@ -14,6 +14,12 @@ struct MainMenuView: View {
     @State private var isUpdating = false
     @State private var showUpdateAlert = false
     @State private var updateMessage = ""
+    @State private var showCompaniesList = false
+    
+    // Admin kontrolü: currentCompany nil ise admin kullanıcısıdır
+    private var isAdmin: Bool {
+        companyManager.currentCompany == nil
+    }
     
     var body: some View {
         VStack(spacing: 0) {
@@ -72,6 +78,15 @@ struct MainMenuView: View {
                 Divider()
                     .padding(.vertical, 10)
                 
+                if isAdmin {
+                    Button(action: {
+                        showCompaniesList = true
+                    }) {
+                        MenuButton(title: "Kayıtlı Firmalar", icon: "building.2.fill", color: .indigo)
+                    }
+                    .padding(.horizontal, 40)
+                }
+                
                 NavigationLink(destination: SettingsView()) {
                     MenuButton(title: "Ayarlar", icon: "gearshape.fill", color: .gray)
                 }
@@ -94,6 +109,9 @@ struct MainMenuView: View {
             Button("Tamam", role: .cancel) { }
         } message: {
             Text(updateMessage)
+        }
+        .sheet(isPresented: $showCompaniesList) {
+            CompaniesListView()
         }
     }
     
