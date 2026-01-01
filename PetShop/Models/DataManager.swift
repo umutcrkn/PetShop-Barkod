@@ -51,8 +51,8 @@ class DataManager: ObservableObject {
     
     // MARK: - GitHub Data Loading
     
-    /// GitHub'dan tüm verileri yükler (firma bazlı)
-    func loadDataFromGitHub() async {
+    /// GitHub'dan tüm verileri yükler (firma bazlı) - merge modu ile
+    func loadDataFromGitHub(mergeWithLocal: Bool = false) async {
         guard githubService.hasAPIURL() || githubService.hasToken() else {
             // Token yoksa local'den yükle
             loadProductsFromLocal()
@@ -79,17 +79,54 @@ class DataManager: ObservableObject {
             let productsPath = companyManager.getCompanyDataPath(file: "products.json")
             let salesPath = companyManager.getCompanyDataPath(file: "sales.json")
             
+            // Local verileri sakla (merge için)
+            let localProducts = products
+            let localSales = sales
+            
             // Products yükle
             let loadedProducts = try await githubService.getProducts(path: productsPath)
-            await MainActor.run {
-                products = loadedProducts
-            }
             
             // Sales yükle
             let loadedSales = try await githubService.getSales(path: salesPath)
+            
             await MainActor.run {
-                sales = loadedSales
-                cleanupOldSales()
+                if mergeWithLocal {
+                    // Merge stratejisi: Local veriler öncelikli
+                    // Products merge
+                    var mergedProducts = loadedProducts
+                    for localProduct in localProducts {
+                        if let index = mergedProducts.firstIndex(where: { $0.id == localProduct.id }) {
+                            // Local versiyon öncelikli (daha güncel)
+                            mergedProducts[index] = localProduct
+                        } else {
+                            // Yeni local ürün ekle
+                            mergedProducts.append(localProduct)
+                        }
+                    }
+                    self.products = mergedProducts
+                    
+                    // Sales merge - Local satışlar öncelikli (yeni satışlar korunmalı)
+                    var mergedSales = loadedSales
+                    for localSale in localSales {
+                        if let index = mergedSales.firstIndex(where: { $0.id == localSale.id }) {
+                            // Local versiyon öncelikli (daha güncel)
+                            mergedSales[index] = localSale
+                        } else {
+                            // Yeni local satış ekle (önemli: yeni satışlar korunmalı)
+                            mergedSales.append(localSale)
+                        }
+                    }
+                    // Local'deki tüm satışları ekle (GitHub'da olmayanlar)
+                    self.sales = mergedSales
+                    self.cleanupOldSales()
+                    
+                    print("✅ Data merged: \(mergedProducts.count) products, \(mergedSales.count) sales")
+                } else {
+                    // Direkt GitHub'dan gelen verileri kullan
+                    self.products = loadedProducts
+                    self.sales = loadedSales
+                    self.cleanupOldSales()
+                }
             }
             
             // Local cache'e de kaydet

@@ -114,8 +114,9 @@ struct MainMenuView: View {
             print("🔄 [2/4] Encryption key'i GitHub'dan yüklüyor...")
             await EncryptionService.shared.loadEncryptionKey(forceReload: true)
             
-            print("🔄 [3/4] Ürünler ve satışları GitHub'dan yüklüyor...")
-            await dataManager.loadDataFromGitHub()
+            print("🔄 [3/4] Ürünler ve satışları GitHub'dan yüklüyor (local ile merge)...")
+            // Merge modu açık: Local veriler (yeni satışlar) korunacak
+            await dataManager.loadDataFromGitHub(mergeWithLocal: true)
             if let error = dataManager.lastError {
                 errors.append("Veriler: \(error)")
             }
