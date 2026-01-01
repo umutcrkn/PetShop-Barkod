@@ -1,10 +1,10 @@
 [
   {
-    "barcode" : "2",
+    "name" : "mama",
     "description" : "mama",
     "price" : 1,
     "id" : "AF327348-B57D-4ACA-AA88-52091B429405",
-    "name" : "mama",
+    "barcode" : "2",
     "stock" : 20
   }
 ]
