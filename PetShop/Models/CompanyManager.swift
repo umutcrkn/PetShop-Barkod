@@ -331,6 +331,35 @@ class CompanyManager: ObservableObject {
         }
     }
     
+    /// Firma deneme süresini uzat (admin için)
+    func extendTrialPeriod(for companyId: String, days: Int) async throws {
+        guard let index = companies.firstIndex(where: { $0.id == companyId }) else {
+            throw CompanyError.companyNotFound
+        }
+        
+        // Mevcut tarihi al, eğer geçmişteyse bugünden başlat, değilse mevcut tarihe ekle
+        let currentExpiry = companies[index].trialExpiresAt
+        let now = Date()
+        
+        let newExpiryDate: Date
+        if currentExpiry < now {
+            // Süresi dolmuşsa bugünden itibaren uzat
+            newExpiryDate = Calendar.current.date(byAdding: .day, value: days, to: now) ?? now
+        } else {
+            // Süresi dolmamışsa mevcut tarihe ekle
+            newExpiryDate = Calendar.current.date(byAdding: .day, value: days, to: currentExpiry) ?? currentExpiry
+        }
+        
+        await MainActor.run {
+            companies[index].trialExpiresAt = newExpiryDate
+        }
+        
+        // GitHub'a kaydet
+        try await saveCompaniesToGitHub()
+        
+        print("✅ Extended trial period for company \(companies[index].name) by \(days) days. New expiry: \(newExpiryDate)")
+    }
+    
     // MARK: - Company Data Path
     
     /// Firma için data path'i döndür
