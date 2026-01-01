@@ -2,7 +2,7 @@
 //  DataManager.swift
 //  PetShop
 //
-//  Data persistence manager
+//  Data persistence manager - GitHub API integration
 //
 
 import Foundation
@@ -13,47 +13,145 @@ class DataManager: ObservableObject {
     
     @Published var products: [Product] = []
     @Published var sales: [Sale] = []
+    @Published var isLoading = false
+    @Published var lastError: String?
     
-    private let productsKey = "SavedProducts"
-    private let salesKey = "SavedSales"
+    private let githubService = GitHubService.shared
     private let passwordKey = "UserPassword"
     private let defaultPassword = "admin"
     
+    // Local cache keys (fallback)
+    private let productsKey = "SavedProducts"
+    private let salesKey = "SavedSales"
+    
     private init() {
-        loadProducts()
-        loadSales()
-        cleanupOldSales()
+        Task {
+            await loadDataFromGitHub()
+        }
+    }
+    
+    // MARK: - GitHub Data Loading
+    
+    /// GitHub'dan tüm verileri yükler
+    func loadDataFromGitHub() async {
+        guard githubService.hasToken() else {
+            // Token yoksa local'den yükle
+            loadProductsFromLocal()
+            loadSalesFromLocal()
+            return
+        }
+        
+        await MainActor.run {
+            isLoading = true
+            lastError = nil
+        }
+        
+        do {
+            // Products yükle
+            let loadedProducts = try await githubService.getProducts()
+            await MainActor.run {
+                products = loadedProducts
+            }
+            
+            // Sales yükle
+            let loadedSales = try await githubService.getSales()
+            await MainActor.run {
+                sales = loadedSales
+                cleanupOldSales()
+            }
+            
+            // Local cache'e de kaydet
+            saveProductsToLocal()
+            saveSalesToLocal()
+            
+        } catch {
+            await MainActor.run {
+                lastError = error.localizedDescription
+                // Hata durumunda local'den yükle
+                loadProductsFromLocal()
+                loadSalesFromLocal()
+            }
+            print("Error loading from GitHub: \(error)")
+        }
+        
+        await MainActor.run {
+            isLoading = false
+        }
+    }
+    
+    /// Verileri GitHub'a kaydeder
+    func syncToGitHub() async {
+        guard githubService.hasToken() else {
+            await MainActor.run {
+                lastError = "GitHub token bulunamadı"
+            }
+            return
+        }
+        
+        await MainActor.run {
+            isLoading = true
+            lastError = nil
+        }
+        
+        do {
+            try await githubService.saveProducts(products)
+            try await githubService.saveSales(sales)
+            
+            // Local cache'e de kaydet
+            saveProductsToLocal()
+            saveSalesToLocal()
+            
+        } catch {
+            await MainActor.run {
+                lastError = error.localizedDescription
+            }
+            print("Error syncing to GitHub: \(error)")
+        }
+        
+        await MainActor.run {
+            isLoading = false
+        }
     }
     
     // MARK: - Products Management
     func addProduct(_ product: Product) {
         products.append(product)
-        saveProducts()
+        saveProductsToLocal()
+        Task {
+            await syncToGitHub()
+        }
     }
     
     func updateProduct(_ product: Product) {
         if let index = products.firstIndex(where: { $0.id == product.id }) {
             products[index] = product
-            saveProducts()
+            saveProductsToLocal()
+            Task {
+                await syncToGitHub()
+            }
         }
     }
     
     func deleteProduct(_ product: Product) {
         products.removeAll { $0.id == product.id }
-        saveProducts()
+        saveProductsToLocal()
+        Task {
+            await syncToGitHub()
+        }
     }
     
     func findProduct(byBarcode barcode: String) -> Product? {
         return products.first { $0.barcode == barcode }
     }
     
-    private func saveProducts() {
+    // MARK: - Local Cache (Fallback)
+    private func saveProductsToLocal() {
         if let encoded = try? JSONEncoder().encode(products) {
             UserDefaults.standard.set(encoded, forKey: productsKey)
         }
     }
     
-    private func loadProducts() {
+    private func loadProductsFromLocal() {
         guard let data = UserDefaults.standard.data(forKey: productsKey) else {
             products = []
             return
@@ -63,7 +161,7 @@ class DataManager: ObservableObject {
             let decoded = try JSONDecoder().decode([Product].self, from: data)
             products = decoded
         } catch {
-            print("Error loading products: \(error)")
+            print("Error loading products from local: \(error)")
             products = []
         }
     }
@@ -84,8 +182,11 @@ class DataManager: ObservableObject {
     // MARK: - Sales Management
     func addSale(_ sale: Sale) {
         sales.append(sale)
-        saveSales()
+        saveSalesToLocal()
         cleanupOldSales()
+        Task {
+            await syncToGitHub()
+        }
     }
     
     func getSalesForDate(_ date: Date) -> [Sale] {
@@ -117,18 +218,22 @@ class DataManager: ObservableObject {
             sale.date < threeDaysAgo
         }
         
-        if sales.count != initialCount { // Only save if something changed
-            saveSales()
+        if sales.count != initialCount {
+            saveSalesToLocal()
+            Task {
+                await syncToGitHub()
+            }
         }
     }
     
-    private func saveSales() {
+    // MARK: - Local Cache (Fallback)
+    private func saveSalesToLocal() {
         if let encoded = try? JSONEncoder().encode(sales) {
             UserDefaults.standard.set(encoded, forKey: salesKey)
         }
     }
     
-    private func loadSales() {
+    private func loadSalesFromLocal() {
         guard let data = UserDefaults.standard.data(forKey: salesKey) else {
             sales = []
             return
@@ -139,7 +244,7 @@ class DataManager: ObservableObject {
             sales = decoded
             cleanupOldSales()
         } catch {
-            print("Error loading sales: \(error)")
+            print("Error loading sales from local: \(error)")
             sales = []
         }
     }

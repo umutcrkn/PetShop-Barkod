@@ -30,6 +30,10 @@ struct MainMenuView: View {
                 NavigationLink(destination: SalesHistoryView()) {
                     MenuButton(title: "Satışlarım", icon: "chart.bar.doc.horizontal", color: .purple)
                 }
+                
+                NavigationLink(destination: SettingsView()) {
+                    MenuButton(title: "Ayarlar", icon: "gearshape.fill", color: .gray)
+                }
             }
             .padding(.horizontal, 40)
             

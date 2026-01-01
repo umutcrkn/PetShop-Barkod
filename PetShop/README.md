@@ -51,9 +51,40 @@ Bu iOS uygulaması, evcil hayvan malzemesi satan dükkanlar için tasarlanmış 
 3. Barkod okutmak için kamera simgesine tıklayın
 4. Ürünleri ekleyin ve satışları tamamlayın
 
+## GitHub Entegrasyonu
+
+Bu uygulama verilerini GitHub repository'sinde saklar. Tüm ürün ve satış verileri GitHub'da `data/products.json` ve `data/sales.json` dosyalarında tutulur.
+
+### GitHub Token Kurulumu
+
+1. GitHub.com'a giriş yapın
+2. Sağ üst köşedeki profil resminize tıklayın > **Settings**
+3. Sol menüden **Developer settings** > **Personal access tokens** > **Tokens (classic)**
+4. **Generate new token (classic)** butonuna tıklayın
+5. Token'a bir isim verin (örn: "PetShop App")
+6. **repo** yetkisini seçin (tüm repo yetkileri)
+7. **Generate token** butonuna tıklayın
+8. Oluşturulan token'ı kopyalayın (bir daha gösterilmeyecek!)
+9. Uygulamada **Ayarlar** > **GitHub Ayarları** bölümüne gidin
+10. Token'ı yapıştırın ve **Token Kaydet** butonuna tıklayın
+
+### Veri Senkronizasyonu
+
+- Uygulama açıldığında otomatik olarak GitHub'dan veriler yüklenir
+- Ürün ekleme, güncelleme veya satış yapıldığında veriler otomatik olarak GitHub'a gönderilir
+- **Ayarlar** ekranından manuel olarak veri çekme veya gönderme işlemi yapabilirsiniz
+
+### Çoklu Cihaz Desteği
+
+GitHub entegrasyonu sayesinde:
+- iOS ve Android cihazlardan aynı verilere erişebilirsiniz
+- Tüm cihazlar aynı veri kaynağını kullanır
+- Veriler GitHub'da merkezi olarak saklanır
+
 ## Notlar
 
-- Veriler UserDefaults ile yerel olarak saklanır
-- Tüm ürün bilgileri cihazda kalır
+- Veriler GitHub'da saklanır (local cache olarak UserDefaults da kullanılır)
+- Tüm ürün bilgileri GitHub repository'sinde tutulur
 - Stok miktarları otomatik olarak güncellenir
+- İnternet bağlantısı gereklidir (offline durumda local cache kullanılır)
 

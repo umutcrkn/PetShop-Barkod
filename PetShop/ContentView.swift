@@ -23,8 +23,10 @@ struct ContentView: View {
             .background(Color(.systemBackground))
         }
         .onAppear {
-            // Debug: DataManager'ın düzgün yüklendiğini kontrol et
-            print("ContentView appeared, isLoggedIn: \(isLoggedIn)")
+            // Uygulama açıldığında GitHub'dan veri yükle
+            Task {
+                await dataManager.loadDataFromGitHub()
+            }
         }
     }
 }
