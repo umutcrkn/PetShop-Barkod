@@ -49,6 +49,12 @@ struct CompanyRegistrationView: View {
                     }
                     .disabled(isRegistering || companyName.isEmpty || username.isEmpty || password.isEmpty || password != confirmPassword)
                     .buttonStyle(.borderedProminent)
+                    
+                    Text("⚠️ 10 günlük deneme süresi")
+                        .font(.caption)
+                        .foregroundColor(.orange)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding(.top, 5)
                 }
                 
                 if !password.isEmpty && !confirmPassword.isEmpty && password != confirmPassword {
@@ -78,7 +84,7 @@ struct CompanyRegistrationView: View {
                     dismiss()
                 }
             } message: {
-                Text("Firma başarıyla kaydedildi!")
+                Text("Firma başarıyla kaydedildi!\n\n10 günlük deneme süreniz başladı. Deneme süresi bitince firma bilgileri ve verileri otomatik olarak silinecektir.")
             }
         }
     }

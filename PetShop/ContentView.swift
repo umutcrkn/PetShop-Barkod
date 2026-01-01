@@ -28,6 +28,10 @@ struct ContentView: View {
             Task {
                 // Önce firmaları yükle
                 await companyManager.loadCompanies()
+                
+                // Deneme süresi biten firmaları kontrol et ve sil
+                await companyManager.checkAndDeleteExpiredTrials()
+                
                 // Eğer firma seçiliyse verileri yükle
                 if companyManager.currentCompany != nil {
                     await dataManager.loadDataFromGitHub()

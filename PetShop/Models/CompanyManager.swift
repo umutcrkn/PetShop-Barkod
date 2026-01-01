@@ -81,6 +81,19 @@ class CompanyManager: ObservableObject {
             return false
         }
         
+        // Deneme süresi bitmiş mi kontrol et
+        if company.isTrialExpired {
+            print("Login failed: Trial expired for username: \(username)")
+            // Deneme süresi biten firmayı sil
+            do {
+                try await deleteCompany(company)
+                print("✅ Deleted expired trial company: \(company.name)")
+            } catch {
+                print("❌ Error deleting expired company: \(error)")
+            }
+            return false
+        }
+        
         let isValid = await company.verifyPassword(password)
         print("Password verification result for \(username): \(isValid)")
         
@@ -247,7 +260,7 @@ class CompanyManager: ObservableObject {
         }
     }
     
-    /// Firmayı sil (admin için)
+    /// Firmayı sil (admin için veya deneme süresi bitince)
     func deleteCompany(_ company: Company) async throws {
         // Eğer silinen firma şu anki firma ise, currentCompany'yi temizle
         if currentCompany?.id == company.id {
@@ -265,8 +278,57 @@ class CompanyManager: ObservableObject {
         // GitHub'a kaydet
         try await saveCompaniesToGitHub()
         
-        // Firma veritabanını silmek için GitHub'dan dosyaları sil (opsiyonel - GitHub API dosya silmeyi desteklemiyor, sadece boş içerik yazabiliriz)
-        // Not: GitHub API dosya silmeyi doğrudan desteklemiyor, bu yüzden sadece companies listesinden kaldırıyoruz
+        // Firma veritabanını sil (products.json ve sales.json dosyalarını boş içerikle yaz)
+        try await deleteCompanyDatabase(companyId: company.id)
+    }
+    
+    /// Firma veritabanını sil (products.json ve sales.json'ı boş içerikle yazar)
+    private func deleteCompanyDatabase(companyId: String) async throws {
+        // Boş products.json yaz
+        let emptyProducts: [Product] = []
+        let productsEncoder = JSONEncoder()
+        productsEncoder.outputFormatting = .prettyPrinted
+        let productsData = try productsEncoder.encode(emptyProducts)
+        try await githubService.putFileContent(
+            path: "companies/\(companyId)/products.json",
+            content: productsData,
+            message: "Delete company database - products"
+        )
+        
+        // Boş sales.json yaz
+        let emptySales: [Sale] = []
+        let salesEncoder = JSONEncoder()
+        salesEncoder.dateEncodingStrategy = .iso8601
+        salesEncoder.outputFormatting = .prettyPrinted
+        let salesData = try salesEncoder.encode(emptySales)
+        try await githubService.putFileContent(
+            path: "companies/\(companyId)/sales.json",
+            content: salesData,
+            message: "Delete company database - sales"
+        )
+        
+        print("✅ Company database deleted: \(companyId)")
+    }
+    
+    /// Deneme süresi biten firmaları kontrol et ve sil
+    func checkAndDeleteExpiredTrials() async {
+        let expiredCompanies = companies.filter { $0.isTrialExpired }
+        
+        if expiredCompanies.isEmpty {
+            print("✅ No expired trial companies found")
+            return
+        }
+        
+        print("⚠️ Found \(expiredCompanies.count) expired trial companies, deleting...")
+        
+        for company in expiredCompanies {
+            do {
+                try await deleteCompany(company)
+                print("✅ Deleted expired trial company: \(company.name) (\(company.username))")
+            } catch {
+                print("❌ Error deleting expired company \(company.name): \(error)")
+            }
+        }
     }
     
     // MARK: - Company Data Path
