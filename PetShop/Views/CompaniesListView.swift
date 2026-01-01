@@ -135,7 +135,7 @@ struct CompaniesListView: View {
             do {
                 try await companyManager.deleteCompany(company)
                 // Firmaları yeniden yükle
-                await loadCompanyData()
+                loadCompanyData()
             } catch {
                 await MainActor.run {
                     errorMessage = "Firma silinirken hata oluştu: \(error.localizedDescription)"
