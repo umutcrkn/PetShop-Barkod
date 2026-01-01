@@ -11,10 +11,11 @@ struct MainMenuView: View {
     @Binding var isLoggedIn: Bool
     
     var body: some View {
-        VStack(spacing: 40) {
-            Spacer()
-            
+        ScrollView {
             VStack(spacing: 30) {
+                Spacer()
+                    .frame(height: 20)
+                
                 NavigationLink(destination: AddProductView()) {
                     MenuButton(title: "Ürün Ekleme", icon: "plus.circle.fill", color: .green)
                 }
@@ -34,18 +35,22 @@ struct MainMenuView: View {
                 NavigationLink(destination: SettingsView()) {
                     MenuButton(title: "Ayarlar", icon: "gearshape.fill", color: .gray)
                 }
+                
+                Spacer()
+                    .frame(height: 20)
+                
+                Button(action: {
+                    isLoggedIn = false
+                }) {
+                    Text("Çıkış Yap")
+                        .foregroundColor(.red)
+                        .padding()
+                }
+                
+                Spacer()
+                    .frame(height: 20)
             }
             .padding(.horizontal, 40)
-            
-            Spacer()
-            
-            Button(action: {
-                isLoggedIn = false
-            }) {
-                Text("Çıkış Yap")
-                    .foregroundColor(.red)
-                    .padding()
-            }
         }
         .background(Color(.systemBackground))
         .navigationBarTitleDisplayMode(.inline)
@@ -61,16 +66,16 @@ struct MenuButton: View {
     var body: some View {
         HStack {
             Image(systemName: icon)
-                .font(.title)
+                .font(.title2)
                 .foregroundColor(.white)
             
             Text(title)
-                .font(.title2)
+                .font(.title3)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 30)
+        .padding(.vertical, 20)
         .background(color)
         .cornerRadius(15)
     }
