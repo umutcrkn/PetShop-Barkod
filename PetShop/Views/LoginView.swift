@@ -162,7 +162,10 @@ struct LoginView: View {
         Task {
             // Önce admin kontrolü yap (admin bir Company değil, özel kullanıcı)
             if username.lowercased() == "admin" && dataManager.verifyPassword(password) {
+                // Admin girişi: currentCompany'yi temizle
                 await MainActor.run {
+                    companyManager.currentCompany = nil
+                    UserDefaults.standard.removeObject(forKey: "CurrentCompanyId")
                     isLoggedIn = true
                     username = ""
                     password = ""
