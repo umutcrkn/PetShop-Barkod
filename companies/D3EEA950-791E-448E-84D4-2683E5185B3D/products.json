@@ -1,3 +1,10 @@
 [
-
+  {
+    "barcode" : "4",
+    "stock" : 2,
+    "description" : "",
+    "id" : "4E2EA926-DB02-418B-B4DB-E2A9D09D893C",
+    "price" : 3,
+    "name" : "3"
+  }
 ]
