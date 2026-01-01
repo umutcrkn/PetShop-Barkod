@@ -2,16 +2,31 @@
   {
     "date" : "2026-01-01T17:50:51Z",
     "id" : "398BFD6F-42E7-483B-B1DC-B2446125A420",
+    "totalAmount" : 120,
     "items" : [
       {
-        "unitPrice" : 120,
         "productBarcode" : "7622100744030",
+        "unitPrice" : 120,
         "totalPrice" : 120,
+        "id" : "74193399-C8C4-45D1-9E2A-81A8573B37D0",
         "productName" : "Terea",
-        "quantity" : 1,
-        "id" : "74193399-C8C4-45D1-9E2A-81A8573B37D0"
+        "quantity" : 1
       }
-    ],
-    "totalAmount" : 120
+    ]
+  },
+  {
+    "date" : "2026-01-01T18:07:08Z",
+    "id" : "06E64ED8-3EDC-4726-A4B4-FF61C6A6983C",
+    "totalAmount" : 150,
+    "items" : [
+      {
+        "productBarcode" : "8690605066215",
+        "unitPrice" : 50,
+        "totalPrice" : 150,
+        "id" : "4CAEAFA5-A656-4946-BE15-A9A03E3E09BB",
+        "productName" : "Dalin",
+        "quantity" : 3
+      }
+    ]
   }
 ]
