@@ -1,18 +1,10 @@
 [
   {
-    "barcode" : "1",
-    "price" : 1234,
-    "id" : "711A91D0-360F-4CDC-8BE2-2A187D95B722",
-    "stock" : 10,
-    "name" : "Pet",
-    "description" : "pet"
-  },
-  {
     "barcode" : "2",
+    "description" : "mama",
     "price" : 1,
     "id" : "AF327348-B57D-4ACA-AA88-52091B429405",
-    "stock" : 20,
     "name" : "mama",
-    "description" : "mama"
+    "stock" : 20
   }
 ]
