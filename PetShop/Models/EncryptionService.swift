@@ -176,6 +176,39 @@ class EncryptionService {
             print("Key loaded: \(key != nil)")
             
             // Authentication failure hatası alırsak, key yanlış olabilir
+            // GitHub'dan key'i yeniden yüklemeyi dene (arka planda)
+            if error.localizedDescription.contains("authenticationFailure") || 
+               error.localizedDescription.contains("authentication") {
+                print("Authentication failure detected, reloading key from GitHub...")
+                // Arka planda key'i yeniden yükle (bir sonraki denemede kullanılacak)
+                Task {
+                    await loadEncryptionKey(forceReload: true)
+                }
+            }
+            
+            return encryptedText
+        }
+    }
+    
+    /// Async decrypt metodu (key reload ile)
+    func decryptAsync(_ encryptedText: String) async -> String {
+        guard let encryptedData = Data(base64Encoded: encryptedText) else {
+            print("Decryption error: Invalid base64 data")
+            return encryptedText
+        }
+        
+        let encryptionKey = ensureKey()
+        
+        do {
+            let sealedBox = try AES.GCM.SealedBox(combined: encryptedData)
+            let decryptedData = try AES.GCM.open(sealedBox, using: encryptionKey)
+            return String(data: decryptedData, encoding: .utf8) ?? encryptedText
+        } catch {
+            print("Decryption error: \(error)")
+            print("Encrypted text length: \(encryptedText.count)")
+            print("Key loaded: \(key != nil)")
+            
+            // Authentication failure hatası alırsak, key yanlış olabilir
             // GitHub'dan key'i yeniden yüklemeyi dene
             if error.localizedDescription.contains("authenticationFailure") || 
                error.localizedDescription.contains("authentication") {

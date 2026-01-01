@@ -80,7 +80,7 @@ class CompanyManager: ObservableObject {
             return false
         }
         
-        if company.verifyPassword(password) {
+        if await company.verifyPassword(password) {
             selectCompany(company)
             return true
         }
@@ -95,7 +95,7 @@ class CompanyManager: ObservableObject {
         }
         
         // Mevcut parolayı doğrula
-        guard company.verifyPassword(currentPassword) else {
+        guard await company.verifyPassword(currentPassword) else {
             throw CompanyError.invalidCredentials
         }
         
