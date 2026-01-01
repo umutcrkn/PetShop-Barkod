@@ -118,6 +118,9 @@ struct CompanyRegistrationView: View {
                     password: password
                 )
                 
+                // Firma kaydedildikten sonra firmaları yeniden yükle
+                await companyManager.refreshCompanies()
+                
                 await MainActor.run {
                     isRegistering = false
                     showSuccess = true
