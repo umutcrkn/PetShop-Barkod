@@ -31,137 +31,160 @@ struct ProductListView: View {
     }
     
     var body: some View {
-        List(selection: $selectedProducts) {
-            if filteredProducts.isEmpty {
-                VStack(spacing: 20) {
-                    Image(systemName: "tray")
-                        .font(.system(size: 50))
-                        .foregroundColor(.gray)
-                    Text("Henüz ürün eklenmemiş")
-                        .foregroundColor(.gray)
-                }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 50)
-            } else {
-                ForEach(filteredProducts) { product in
-                    ProductRowView(product: product)
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                            if editMode?.wrappedValue == .inactive {
-                                selectedProduct = product
-                            }
-                        }
-                        .tag(product.id)
-                }
-                .onDelete(perform: deleteProducts)
+        listContent
+            .navigationTitle("Ürün Listesi")
+            .navigationBarTitleDisplayMode(.large)
+            .searchable(text: $searchText, prompt: "Ürün adı, barkod veya açıklama ara...")
+            .sheet(item: $selectedProduct) { product in
+                ProductEditView(product: product)
             }
-        }
-        .navigationTitle("Ürün Listesi")
-        .navigationBarTitleDisplayMode(.large)
-        .searchable(text: $searchText, prompt: "Ürün adı, barkod veya açıklama ara...")
-        .sheet(item: $selectedProduct) { product in
-            ProductEditView(product: product)
-        }
-        .sheet(isPresented: $showBackupSheet) {
-            BackupExportView()
-        }
-        .sheet(isPresented: $showBarcodeScanner) {
-            BarcodeScannerView(barcode: $searchText)
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                if editMode?.wrappedValue == .inactive {
-                    Button(action: {
-                        showBarcodeScanner = true
-                    }) {
-                        Image(systemName: "camera.fill")
-                            .foregroundColor(.blue)
-                    }
+            .sheet(isPresented: $showBackupSheet) {
+                BackupExportView()
+            }
+            .sheet(isPresented: $showBarcodeScanner) {
+                BarcodeScannerView(barcode: $searchText)
+            }
+            .toolbar {
+                toolbarContent
+            }
+            .alert("Ürünleri Sil", isPresented: $showDeleteConfirmation) {
+                Button("İptal", role: .cancel) { }
+                Button("Sil", role: .destructive) {
+                    deleteSelectedProducts()
+                }
+            } message: {
+                Text("\(selectedProducts.count) ürünü silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.")
+            }
+            .onChange(of: editMode?.wrappedValue) { oldValue, newValue in
+                if newValue == .inactive {
+                    selectedProducts.removeAll()
                 }
             }
-            
-            ToolbarItem(placement: .navigationBarTrailing) {
-                HStack {
-                    if editMode?.wrappedValue == .active {
-                        if selectedProducts.count == filteredProducts.count {
-                            Button(action: {
-                                selectedProducts.removeAll()
-                            }) {
-                                Text("Seçimi Kaldır")
-                                    .foregroundColor(.blue)
-                            }
-                        } else {
-                            Button(action: {
-                                selectedProducts = Set(filteredProducts.map { $0.id })
-                            }) {
-                                Text("Hepsini Seç")
-                                    .foregroundColor(.blue)
-                            }
-                        }
-                        
-                        if !selectedProducts.isEmpty {
-                            Button(action: {
-                                showDeleteConfirmation = true
-                            }) {
-                                HStack {
-                                    Image(systemName: "trash")
-                                    Text("Sil (\(selectedProducts.count))")
-                                }
-                                .foregroundColor(.red)
-                            }
-                        }
-                    }
-                    EditButton()
-                }
-            }
-        }
-        .alert("Ürünleri Sil", isPresented: $showDeleteConfirmation) {
-            Button("İptal", role: .cancel) { }
-            Button("Sil", role: .destructive) {
-                deleteSelectedProducts()
-            }
-        } message: {
-            Text("\(selectedProducts.count) ürünü silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.")
-        }
-        .onChange(of: editMode?.wrappedValue) { oldValue, newValue in
-            if newValue == .inactive {
-                selectedProducts.removeAll()
-            }
-        }
-        .onAppear {
-            // View görünür olduğunda verileri GitHub'dan yeniden yükle
-            Task {
-                await dataManager.loadDataFromGitHub()
-            }
-        }
-        .onChange(of: selectedProduct) { oldValue, newValue in
-            // Ürün düzenleme ekranı kapandığında verileri yeniden yükle
-            if newValue == nil && oldValue != nil {
+            .onAppear {
+                // View görünür olduğunda verileri GitHub'dan yeniden yükle
                 Task {
                     await dataManager.loadDataFromGitHub()
                 }
             }
-        }
-        .safeAreaInset(edge: .bottom) {
-            if !dataManager.products.isEmpty {
-                Button(action: {
-                    selectedProduct = nil // Clear selection
-                    showBackupSheet = true
-                }) {
-                    HStack {
-                        Image(systemName: "square.and.arrow.up")
-                        Text("Yedekle ve Mail Gönder")
+            .onChange(of: selectedProduct) { oldValue, newValue in
+                // Ürün düzenleme ekranı kapandığında verileri yeniden yükle
+                if newValue == nil && oldValue != nil {
+                    Task {
+                        await dataManager.loadDataFromGitHub()
                     }
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
                 }
-                .padding()
-                .background(Color(.systemBackground))
             }
+            .safeAreaInset(edge: .bottom) {
+                backupButton
+            }
+    }
+    
+    @ViewBuilder
+    private var listContent: some View {
+        List(selection: $selectedProducts) {
+            if filteredProducts.isEmpty {
+                emptyStateView
+            } else {
+                productsList
+            }
+        }
+    }
+    
+    private var emptyStateView: some View {
+        VStack(spacing: 20) {
+            Image(systemName: "tray")
+                .font(.system(size: 50))
+                .foregroundColor(.gray)
+            Text("Henüz ürün eklenmemiş")
+                .foregroundColor(.gray)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 50)
+    }
+    
+    private var productsList: some View {
+        ForEach(filteredProducts) { product in
+            ProductRowView(product: product)
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    if editMode?.wrappedValue == .inactive {
+                        selectedProduct = product
+                    }
+                }
+                .tag(product.id)
+        }
+        .onDelete(perform: deleteProducts)
+    }
+    
+    @ToolbarContentBuilder
+    private var toolbarContent: some ToolbarContent {
+        ToolbarItem(placement: .navigationBarLeading) {
+            if editMode?.wrappedValue == .inactive {
+                Button(action: {
+                    showBarcodeScanner = true
+                }) {
+                    Image(systemName: "camera.fill")
+                        .foregroundColor(.blue)
+                }
+            }
+        }
+        
+        ToolbarItem(placement: .navigationBarTrailing) {
+            HStack {
+                if editMode?.wrappedValue == .active {
+                    if selectedProducts.count == filteredProducts.count {
+                        Button(action: {
+                            selectedProducts.removeAll()
+                        }) {
+                            Text("Seçimi Kaldır")
+                                .foregroundColor(.blue)
+                        }
+                    } else {
+                        Button(action: {
+                            selectedProducts = Set(filteredProducts.map { $0.id })
+                        }) {
+                            Text("Hepsini Seç")
+                                .foregroundColor(.blue)
+                        }
+                    }
+                    
+                    if !selectedProducts.isEmpty {
+                        Button(action: {
+                            showDeleteConfirmation = true
+                        }) {
+                            HStack {
+                                Image(systemName: "trash")
+                                Text("Sil (\(selectedProducts.count))")
+                            }
+                            .foregroundColor(.red)
+                        }
+                    }
+                }
+                EditButton()
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private var backupButton: some View {
+        if !dataManager.products.isEmpty {
+            Button(action: {
+                selectedProduct = nil
+                showBackupSheet = true
+            }) {
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                    Text("Yedekle ve Mail Gönder")
+                }
+                .font(.headline)
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color.blue)
+                .cornerRadius(10)
+            }
+            .padding()
+            .background(Color(.systemBackground))
         }
     }
     
