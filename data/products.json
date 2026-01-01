@@ -1,1 +1,6682 @@
-[]
+[
+  {
+    "stock" : 10,
+    "price" : 110,
+    "id" : "916DB066-99A3-4284-A012-97D6F446ACB5",
+    "description" : "",
+    "name" : "meo",
+    "barcode" : "1"
+  },
+  {
+    "stock" : 10000,
+    "price" : 1079,
+    "id" : "438BAAFD-C86A-443E-907A-DE7189F73DDB",
+    "description" : "",
+    "name" : "Royal Canin Jelly Yavru Kedi Pouch Yaş Mama (12 x 85 g)",
+    "barcode" : "9003579311783"
+  },
+  {
+    "stock" : 10,
+    "price" : 1499,
+    "id" : "5870434F-EE5F-4876-9B77-A54A157E06EB",
+    "description" : "",
+    "name" : "Royal Canin Anne & Bebek Yavru Kedi Maması (2 kg)",
+    "barcode" : "3182550707312"
+  },
+  {
+    "stock" : 10,
+    "price" : 1400,
+    "id" : "62C38E97-A97D-4E63-B33E-BB07905B6610",
+    "description" : "",
+    "name" : "Royal Canin Yavru Kedi Maması (2 kg)",
+    "barcode" : "3182550702423"
+  },
+  {
+    "stock" : 10000,
+    "price" : 949.9,
+    "id" : "613E6F18-C1E6-4755-8EFD-F2A654C07298",
+    "description" : "",
+    "name" : "Hill's Science Plan Tavuk Etli Yavru Kedi Maması (1,5 kg)",
+    "barcode" : "527420370594;52742866604;052742059631;52742059631"
+  },
+  {
+    "stock" : 10000,
+    "price" : 1899,
+    "id" : "FDB7BB5C-8EAD-4876-8278-B553DFB3AB0C",
+    "description" : "",
+    "name" : "N&D Ocean Morina Balıklı, Bal Kabaklı & Karidesli Yavru Kedi Maması (1,5 kg)",
+    "barcode" : "8010276038852"
+  },
+  {
+    "stock" : 10000,
+    "price" : 899,
+    "id" : "C40B0189-4F32-4838-9696-D3B7E7584DEC",
+    "description" : "",
+    "name" : "Pro Performance Kuzu Etli ve Pirinçli Yavru Kedi Maması (2 kg)",
+    "barcode" : "8682328740206"
+  },
+  {
+    "stock" : 10000,
+    "price" : 1199,
+    "id" : "106C338A-20D0-4D6F-90D7-0ADF37BB98CF",
+    "description" : "",
+    "name" : "Purina Pro Plan Liveclear Hindi Etli Yavru Kedi Maması (1,4 kg)",
+    "barcode" : "7613287232526"
+  },
+  {
+    "stock" : 10000,
+    "price" : 940,
+    "id" : "AD402580-7382-411D-A81A-3308EEE782B3",
+    "description" : "",
+    "name" : "Purina Pro Plan Tavuk Etli Yavru Kedi Maması (1,5 kg)",
+    "barcode" : "8697458625222;3222270708760;7613033563119;7613036505178"
+  },
+  {
+    "stock" : 10000,
+    "price" : 1499,
+    "id" : "ADDDD6FB-28A4-4B5D-8532-407A3F064EBD",
+    "description" : "",
+    "name" : "Royal Canin Yavru Kedi Maması ve Pouch Yaş Mama (2 x 2 kg)",
+    "barcode" : "2110211019102;2310211019101"
+  },
+  {
+    "stock" : 10,
+    "price" : 5800,
+    "id" : "5C836011-19B8-4695-A890-7ED6CA08FBEF",
+    "description" : "",
+    "name" : "Royal Canin Yavru Kedi Maması (10 kg)",
+    "barcode" : "3182550702973"
+  },
+  {
+    "stock" : 10000,
+    "price" : 2659,
+    "id" : "91AC11FB-D737-4A58-8050-0988CB482825",
+    "description" : "",
+    "name" : "Royal Canin Yavru Kedi Maması (4 kg)",
+    "barcode" : "3182550702447"
+  },
+  {
+    "stock" : 10,
+    "price" : 299,
+    "id" : "6833AD83-688B-4778-89A0-C631C0A286E8",
+    "description" : "",
+    "name" : "Royal Canin Anne ve Bebek Kedi Maması (400 g)",
+    "barcode" : "254400400;3182550707305"
+  },
+  {
+    "stock" : 10000,
+    "price" : 2799,
+    "id" : "D61B3049-8B84-4DEF-92B6-4777E8F60975",
+    "description" : "",
+    "name" : "Royal Canin Anne ve Bebek Yavru Kedi Maması (4 kg)",
+    "barcode" : "3182550707329"
+  },
+  {
+    "stock" : 10,
+    "price" : 299,
+    "id" : "398027A2-ED90-4155-B399-DFBB7BAE6BF1",
+    "description" : "",
+    "name" : "Royal Canin Yavru Kedi Maması (400 g)",
+    "barcode" : "318250702379;3182550702379"
+  },
+  {
+    "stock" : 10,
+    "price" : 175,
+    "id" : "97EA84FF-03D5-483A-A5FC-F6D22C423C79",
+    "description" : "",
+    "name" : "Trendline Tavuk Etli Yavru Kedi Maması (1 kg)",
+    "barcode" : "8698995027236"
+  },
+  {
+    "stock" : 10000,
+    "price" : 550,
+    "id" : "156C67BB-1E27-41FF-A59A-23BDFF9505CD",
+    "description" : "",
+    "name" : "Reflex Tavuk Etli ve Pirinçli Yavru Kedi Maması (2 kg)",
+    "barcode" : "86989950228851;8698995028851"
+  },
+  {
+    "stock" : 10000,
+    "price" : 65,
+    "id" : "46F53D12-A4DE-4B63-9F71-A33D6FF3A015",
+    "description" : "",
+    "name" : "Rocat Tavuk Etli Yavru Kedi Konserve Maması (400 g)",
+    "barcode" : "8699245866148"
+  },
+  {
+    "stock" : 10000,
+    "price" : 275,
+    "id" : "5B2F7FF2-EA8F-4A1D-8114-F92BD3E25AA1",
+    "description" : "",
+    "name" : "Proline Tavuk Etli Yavru Kedi Maması (1,2 kg)",
+    "barcode" : "8698995030762"
+  },
+  {
+    "stock" : 10000,
+    "price" : 130,
+    "id" : "138A186D-623E-45BE-B7F5-7B8BDDA666BA",
+    "description" : "",
+    "name" : "Proline Tavuk Etli Yavru Kedi Maması (400 g)",
+    "barcode" : "8698995030755"
+  },
+  {
+    "stock" : 10000,
+    "price" : 89.9,
+    "id" : "8524A021-531F-4760-A451-B795E7A8EFDF",
+    "description" : "",
+    "name" : "Whiskas Güveç Yavru Pouch Mama (4 x 85 g)",
+    "barcode" : "5900951303258"
+  },
+  {
+    "stock" : 10000,
+    "price" : 949.9,
+    "id" : "F62D2539-1FE0-40CE-BD20-2E85313E0A31",
+    "description" : "",
+    "name" : "Hill's Tuna Balıklı Yavru Kedi Maması (1,5 kg)",
+    "barcode" : "052742059655"
+  },
+  {
+    "stock" : 10000,
+    "price" : 450,
+    "id" : "53252DA3-C3AE-4ED7-B62E-6C18EB2CB39E",
+    "description" : "",
+    "name" : "Vet Prive Tavuk Etli Yavru Kedi Maması (1,5 kg)",
+    "barcode" : "8683079748688"
+  },
+  {
+    "stock" : 10000,
+    "price" : 349.9,
+    "id" : "CFC447C9-2359-49CF-819F-5E927D11898B",
+    "description" : "",
+    "name" : "Juno Tavuk Etli Yavru Kedi Maması (2 kg)",
+    "barcode" : "8690568100100"
+  },
+  {
+    "stock" : 10000,
+    "price" : 395,
+    "id" : "163D4F73-60D1-41A0-BD57-E3D9C036F609",
+    "description" : "",
+    "name" : "Midos Tavuk Etli Yavru Kedi Maması (2 kg)",
+    "barcode" : "8690568100377"
+  },
+  {
+    "stock" : 10000,
+    "price" : 899,
+    "id" : "9439B875-D6C9-4861-BE9B-D6B36966314B",
+    "description" : "",
+    "name" : "Pro Performance Somonlu ve Pirinçli Yavru Kedi Maması (2 kg)",
+    "barcode" : "8684272330809"
+  },
+  {
+    "stock" : 10000,
+    "price" : 1499,
+    "id" : "16C421D1-3F10-4B43-87D7-B3B3B349D83E",
+    "description" : "",
+    "name" : "N&D Tropical Kuzu Etli Yavru Kedi Maması (1,5 kg)",
+    "barcode" : "8010276045027"
+  },
+  {
+    "stock" : 10000,
+    "price" : 299,
+    "id" : "EB655B85-4A79-499A-BFC3-72F5D69A80C2",
+    "description" : "",
+    "name" : "Reflex Tavuk Etli Yavru Kedi Maması (1 kg)",
+    "barcode" : "8698995036719"
+  },
+  {
+    "stock" : 10000,
+    "price" : 899,
+    "id" : "76C6A5B7-E96C-4181-A695-C3327145671B",
+    "description" : "",
+    "name" : "Pro Performance Cat Sport Fit Tavuk Etli ve Balıklı Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "8682328740244"
+  },
+  {
+    "stock" : 10000,
+    "price" : 1499,
+    "id" : "C3702535-2332-4C17-AC1F-6F1E0BB66549",
+    "description" : "",
+    "name" : "Brit Care Haircare Hypo-Allergenic Deri ve Tüy Sağlığı İçin Tahılsız Kedi Maması (2 kg)",
+    "barcode" : "8595602540884"
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Brit Care Haircare Deri ve Tüy Sağlığı İçin Tahılsız Yetişkin Kedi Maması (7 kg)",
+    "barcode" : "8595602540877",
+    "id" : "7ED4C3AA-7779-4B4D-82EA-2C4D1271BDF2",
+    "price" : 2620
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Brit Care Sensitive Hipoalerjenik Tahılsız, Somonlu & Hindi Etli Yetişkin Kedi Maması (7 kg)",
+    "barcode" : "8595602540693",
+    "id" : "8A3B2830-7862-4EB1-8A04-F26FAA5168B2",
+    "price" : 2620
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Brit Care Sensitive Hipoalerjenik Hindi Etli ve Somonlu Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "8595602540709",
+    "id" : "FB568799-FB7D-4170-8A2D-A4F183FA4B9E",
+    "price" : 1499
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Guupy Cat Tavuk Etli Yetişkin Kedi Maması (15 kg)",
+    "barcode" : "8681763069552",
+    "id" : "AF5875A7-CF35-41F8-848B-790F0A090790",
+    "price" : 1250
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Guupy Mix Cat Tahıllı Karışık Yetişkin Kedi Maması (15 kg)",
+    "barcode" : "8681763069569",
+    "id" : "2C9B2411-FF97-4A93-83E9-91C4770D4EB4",
+    "price" : 1250
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "N&D Ocean Düşük Tahıllı  Morina Balıklı ve Portakallı Yetişkin Kedi Maması (1,5 kg)",
+    "barcode" : "8010276036780",
+    "id" : "9DA9C0EB-4BD8-4AB5-AA8B-48EC8E061CF4",
+    "price" : 1499
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "N&D Ocean Ringa Balıklı, Balkabaklı ve Portakallı Yetişkin Kedi Maması (1,5 kg)",
+    "barcode" : "8010276036742;8010276035394",
+    "id" : "761FC5ED-4955-4098-872F-1E92096AB511",
+    "price" : 1799
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Enjoy Cat Food Tavuk Etli Yetişkin Kedi Maması (1 kg)",
+    "barcode" : "8698995011419",
+    "id" : "7C0FA40F-6299-4474-BBF2-8840BD8E319A",
+    "price" : 175
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Pro Performance Kuzu Etli ve Pirinçli Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "8682328740220",
+    "id" : "298314CE-E938-4222-9F90-6044A3B413C3",
+    "price" : 899
+  },
+  {
+    "stock" : 9999,
+    "description" : "",
+    "name" : "Reflex Gourmet Tavuk Etli ve Pirinçli Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "8698995028837",
+    "id" : "A3E6ABDE-256B-407E-9953-3C5A96329A2C",
+    "price" : 550
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Purina Pro Plan Original Tavuk Etli Yetişkin Kedi Maması (1,5 kg)",
+    "barcode" : "3222270708784;7613033569708;7613036505956",
+    "id" : "A3B445E3-1DF9-4105-BB6F-89025F353822",
+    "price" : 940
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Royal Canin British Shorthair Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "3182550756419",
+    "id" : "47D47E7E-EAD2-406F-95AA-2A876127C743",
+    "price" : 1500
+  },
+  {
+    "stock" : 9999,
+    "description" : "",
+    "name" : "Reflex Tavuk Etli Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "8698995028868",
+    "id" : "247C2B64-ADCE-4838-B932-9F5399ACAB73",
+    "price" : 550
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Royal Canin Persian Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "3152550702614;3182550702614",
+    "id" : "F413FA74-D512-4AAF-8968-06E0AD629D7E",
+    "price" : 1500
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Royal Canin Care Hair & Skin Tüy ve Deri Bakımı Yetişkin Kedi Maması (2 kg",
+    "barcode" : "252602000;3182550721738",
+    "id" : "15A397FF-84F2-4424-BE0C-F7E5E97022FD",
+    "price" : 1950
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Royal Canin Care Hairball Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "3182550721400",
+    "id" : "F29B02A1-50F3-4630-B26E-26AFA80DDB95",
+    "price" : 1950
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Royal Canin Savour Exigent Hassas Seçici Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "3182550717137",
+    "id" : "F264E4FA-008F-4958-9AB0-24B6B63925C8",
+    "price" : 1525
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Royal Canin Regular Sensible 33 Hassas Sindirim Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "3182550702317",
+    "id" : "5A0AFC22-E4E1-4014-82F6-A2E4603DE8DF",
+    "price" : 1535
+  },
+  {
+    "stock" : 10,
+    "description" : "",
+    "name" : "Trendline Somonlu Yetişkin Kedi Maması (1 kg)",
+    "barcode" : "8698995011662",
+    "id" : "233E83C9-0EEA-4EC0-8B07-CAC6CE13268A",
+    "price" : 150
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Wise Cat Etli Yetişkin Kedi Maması (15 kg)",
+    "barcode" : "8680853489720",
+    "id" : "3AB09A44-205E-44B7-98F1-AAA10FC2A3E8",
+    "price" : 650
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Purina Pro Plan Delicate Kuzu Etli Yetişkin Kedi Maması (3 kg)",
+    "barcode" : "7613035846708",
+    "id" : "EC0027B5-71BD-4BDD-A361-170E0148E6FE",
+    "price" : 2000
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Purina Pro Plan Original Somonlu ve Pirinçli Yetişkin Kedi Maması (3 kg)",
+    "barcode" : "7613036508247",
+    "id" : "C4A70BE9-A986-4950-84C3-7A842F83263A",
+    "price" : 2000
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Purina Pro Plan Original Somonlu ve Pirinçli Yetişkin Kedi Maması (1,5 kg)",
+    "barcode" : "7613033569463;7613036507193;7613036508193",
+    "id" : "FD69D257-3126-4AF1-AEEF-1C62B3DEDE0D",
+    "price" : 980
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Royal Canin Regular Fit 32 Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "3182550702201",
+    "id" : "DB401786-24AB-4210-8EA3-52F44A546E81",
+    "price" : 1399
+  },
+  {
+    "stock" : 10,
+    "description" : "",
+    "name" : "Trendline Tavuk Etli Yetişkin Kedi Maması (1 kg)",
+    "barcode" : "8698995011303",
+    "id" : "478DC5CD-E801-4D6B-AEE4-4625671654B0",
+    "price" : 175
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Reflex Somon ve Hamsi Balıklı Yetişkin Kedi Maması (2 kg)",
+    "barcode" : "8698995028875",
+    "id" : "ADF6E774-930E-476E-8CC2-B2B440A77D03",
+    "price" : 550
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Royal Canin Regular Sensible 33 Hassas Sindirim Yetişkin Kedi Maması (15 kg)",
+    "barcode" : "3182550702362",
+    "id" : "4EE9CFA7-F969-4E2B-A52D-70C9F6EFBCCB",
+    "price" : 5250
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Proline Kuzu Etli ve Pirinçli Yetişkin Kedi Maması (400 g)",
+    "barcode" : "8698995030717",
+    "id" : "D250B9D5-BFCA-4F6B-B127-8AE9A991828A",
+    "price" : 120
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Proline Kuzu Etli Yetişkin Kedi Maması (1,2 kg)",
+    "barcode" : "8698995030724",
+    "id" : "FA01A830-A04F-4338-A8EE-377929D08452",
+    "price" : 250
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Proline Renkli Tavuk Etli Yetişkin Kedi Maması (1,2 kg)",
+    "barcode" : "8698995030687",
+    "id" : "10526BB7-F05E-464E-90DA-3A927770E6FE",
+    "price" : 250
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Proline Tavuk Etli Renkli Taneli Yetişkin Kedi Maması (400 g)",
+    "barcode" : "8698995030670",
+    "id" : "C0267DCD-06D1-450C-91E0-B50D016A8BA3",
+    "price" : 120
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Proline Tavuk Etli Yetişkin Kedi Maması (400 g)",
+    "barcode" : "8698995030656",
+    "id" : "7DFA7069-7265-4B25-B202-5035A13814BE",
+    "price" : 120
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Proline Balık Etli Yetişkin Kedi Maması (400 g)",
+    "barcode" : "8698995030694",
+    "id" : "41A4DAFD-B42A-408D-AEE1-4A1BCD5842C3",
+    "price" : 120
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Brit Care Sensitive Hipoalerjenik Böcek Proteinli ve Ringa Balıklı Yetişkin Kedi Maması (7 kg)",
+    "barcode" : "8595602554225",
+    "id" : "08E216CA-695F-4A25-A7A1-6410142CD58A",
+    "price" : 2620
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Whiskas Klasik Öğünler Pouch Mama (4 x 85 g)",
+    "barcode" : "5900951301810",
+    "id" : "129DEA40-35BA-4AB0-A1BE-69F3840460BC",
+    "price" : 89.9
+  },
+  {
+    "stock" : 10000,
+    "description" : "",
+    "name" : "Proline Tavuk Etli Yetişkin Kedi Maması (1,2 kg)",
+    "barcode" : "8698995030663",
+    "id" : "13EB00D1-38BD-4334-A557-5095960422EE",
+    "price" : 250
+  },
+  {
+    "price" : 250,
+    "barcode" : "8698995030700",
+    "stock" : 10000,
+    "id" : "21B9DE56-F7D1-4D5F-9312-18241FC3C300",
+    "name" : "Proline Balıklı & Pirinçli Yetişkin Kedi Maması (1,2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 1350,
+    "barcode" : "8690944727891",
+    "stock" : 10000,
+    "id" : "CA87D6F4-9CA1-4E4D-95D6-3C29DCD6A797",
+    "name" : "Rico Tavuk Etli Yetişkin Kedi Maması (15 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 59,
+    "barcode" : "8445290799562",
+    "stock" : 10000,
+    "id" : "7E958FE1-5908-4860-8169-8E8604B35F4C",
+    "name" : "Pro Plan Delicate Sos İçinde Okyanus Balıklı Yaş Kedi Maması (85 g)",
+    "description" : ""
+  },
+  {
+    "price" : 260,
+    "barcode" : "8690944728089",
+    "stock" : 10000,
+    "id" : "962EB84E-CE22-4541-87D1-603AABCECA87",
+    "name" : "Rico Somonlu Yetişkin Kedi Maması (2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 1499,
+    "barcode" : "8698995010825",
+    "stock" : 10000,
+    "id" : "4DFF4DB6-BDCE-4622-8F9F-B7F7C1CEC974",
+    "name" : "NewCat Tavuk Etli Yetişkin Kedi Maması (15 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 260,
+    "barcode" : "8690944728072",
+    "stock" : 10000,
+    "id" : "67784EC9-9BB7-4B36-AED1-1F524095DAEC",
+    "name" : "Rico Kuzu Etli Yetişkin Kedi Maması (2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 1799,
+    "barcode" : "8010276040152",
+    "stock" : 10000,
+    "id" : "22FDB209-6298-4193-95BA-30EBCE1AC7AC",
+    "name" : "N&D Ocean Tahılsız Ringa Balığı ve Portakallı Kısırlaştırılmış Kedi Maması (1,5 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 1120,
+    "barcode" : "7613033566387",
+    "stock" : 10000,
+    "id" : "1787B36F-B133-4244-A6F4-87A77ED2A70E",
+    "name" : "Purina Pro Plan Somonlu Kısırlaştırılmış Kedi Maması (1,5 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 2659,
+    "barcode" : "3182550737616",
+    "stock" : 10000,
+    "id" : "100BDA05-19BE-49D3-AD2B-706C96AC0497",
+    "name" : "Royal Canin Kısırlaştırılmış Kedi Maması (4 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 1399,
+    "barcode" : "3182550737593",
+    "stock" : 10000,
+    "id" : "36B80ADA-4C64-4EF1-A5E0-9BB272A18687",
+    "name" : "Royal Canin Kısırlaştırılmış Yetişkin Kedi Maması (2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 5450,
+    "barcode" : "8010276040046",
+    "stock" : 10000,
+    "id" : "8838C4CE-D136-40E5-B572-720C85D6F979",
+    "name" : "N&D Düşük Tahıllı Somonlu Kısırlaştırılmış Kedi Maması (10 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 2800,
+    "barcode" : "8010276032751",
+    "stock" : 10000,
+    "id" : "D4E0CA65-43A8-4A88-81C0-E1D0FAC80903",
+    "name" : "N&D Düşük Tahıllı Tavuk Etli ve Narlı Kısırlaştırılmış Kedi Maması (5 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 5450,
+    "barcode" : "8010276031341",
+    "stock" : 10000,
+    "id" : "EA3D1AE8-C306-410E-BA85-5A5E8DA0B985",
+    "name" : "N&D Düşük Tahıllı Tavuk Etli ve Narlı Kısırlaştırılmış Kedi Maması (10 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 899,
+    "barcode" : "8682328740213",
+    "stock" : 10000,
+    "id" : "EC56C1AF-C39C-425C-924E-707561B8F669",
+    "name" : "Pro Performance Tavuk Etli Kısırlaştırılmış Kedi Maması (2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 899,
+    "barcode" : "8682328740237",
+    "stock" : 10000,
+    "id" : "86EA0F4F-63A3-426B-90BA-6887FABC5066",
+    "name" : "Pro Performance Kuzu Etli ve Kızılcıklı Kısırlaştırılmış Yetişkin Kedi Maması (2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 1590,
+    "barcode" : "3182550805186",
+    "stock" : 10000,
+    "id" : "0EDF2008-54D6-470F-A898-B7B23E00B301",
+    "name" : "Royal Canin Kısırlaştırılmış Yavru Kedi Maması (2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 319,
+    "barcode" : "3182550737555",
+    "stock" : 10000,
+    "id" : "4B18765F-2634-457A-8F93-D1F153E1555A",
+    "name" : "Royal Canin Kısırlaştırılmış Yetişkin Kedi Maması (400 g)",
+    "description" : ""
+  },
+  {
+    "price" : 1540,
+    "barcode" : "3222270884143;7613033560064",
+    "stock" : 10000,
+    "id" : "49506ADE-0A05-4715-800B-DBF96AEEB293",
+    "name" : "Purina Pro Plan Somonlu Kısırlaştırılmış Yetişkin Kedi Maması (3 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 175,
+    "barcode" : "8698995027229",
+    "stock" : 10,
+    "id" : "31365A36-8F3D-4E8D-8F5A-2DC5122A6313",
+    "name" : "Trendline Tavuk Etli Kısırlaştırılmış Yetişkin Kedi Maması (1 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 140,
+    "barcode" : "8698995030731",
+    "stock" : 10000,
+    "id" : "5B4F2246-50D4-49E9-9E44-4B4C0C170A42",
+    "name" : "Proline Tavuk Etli Kısırlaştırılmış Kedi Maması (400 g)",
+    "description" : ""
+  },
+  {
+    "price" : 290,
+    "barcode" : "8698995030748",
+    "stock" : 10000,
+    "id" : "E614A745-D466-410D-B644-5C6A9ADC4BDD",
+    "name" : "Proline Tavuk Etli Kısırlaştırılmış Kedi Maması (1,2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 1499,
+    "barcode" : "8010276042125",
+    "stock" : 10000,
+    "id" : "5E793361-7AE1-4680-9F6C-D7729FC62825",
+    "name" : "N&D Tropical Selection Serisi Düşük Tahıllı, Tropikal Meyveli & Kuzu Etli Kısırlaştırılmış Kedi Maması (1,5 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 5650,
+    "barcode" : "8010276042149",
+    "stock" : 10000,
+    "id" : "04D2D2A9-E475-42F5-AA08-20C29917E1E8",
+    "name" : "N&D Tropical Kuzu Etli Kısırlaştırılmış Kedi Maması (10 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 349.9,
+    "barcode" : "8690568100131",
+    "stock" : 10000,
+    "id" : "2EA71982-4BD4-4F56-B9F2-89D2442BE155",
+    "name" : "Juno Somonlu Kısırlaştırılmış Kedi Maması (2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 279.9,
+    "barcode" : "7613033564642",
+    "stock" : 10000,
+    "id" : "14BAA2FD-8121-41BB-86A7-BFCBB09049B3",
+    "name" : "Pro Plan Somonlu Kısırlaştırılmış Kedi Maması (400 g)",
+    "description" : ""
+  },
+  {
+    "price" : 325,
+    "barcode" : "8690944728041",
+    "stock" : 10000,
+    "id" : "DDCC3457-E0D1-4432-A990-5DEA9E297A4E",
+    "name" : "Rico Tavuk Etli Kısırlaştırılmış Kedi Maması (2 kg)",
+    "description" : ""
+  },
+  {
+    "price" : 34.9,
+    "barcode" : "7613037025545;8445290426550",
+    "stock" : 10000,
+    "id" : "DEB2D061-F788-4A91-A415-F3297339A7F1",
+    "name" : "Purina Cat Chow Kuzu Etli Yavru Kedi Pouch Yaş Mama (85 g)",
+    "description" : ""
+  },
+  {
+    "price" : 59.9,
+    "barcode" : "7613032816537;7613031381494",
+    "stock" : 10000,
+    "id" : "6124A6D5-FE89-4EB9-8C50-A8B3234459B0",
+    "name" : "Purina Gourmet Gold Kıyılmış Tavuk Etli Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : ""
+  },
+  {
+    "price" : 99,
+    "barcode" : "9003579308943",
+    "stock" : 10,
+    "id" : "888366CE-D968-466B-9F69-7385A2A6D779",
+    "name" : "Royal Canin Gravy Soslu Yavru Yaş Kedi Maması (85 g)",
+    "description" : ""
+  },
+  {
+    "price" : 99,
+    "barcode" : "9003579309537",
+    "stock" : 10,
+    "id" : "2697C1DD-93DE-4BD2-A873-4B6ED3B8B095",
+    "name" : "Royal Canin Digest Sensitive Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : ""
+  },
+  {
+    "price" : 109,
+    "barcode" : "7613034734686;7613287487711",
+    "stock" : 10000,
+    "id" : "4F8DC47F-9B92-4F0C-AA29-A1639A0C1EB2",
+    "name" : "Purina Felix Tavuk Etli ve Sığır Etli Yavru Kedi Yaş Mama (4 x 85 g)",
+    "description" : ""
+  },
+  {
+    "price" : 99,
+    "barcode" : "9003579311714",
+    "stock" : 10000,
+    "id" : "A1F370DF-1113-436C-8979-A71FFEDC6210",
+    "name" : "Royal Canin Jelly Yaş Yavru Kedi Konserve Maması (85 g)",
+    "description" : ""
+  },
+  {
+    "price" : 34.9,
+    "barcode" : "7613036594899;8445290426215",
+    "stock" : 10000,
+    "id" : "98958EF3-050B-4B0C-B4F1-3D84425E32D1",
+    "name" : "Purina Cat Chow Somonlu Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : ""
+  },
+  {
+    "price" : 75,
+    "barcode" : "8681085427221",
+    "stock" : 10000,
+    "id" : "0E519D60-9466-4DC5-95FD-55914E63DCE1",
+    "name" : "Crocus Kuzu Etli Yetişkin Kedi Konserve Maması (400 g)",
+    "description" : ""
+  },
+  {
+    "price" : 59.9,
+    "barcode" : "8683400976063",
+    "stock" : 10000,
+    "id" : "80EE61FD-CEF5-4313-B024-77DA086C2C15",
+    "name" : "Jessy Tavuk Etli Yavru Kedi Konserve Maması (400 g)",
+    "description" : ""
+  },
+  {
+    "price" : 49.9,
+    "barcode" : "8850477017672",
+    "stock" : 10000,
+    "id" : "ED6C85D1-6FC0-4866-BB00-786ED4E4C7C4",
+    "name" : "Me-O Jelly Ton Balıklı Yetişkin Kedi Pouch Yaş Mama (80 g)",
+    "description" : ""
+  },
+  {
+    "barcode" : "8850477015524",
+    "price" : 49.9,
+    "stock" : 10000,
+    "name" : "Me-O Jelly Dana Etli Yetişkin Kedi Konserve Maması (80 g)",
+    "description" : "",
+    "id" : "4431E457-1726-4C94-A9E4-5D4D4A2DA841"
+  },
+  {
+    "barcode" : "8850477015548",
+    "price" : 49.9,
+    "stock" : 10000,
+    "name" : "Me-O Gravy Tavuk Etli Yetişkin Kedi Konserve Maması (80 g)",
+    "description" : "",
+    "id" : "533D4503-8115-4D85-BFD6-42CAE0C205D9"
+  },
+  {
+    "barcode" : "8850477017221",
+    "price" : 49.9,
+    "stock" : 10000,
+    "name" : "Me-O Jelly Ton Balıklı ve Sardalyalı Yavru Kedi Konserve Maması (80 g)",
+    "description" : "",
+    "id" : "16635ED1-B1AA-4EAB-A23A-85A53E8C282F"
+  },
+  {
+    "barcode" : "8850477019560",
+    "price" : 49.9,
+    "stock" : 10000,
+    "name" : "Me-O Gravy Kuzu Etli Yavru Kedi Konserve Maması (80 g)",
+    "description" : "",
+    "id" : "27F0934C-4743-4FB4-B388-7C086BD663BD"
+  },
+  {
+    "barcode" : "8850477019751",
+    "price" : 49.9,
+    "stock" : 10000,
+    "name" : "Me-O Ton Balıklı Yavru Kedi Konserve Maması (80 g)",
+    "description" : "",
+    "id" : "1E1F7A0C-5CD9-42C4-968E-D0532979BF57"
+  },
+  {
+    "barcode" : "42017028",
+    "price" : 39.9,
+    "stock" : 10000,
+    "name" : "Miamor Pastete Somonlu Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "33056B7F-9BE9-4E84-8922-B49321D5BC24"
+  },
+  {
+    "barcode" : "42017080",
+    "price" : 39.9,
+    "stock" : 10000,
+    "name" : "Miamor Pastete Tavuk Etli Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "D03E276D-C39E-431C-84F2-1BF079EC4C1D"
+  },
+  {
+    "barcode" : "7613287487636",
+    "price" : 139,
+    "stock" : 10000,
+    "name" : "Purina Felix Sığır Etli ve Tavuk Etli Yetişkin Kedi Pouch Yaş Mama (4 x 85 g)",
+    "description" : "",
+    "id" : "F2A31578-68E8-41D9-9649-605855D749E5"
+  },
+  {
+    "barcode" : "7613287484611",
+    "price" : 39,
+    "stock" : 10000,
+    "name" : "Purina Felix Sensations Tavuk Etli ve Havuçlu Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "CFF0BD0C-E111-4840-BB15-2B2707F2F6E1"
+  },
+  {
+    "barcode" : "7613287484406",
+    "price" : 39,
+    "stock" : 10000,
+    "name" : "Purina Felix Sığır Etli Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "199D8D92-2748-4C7F-B4E8-D2BFE1E37E33"
+  },
+  {
+    "barcode" : "7613287484437",
+    "price" : 39,
+    "stock" : 10000,
+    "name" : "Purina Felix Sığır Etli ve Kümes Hayvanlı Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "BDC7539B-FABE-42EE-AD68-34ABF8CB43CD"
+  },
+  {
+    "barcode" : "7613287484147",
+    "price" : 39,
+    "stock" : 10000,
+    "name" : "Purina Felix Somonlu Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "4940BEA9-D710-4EC0-B72F-F5CED1A85A9D"
+  },
+  {
+    "barcode" : "7613032815066",
+    "price" : 59.9,
+    "stock" : 10000,
+    "name" : "Purina Gourmet Gold Ciğer Etli ve Tavşan Etli Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "FD13FF41-03DA-4D34-A8E6-C90C95A9D821"
+  },
+  {
+    "barcode" : "7613031380992;7613032814953",
+    "price" : 59.9,
+    "stock" : 10000,
+    "name" : "Purina Gourmet Gold Kıyılmış Hindi Etli Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "EA0FD106-F3E0-49EF-88C5-F6C6A6A75264"
+  },
+  {
+    "barcode" : "7613032816506;7613032861506;80393320",
+    "price" : 59.9,
+    "stock" : 10000,
+    "name" : "Purina Gourmet Gold Kıyılmış Sığır Etli Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "678F0F0C-E5A7-4B19-A442-18D005EA060D"
+  },
+  {
+    "barcode" : "7613031381029;7613032814526",
+    "price" : 59.9,
+    "stock" : 10000,
+    "name" : "Purina Gourmet Gold Kıyılmış Ton Balıklı Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "99F94AD0-5BEA-46B8-95D0-69A70A4EC4A1"
+  },
+  {
+    "barcode" : "7613032816766;7613032947019;7613033775666",
+    "price" : 59.9,
+    "stock" : 10000,
+    "name" : "Purina Gourmet Gold Çifte Lezzet Sığır Etli ve Tavuk Etli Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "A66A02F8-30CF-493E-888A-BA230823A113"
+  },
+  {
+    "barcode" : "7613033568619;761303693462",
+    "price" : 59,
+    "stock" : 10000,
+    "name" : "Purina Pro Plan Tavuk Etli Yavru Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "2710351A-900F-40A9-86A8-69D7D5C85326"
+  },
+  {
+    "barcode" : "7613032815318",
+    "price" : 59.9,
+    "stock" : 10000,
+    "name" : "Purina Gourmet Gold Somonlu ve Tavuk Etli Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "85562FBF-3117-41BC-9F43-57662786755D"
+  },
+  {
+    "barcode" : "3222270189927",
+    "price" : 59,
+    "stock" : 10000,
+    "name" : "Purina Pro Plan Delicate Hindi Etli Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "8F49CE04-2792-4D96-B85B-6AD139868C67"
+  },
+  {
+    "barcode" : "9003579311660",
+    "price" : 220,
+    "stock" : 10000,
+    "name" : "Royal Canin Anne & Bebek Kedi Konserve Maması (195 g)",
+    "description" : "",
+    "id" : "928473A4-20A2-4348-BDDD-32AE2AE2BD23"
+  },
+  {
+    "barcode" : "0900357931130;900357931130;9003579311301",
+    "price" : 99,
+    "stock" : 10000,
+    "name" : "Royal Canin Gravy Kısırlaştırılmış Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "6B6FAEB0-8E89-469E-9C10-4603F4E20DE9"
+  },
+  {
+    "barcode" : "9003579311844",
+    "price" : 1079,
+    "stock" : 10000,
+    "name" : "Royal Canin Jelly Kısırlaştırılmış Yetişkin Kedi Konserve Maması (12 x 85 g)",
+    "description" : "",
+    "id" : "A6B5E273-3FB0-43F5-B28A-E0BE3B0D5B4A"
+  },
+  {
+    "barcode" : "9003579309513",
+    "price" : 99,
+    "stock" : 10,
+    "name" : "Royal Canin Jelly Instictive Yetişkin Kedi Konserve Maması (85 g)",
+    "description" : "",
+    "id" : "C672C670-3F5A-4B20-83D3-34F1D7B3963B"
+  },
+  {
+    "barcode" : "9003579308745",
+    "price" : 1079,
+    "stock" : 10000,
+    "name" : "Royal Canin Gravy Yavru Kedi Pouch Yaş Mama (12 x 85 g)",
+    "description" : "",
+    "id" : "93287A7E-1F5F-4E54-A4D9-C44B95B75E2D"
+  },
+  {
+    "barcode" : "8445290426512;7613037025507",
+    "price" : 34.9,
+    "stock" : 10000,
+    "name" : "Purina Cat Chow Kuzu Etli Kısırlaştırılmış Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "A563337D-49DB-4E3E-9606-9D1DA6BDFE45"
+  },
+  {
+    "barcode" : "9003579311776",
+    "price" : 99,
+    "stock" : 10,
+    "name" : "Royal Canin Jelly Kısırlaştırılmış Yaş Kedi Maması (85 g)",
+    "description" : "",
+    "id" : "9455B2FE-8415-4C27-945A-96909B5AC2F1"
+  },
+  {
+    "barcode" : "7613287484833;7613287484826",
+    "price" : 39,
+    "stock" : 10000,
+    "name" : "Purina Felix Sensations Sığır Etli ve Domatesli Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "CADBDFE6-3D7C-4B2D-9B39-7C6F1D163704"
+  },
+  {
+    "barcode" : "7613287484161",
+    "price" : 39,
+    "stock" : 10000,
+    "name" : "Purina Felix Le Ghiottonerie Tavuk Etli Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "EA580BA6-EDB3-46C6-B3BF-E36281DD81A1"
+  },
+  {
+    "barcode" : "8699245866117",
+    "price" : 65,
+    "stock" : 10000,
+    "name" : "Rocat Kuzu Etli Yetişkin Kedi Konserve Maması (400 g)",
+    "description" : "",
+    "id" : "B4D7E8D1-AD0A-4937-A301-FA2E64350945"
+  },
+  {
+    "barcode" : "8699245866100",
+    "price" : 65,
+    "stock" : 10000,
+    "name" : "Rocat Tavuk Etli Yetişkin Kedi Konserve Maması (400 g)",
+    "description" : "",
+    "id" : "23111FDD-3460-4F5B-B17F-FDD635207942"
+  },
+  {
+    "barcode" : "8699245866131",
+    "price" : 49.9,
+    "stock" : 10000,
+    "name" : "Rocat Somonlu Kısırlaştırılmış Kedi Konserve Maması (400 g)",
+    "description" : "",
+    "id" : "822B3ACA-A458-4AE4-A8F2-14E382500B49"
+  },
+  {
+    "barcode" : "8699245866124",
+    "price" : 65,
+    "stock" : 10000,
+    "name" : "Rocat Somonlu ve Parça Etli Yetişkin Kedi Konservesi (400 g)",
+    "description" : "",
+    "id" : "15C7AFE7-7D61-4E12-9CF4-CD5300AD241E"
+  },
+  {
+    "barcode" : "5900951306112",
+    "price" : 29.9,
+    "stock" : 10000,
+    "name" : "Whiskas Pure Delight Sığır Etli Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "4D28C707-1D47-4D62-A39F-1FA4C1041422"
+  },
+  {
+    "barcode" : "5900951302039",
+    "price" : 29.9,
+    "stock" : 10000,
+    "name" : "Whiskas Somonlu Yetişkin Kedi Pouch Yaş Mama (85 g)",
+    "description" : "",
+    "id" : "F535E8F1-9B38-4781-A42D-35B218D08912"
+  },
+  {
+    "barcode" : "9003579311295",
+    "price" : 1079,
+    "stock" : 10000,
+    "name" : "Royal Canin Gravy Kısırlaştırılmış Yetişkin Kedi Pouch Yaş Mama (12 x 85 g)",
+    "description" : "",
+    "id" : "3D5F7FF3-9885-4CAE-BE78-DA1EDD3EDC4C"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "AE665BF0-D96E-437F-93FC-39A1998F9DFB",
+    "price" : 29.9,
+    "barcode" : "5900951306105",
+    "name" : "Whiskas Pure Delight Tavuk Etli Yaş Kedi Maması (85 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "45F59082-EA25-4B8E-8209-1D3C56905233",
+    "price" : 44.9,
+    "barcode" : "8698995030939",
+    "name" : "Spectrum Gusto Somon Balıklı ,Tavuk Etli & Kabaklı Kedi Çorbası (50 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "5EAB6635-F322-4E13-A43E-0737693AFF61",
+    "price" : 49.9,
+    "barcode" : "8445290173317",
+    "name" : "Purina Proplan Hindi Etli Narin Yetişkin Kedi Konserve Maması (85 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "DC77C0EB-E368-411B-B02F-9A113712B189",
+    "price" : 49.9,
+    "barcode" : "8445290173287",
+    "name" : "Purina Proplan Kısırlaştırılmış Kedi Konserve Maması (85 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "EF72135A-8234-4594-8239-E5BD6B9EC634",
+    "price" : 49.9,
+    "barcode" : "8445290173218",
+    "name" : "Purina Proplan Tavuk Etli Yetişkin Kedi Konserve Maması (85 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "FB6A0E31-31FF-4949-BA63-21D67D993C5D",
+    "price" : 75,
+    "barcode" : "8698995031981",
+    "name" : "Proline Dana Etli Yetişkin Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "4D1540FB-A565-494C-B49A-9AA1C48CBC79",
+    "price" : 75,
+    "barcode" : "8698995031998",
+    "name" : "Proline Kuzu Etli Yetişkin Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "23FB47C4-C48C-45BA-B17D-DFEBF52749A8",
+    "price" : 75,
+    "barcode" : "8698995032001",
+    "name" : "Proline Somonlu Yetişkin Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "397567DF-4ADA-4832-A7BF-5430623C2DF1",
+    "price" : 89,
+    "barcode" : "8698995032018",
+    "name" : "Proline Somonlu ve Alabalıklı Yetişkin Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "EFA86EAB-45F4-491F-BD7D-589B0A4C05E3",
+    "price" : 89,
+    "barcode" : "8698995032025",
+    "name" : "Proline Tavuklu ve Ciğerli Yetişkin Kedi Konservesi (395 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "91D404BC-32C5-495B-B036-B26B8DF23B03",
+    "price" : 89,
+    "barcode" : "8698995031974",
+    "name" : "Proline Sos İçinde Et Parçacıklı Tavuk Etli Yetişkin Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "10262C16-B7C8-4227-93C4-8F86B2C69593",
+    "price" : 89,
+    "barcode" : "8698995032032",
+    "name" : "Proline Okyanus Balıklı Yetişkin Kedi Konservesi (395 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "11B33EA6-ECE0-4094-B95D-DA93D5406452",
+    "price" : 89,
+    "barcode" : "8698995032049",
+    "name" : "Proline Kuzu Etli ve Havuçlu Yetişkin Kedi Konservesi (395 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "41B25FD1-14B4-4A44-A61A-6BE07446AB94",
+    "price" : 59,
+    "barcode" : "8445290673688;8445290673718",
+    "name" : "Pro Plan Tavuk Etli Yavru Kedi Konservesi (85 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "BA239304-95A8-4DA1-AE38-6DD87038D84B",
+    "price" : 79,
+    "barcode" : "8851759458466",
+    "name" : "Jinny Ton Balıklı ve Tavuk Etli Jel Kedi Maması (70 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "1EDE18A6-DDDF-449A-984B-F9A079D0AAA9",
+    "price" : 79,
+    "barcode" : "8851759458435",
+    "name" : "Jinny Uskumru ve Ton Balıklı Jel Kedi Maması (70 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "3EF712FD-78FA-4E2A-85D3-5D7ABFC46268",
+    "price" : 79,
+    "barcode" : "8851759458404",
+    "name" : "Jinny Ton Balıklı ve Tavuk Etli Sos Kedi Maması (70 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "90EDF73F-878C-4476-A111-19916024A945",
+    "price" : 79,
+    "barcode" : "8851759458374",
+    "name" : "Jinny Ton ve Somon Balıklı Sos Kedi Maması (70 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "A3A3D829-5F04-47C3-9841-8E79323CBB89",
+    "price" : 59,
+    "barcode" : "8445290658319",
+    "name" : "Pro Plan Sos İçinde Hindili Yaş Yavru Kedi Maması (85 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "30EA268A-2FF0-4D7C-AF6D-63802006FA41",
+    "price" : 59,
+    "barcode" : "8445290799586",
+    "name" : "Purina Pro Plan Sos İçinde Biftek Etli Pouch Yaş Kısırlaştırılmış Kedi Maması (85 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "B314FC83-2596-478E-84BD-A36B6C24BC4E",
+    "price" : 59.9,
+    "barcode" : "8683400976100",
+    "name" : "Jessy Kuzu Etli Yetişkin Kedi Konserve Maması (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "F4319FAC-4577-46FB-83EA-2F939DFBD9AA",
+    "price" : 59.9,
+    "barcode" : "8683400976094",
+    "name" : "Jessy Somonlu Kısır Kedi Konserve Maması (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "6E09D7EC-7612-48D8-9B19-2D2E40D9A05F",
+    "price" : 130,
+    "barcode" : "7613287070722",
+    "name" : "Purina Gourmet Revelations Somon Balıklı Kedi Konservesi (2 x 57 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "08B30BA6-60D9-4CF1-8756-9B2CEF6AC4CB",
+    "price" : 130,
+    "barcode" : "7613287070067",
+    "name" : "Purina Gourmet Revelations Tavuklu Kedi Yaş Maması (2 x 57 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "E6D6A63F-08F5-473D-AA6B-5E898142996E",
+    "price" : 130,
+    "barcode" : "7613287067067",
+    "name" : "Purina Gourmet Revelations Sığır Etli Kedi Yaş Maması (2 x 57 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "D266E6E8-D2E7-4C3C-A9D7-44AF38103C24",
+    "price" : 130,
+    "barcode" : "7613287071125",
+    "name" : "Purina Gourmet Revelations Ton Balıklı Kedi Yaş Maması (2 x 57 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "2585F807-1CC0-4DF4-928C-4F9B6ED38612",
+    "price" : 89,
+    "barcode" : "7613038511276",
+    "name" : "Purina Pro Plan Hydra Care Su Tüketimini Arttıran Yetişkin Kedi Maması (85 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "03932271-EC26-4B4D-816E-E2B79C881300",
+    "price" : 75,
+    "barcode" : "8681085431549",
+    "name" : "Crocus Yetişkin Kedi Somonlu Pate Yaş Mama (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "17C66F14-9BA4-46ED-A08E-12AE825069BD",
+    "price" : 75,
+    "barcode" : "8681085431556",
+    "name" : "Crocus Yetişkin Kedi Tavuk Etli Pate Yaş Mama (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "C374357B-A586-4B71-9534-8F15413AED28",
+    "price" : 75,
+    "barcode" : "8681085431532",
+    "name" : "Crocus Yavru Kedi Tavuk Etli Pate Yaş Mama (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "31561FBB-D095-4191-A08C-2A3B11758208",
+    "price" : 80,
+    "barcode" : "8698931095152",
+    "name" : "Bio Pet Active Nutritive Life Biftekli Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "0A71579F-F536-4189-8085-291167E8C9F1",
+    "price" : 80,
+    "barcode" : "8698931095176",
+    "name" : "Bio Pet Active Nutritive Life Ton Balıklı Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "905EA5F5-9116-410E-B43D-773472C54869",
+    "price" : 80,
+    "barcode" : "8698931095190",
+    "name" : "Bio PetActive Nutritive Life Tavuk Etli Yavru Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "6041D41C-D6F7-49B1-9D76-75675E97DC09",
+    "price" : 80,
+    "barcode" : "8698931095169",
+    "name" : "Bio PetActive Nutritive Life Tavuk Etli Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "8E8938F7-7266-4A63-801B-D096FB868E69",
+    "price" : 80,
+    "barcode" : "8698931095183",
+    "name" : "Bio PetActive Nutritive Life Somonlu Kısırlaştırılmış Kedi Konservesi (400 g)"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "4395F537-109E-44FD-81CA-618C1177326A",
+    "price" : 80,
+    "barcode" : "8698995037693",
+    "name" : "King Somonlu Kedi Konserve Maması (400 g)"
+  },
+  {
+    "name" : "King Sos İçerisinde Et Parçacıklı Tavuk Etli Yetişkin Kedi Konservesi (400 g)",
+    "price" : 80,
+    "id" : "D6895287-58C0-43A6-A7F4-42A605A76EAB",
+    "barcode" : "8698995037686",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Treats Jelly Tavuk Etli ve Bal Kabaklı Ek Besin ve Kedi Ödülü (4 x 15 g)",
+    "price" : 199,
+    "id" : "1C4DC680-5980-4A3F-AFCE-623970C49E7A",
+    "barcode" : "8850477020603;8850477020559",
+    "stock" : 10,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Domatesli Kedi Ödül Maması (4 x 15 g)",
+    "price" : 199,
+    "id" : "710AB843-CDE9-426E-8048-773CDD155CD5",
+    "barcode" : "86800671449033;8850477020511",
+    "stock" : 10,
+    "description" : ""
+  },
+  {
+    "name" : "Dreamies Tavuk Etli Kedi Ödül Maması (60 g)",
+    "price" : 49.9,
+    "id" : "95F3AE80-DD5A-4E82-A7B7-C2BC66BCD55B",
+    "barcode" : "4008429081768;4008429037894;5998749130469",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Treats Tavuk Etli, Karaciğer Etli & Keçi Sütlü Ek Besin ve Kedi Ödülü (4 x 15 g)",
+    "price" : 199,
+    "id" : "596DBA4B-6185-4544-9F0B-65AD29ED8E2B",
+    "barcode" : "8850477020528",
+    "stock" : 10,
+    "description" : ""
+  },
+  {
+    "name" : "Dreamies Ördek Etli Kedi Ödülü (60 g)",
+    "price" : 49.9,
+    "id" : "6BD6814A-EE3A-4C75-8FCF-D63315235AB8",
+    "barcode" : "5998749116500;5998749130520",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Kurutulmuş Ton Balıklı Kedi Ödülü (15 g)",
+    "price" : 40,
+    "id" : "24667824-688B-4BF2-BA64-3267F37F0D43",
+    "barcode" : "8850477012776",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Keçi Sütlü Yavru Kedi Ödül Maması (4 x 15 g)",
+    "price" : 199,
+    "id" : "5B4CCCD1-05CC-411B-9ACC-2156FC0A0F7E",
+    "barcode" : "8850477004863",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Miamor Cream Ciğer Etli Tamamlayıcı Ek Besin ve Kedi Ödülü (6 x 15 g)",
+    "price" : 219.9,
+    "id" : "E4510F35-5627-4672-A640-945C63702DBC",
+    "barcode" : "4000158743039",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Miamor Cream Peynirli Kedi Ödül Maması (5 x 15 g)",
+    "price" : 219.9,
+    "id" : "55BEC206-1A87-465F-8F82-D1CFB88C40E9",
+    "barcode" : "4000158743091",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Çizgili Orkinos Balıklı Kedi Ödülü (4 x 15 g)",
+    "price" : 199,
+    "id" : "C3582E7E-810D-4DA3-8815-E98DF01BBF1B",
+    "barcode" : "8850477013617;8850477018617",
+    "stock" : 9999,
+    "description" : ""
+  },
+  {
+    "name" : "Miamor Cream Malt Kedi Ödülü (6 x 15 g)",
+    "price" : 249,
+    "id" : "03517736-789E-4E55-8342-D90A4DBE808B",
+    "barcode" : "4000158743053",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "M-Pets Creamy Morina Balıklı ve Biftek Etli Kedi Ödülü (4 x 15 g)",
+    "price" : 100,
+    "id" : "AA93B317-509B-4786-A758-0E6D4E2BC9A6",
+    "barcode" : "6953182743286",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Reflex Cat Sticks Av Hayvanlı ve Kaz Etli Kedi Ödülü (3 x 5 g)",
+    "price" : 59,
+    "id" : "19993A1E-D818-48FB-803B-4758E7975996",
+    "barcode" : "8698995030199",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Reflex Plus Meaty Sticks Hindi Etli ve Kuzu Etli Yetişkin Kedi Ödülü (3 x 5 g)",
+    "price" : 59,
+    "id" : "26A20759-1048-4198-9B23-CC752F0C9B3C",
+    "barcode" : "8698995030205",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Reflex Hindi Etli Yavru Kedi Ödül Çubuğu (3 x 3 g)",
+    "price" : 59,
+    "id" : "2DFEB353-48F2-4F68-AD6B-825F66115F7A",
+    "barcode" : "8698995026932",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Kurutulmuş Ton Balıklı Kedi Ödülü (4 x 15 g)",
+    "price" : 199,
+    "id" : "F29B0334-377D-4857-867C-1F6EA10D8A92",
+    "barcode" : "850477013704;8850477013704",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "M-Pets Creamy Ton Balıklı Kedi Ödülü (4 x 15 g)",
+    "price" : 79,
+    "id" : "1E6620EF-956F-42A4-BE68-93058A7C2053",
+    "barcode" : "6953182743309",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "M-Pets Creamy Deniz Taraklı ve Ton Balıklı Kedi Ödülü (4 x 15 g)",
+    "price" : 79,
+    "id" : "753FB416-577E-4AFA-959F-83CDE2AFF713",
+    "barcode" : "6953182743323",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Reflex Plus Meaty Sticks Tavuk Etli ve Ördek Etli Yetişkin Kedi Ödülü (3 x 5 g)",
+    "price" : 59,
+    "id" : "56D4CBCB-E1F7-4AEF-BB02-31BB91C48589",
+    "barcode" : "8698995030212",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Deniz Taraklı ve Ton Balıklı Kedi Ödülü (4 x 15 g)",
+    "price" : 199,
+    "id" : "7C005A29-0C59-47B9-9E58-5056885DC2B9",
+    "barcode" : "850477018624;8850477018624",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Reflex Plus Dana Etli ve Kuzu Etli Meaty Sticks Yetişkin Kedi Ödülü (3 x 5 g)",
+    "price" : 59,
+    "id" : "B9F538F4-E9B0-4514-A6AB-17773E31E779",
+    "barcode" : "8698995030182",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Somonlu Kedi Ödülü (4 x 15 g)",
+    "price" : 199,
+    "id" : "42C38DC3-8F50-4DF3-A884-2504E3FEB9B1",
+    "barcode" : "850477013698;8850477013698",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "M-Pets Creamy Somonlu ve Biftek Etli Kedi Ödülü (4 x 15 g)",
+    "price" : 79,
+    "id" : "8758B415-3A12-41AE-B5AC-438C0A08002D",
+    "barcode" : "6953182743279",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Dreamies Somonlu Kedi Ödülü (60 g)",
+    "price" : 49.9,
+    "id" : "C94DC30C-E3E8-4112-97BC-DFB07A2D9F46",
+    "barcode" : "4008429037962;5998749130483",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Mavi Yüzgeçli Orkinoslu Kedi Ödülü (4 x 15 g)",
+    "price" : 199,
+    "id" : "1438A136-3157-4673-8E76-5D9E0DB84AC7",
+    "barcode" : "850477018600;8850477013600;8850477018600",
+    "stock" : 9999,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Tavuk Etli ve Ciğer Etli Kedi Ödülü (4 x 15 g)",
+    "price" : 159,
+    "id" : "E1DFCC47-0F50-42B1-BCEA-E06B01F0F557",
+    "barcode" : "850477013681;885047701368;8850477013681",
+    "stock" : 9999,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Treats Tavuk Ciğeri Etli ve Keçi Sütlü Yavru Kedi Ödül Maması (4 x 15 g)",
+    "price" : 199,
+    "id" : "86744950-939C-45CC-B66A-D410EF91537B",
+    "barcode" : "8850477004856",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "M-Pets Creamy Tavuk Etli Kedi Ödülü (4 x 15 g)",
+    "price" : 80,
+    "id" : "31905BC7-E9C4-48EF-8C77-37530EF5D148",
+    "barcode" : "6953182743293;6953185743293",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Miamor Cream Malt ve Peynirli Ek Besin Kedi Ödülü (6 x 15 g)",
+    "price" : 249,
+    "id" : "7523E69E-150F-4730-AD8B-07D9C3C6103A",
+    "barcode" : "4000158743077",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Me-O Creamy Yengeçli ve Ton Balıklı Kedi Ödülü (4 x 15 g)",
+    "price" : 199,
+    "id" : "07A99BD8-A0E9-4C7D-AF82-088279AFCA98",
+    "barcode" : "850477013711;8850477012806;8850477013711",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Dreamies Biftek Etli ve Peynirli Kedi Ödül Maması (60 g)",
+    "price" : 49.9,
+    "id" : "BD3BE280-C28A-440F-8824-71A991A90481",
+    "barcode" : "4008429055331",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "M-Pets Somonlu Sıvı Kedi Ödül Maması (4 x 15 g)",
+    "price" : 100,
+    "id" : "51F88493-3B0A-482B-86C9-FBF4F9849CA1",
+    "barcode" : "6953182743316",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Royalist Ton Balığı Aromalı Sıvı Kedi Ödül Maması (75 g)",
+    "price" : 129.9,
+    "id" : "EFDFCE52-C2C7-4508-8509-08761053E163",
+    "barcode" : "8682291404556",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Royalist Tavuk ve Karides Aromalı Sıvı Kedi Ödül Maması (75 g)",
+    "price" : 129.9,
+    "id" : "595F46EF-172B-4E51-B739-EA4E054AA5DF",
+    "barcode" : "8682291404549",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "name" : "Royalist Creamy Snack Tavuk Etli ve Deniz Taraklı Krema Ödül (5 x 15 g)",
+    "price" : 129.9,
+    "id" : "3025F8F0-B620-4679-8891-85532C451AC3",
+    "barcode" : "8682291404532",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "FCD69449-466F-4F68-8076-5571AA64E48B",
+    "name" : "Royalist Tavuk Aromalı Sıvı Kedi Ödül Maması (75 g)",
+    "description" : "",
+    "price" : 99,
+    "barcode" : "8682291404570",
+    "stock" : 10000
+  },
+  {
+    "id" : "5C1E7FA8-937F-47C7-98EB-BAE551E07A2B",
+    "name" : "Royalist Somon Aromalı Sıvı Kedi Ödül Maması (75 g)",
+    "description" : "",
+    "price" : 99,
+    "barcode" : "8682291404563",
+    "stock" : 10000
+  },
+  {
+    "id" : "E35CCDBC-39AD-43AB-8EAD-C8C7739768B4",
+    "name" : "Wanpy Taze Ördek Etli ve Balkabaklı Kedi Et Ezmesi (90 g)",
+    "description" : "",
+    "price" : 50,
+    "barcode" : "6927749871521",
+    "stock" : 10000
+  },
+  {
+    "id" : "B47898F3-B1BB-4483-8DCE-8F6C85C276E1",
+    "name" : "Wanpy Taze Ton Balıklı ve Tavuk Etli Kedi Et Ezmesi (90 g)",
+    "description" : "",
+    "price" : 50,
+    "barcode" : "6927749871545",
+    "stock" : 10000
+  },
+  {
+    "id" : "A55F8AA4-EFE9-4064-9222-5DC74A810DFC",
+    "name" : "Wanpy Taze Somonlu ve Tavuk Etli Kedi Et Ezmesi (90 g)",
+    "description" : "",
+    "price" : 50,
+    "barcode" : "6927749871538",
+    "stock" : 10000
+  },
+  {
+    "id" : "34284EDD-1C93-4FE9-859C-FD6CC2724BA3",
+    "name" : "Wanpy Taze Tavuk Etli ve Havuçlu Kedi Et Ezmesi (90 g)",
+    "description" : "",
+    "price" : 50,
+    "barcode" : "6927749871514;8682631203597",
+    "stock" : 10000
+  },
+  {
+    "id" : "B312FE4C-3AC4-4CAB-A72E-7586B350504D",
+    "name" : "M-Pets Yengeçli Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 100,
+    "barcode" : "6953182712510;6953182733812",
+    "stock" : 10000
+  },
+  {
+    "id" : "E7C1666E-DD74-47DF-95F5-0101FE989E77",
+    "name" : "Wanpy Karışık Ra-Mix Sıvı Kedi Ödülü (25 x 14 g)",
+    "description" : "",
+    "price" : 390,
+    "barcode" : "6927749871439",
+    "stock" : 10000
+  },
+  {
+    "id" : "8BC0F390-1F29-4052-A457-6D5BD6B6DF2F",
+    "name" : "Spectrum Gusto Balıklı ve Tavuk Etli Sıvı Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 129.9,
+    "barcode" : "8698995030878",
+    "stock" : 10000
+  },
+  {
+    "id" : "D0D7DC5C-B6BF-4AA8-977E-5392FE5E1ABB",
+    "name" : "Spectrum Gusto Somon Balıklı Sıvı Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 129.9,
+    "barcode" : "8698995030861",
+    "stock" : 10000
+  },
+  {
+    "id" : "47FAF459-8270-4027-BC6C-D39E67EB89CC",
+    "name" : "Spectrum Gusto Tavuk Etli Sıvı Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 129.9,
+    "barcode" : "8698995030854",
+    "stock" : 10000
+  },
+  {
+    "id" : "BE7C0007-BC22-499B-8CD3-ECE8034A9496",
+    "name" : "Spectrum Gusto Ton Balıklı Sıvı Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 129.9,
+    "barcode" : "8698995030487;8698995030847",
+    "stock" : 10000
+  },
+  {
+    "id" : "A0DA9FA9-29AD-4F43-9FA7-1771CD946530",
+    "name" : "Spectrum Gusto Ton ve Somon Balıklı Sıvı Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 129.9,
+    "barcode" : "8698995030885",
+    "stock" : 10000
+  },
+  {
+    "id" : "755DC3F8-1D3F-4774-ADC6-C4FC3CF691B7",
+    "name" : "Spectrum Gusto Ton Balıklı ve Tatlı Patatesli Sıvı Kedi Çorbası (50 g)",
+    "description" : "",
+    "price" : 44.9,
+    "barcode" : "8698995030915",
+    "stock" : 10000
+  },
+  {
+    "id" : "C1256EEA-19F7-4B47-9CA6-6D0F0F887880",
+    "name" : "Spectrum Gusto Ton Balığı, Uskumru & Brokolili Sıvı Kedi Çorbası (50 g)",
+    "description" : "",
+    "price" : 44.9,
+    "barcode" : "8698995030922",
+    "stock" : 10000
+  },
+  {
+    "id" : "137547A1-C3CE-49F2-89B1-DEFDE821D0B9",
+    "name" : "Royalist Tavuk Aromalı Sıvı Kedi Ödül Maması (15 g)",
+    "description" : "",
+    "price" : 25,
+    "barcode" : "8682291404471",
+    "stock" : 10000
+  },
+  {
+    "id" : "C7D74DE8-E5DA-424F-8CEA-A09FB83529F9",
+    "name" : "Me-O Creamy Tavuk, Ciğer Etli & Keçi Sütlü Kedi Ödülü (15 g)",
+    "description" : "",
+    "price" : 40,
+    "barcode" : "8850477020474",
+    "stock" : 10000
+  },
+  {
+    "id" : "75957299-C56F-4FCE-845C-E071439E2011",
+    "name" : "Reflex Happy Hour Seçici Kediler İçin Peynirli Kedi Ödül Maması (60 g)",
+    "description" : "",
+    "price" : 59,
+    "barcode" : "8698995032261",
+    "stock" : 10000
+  },
+  {
+    "id" : "411CB091-0906-4D98-AA11-46FA86BF6E7A",
+    "name" : "Reflex Happy Hour Sakinleşmeyi Destekleyici Kuzu Etli ve Kızılcıklı Kedi Ödül Maması (60 g)",
+    "description" : "",
+    "price" : 59,
+    "barcode" : "8698995032247",
+    "stock" : 10000
+  },
+  {
+    "id" : "3F9C5AD3-BA1F-4EEF-98E6-52E6B8F55324",
+    "name" : "Reflex Happy Hour Sağlıklı Kemikleri Destekleyici Kedi Ödül Maması (60 g)",
+    "description" : "",
+    "price" : 59,
+    "barcode" : "8698995032254",
+    "stock" : 10000
+  },
+  {
+    "id" : "B7BA0C23-C155-4068-8E9A-DB3D384A5635",
+    "name" : "Me-O Keçi Sütlü ve Ton Balıklı Kedi Ödül Kreması (15 g)",
+    "description" : "",
+    "price" : 40,
+    "barcode" : "8850477020481",
+    "stock" : 10000
+  },
+  {
+    "id" : "9C91A2BB-C68E-4983-831B-65B4FF97D11B",
+    "name" : "Me-O Creamy Deniz Taraklı ve Ton Balıklı Kedi Ödülü (15 g)",
+    "description" : "",
+    "price" : 40,
+    "barcode" : "8850477018594",
+    "stock" : 10000
+  },
+  {
+    "id" : "80CD9E97-E449-4875-BA88-462BFBF6D87C",
+    "name" : "Me-O Creamy Tavuk Etli ve Bal Kabaklı Kedi Ödülü (15 g)",
+    "description" : "",
+    "price" : 40,
+    "barcode" : "8850477020504",
+    "stock" : 10000
+  },
+  {
+    "id" : "BFCD31AD-8E71-4017-BF05-BA9147E79755",
+    "name" : "Reflex Happy Hour Urinary Tavuklu ve Yaban Mersinli Kedi Ödül Maması (60 g)",
+    "description" : "",
+    "price" : 59,
+    "barcode" : "8698995032230",
+    "stock" : 10000
+  },
+  {
+    "id" : "07F8B23F-AAF5-45B3-A879-49BC87204F61",
+    "name" : "Gardenmix Kedi Ödül Kreması Somon + Biotin (5 x 15g)",
+    "description" : "",
+    "price" : 170,
+    "barcode" : "8681085428679",
+    "stock" : 10000
+  },
+  {
+    "id" : "1BE5F5A7-248B-406B-9020-5FFC2CDB386C",
+    "name" : "Gardenmix Kedi Ödül Kreması XXL Somon + Ördek (24 x 15 g)",
+    "description" : "",
+    "price" : 689.9,
+    "barcode" : "8681085428990",
+    "stock" : 10000
+  },
+  {
+    "id" : "6743CB54-9388-4F69-BF82-BD79896755A9",
+    "name" : "Ranova Tavuk Etli ve Keçi Sütlü Eklem ve Kemik Destekleyici Lolipop Kedi Ödül Maması (1,4 g)",
+    "description" : "",
+    "price" : 54.9,
+    "barcode" : "602835492717",
+    "stock" : 10000
+  },
+  {
+    "id" : "667673E2-DFBE-411C-9AF5-01B6E189D106",
+    "name" : "Ranova Tavuk Etli ve Kızılcıklı Üriner Sistem Destekleyici Lolipop Kedi Ödül Maması (1,4 g)",
+    "description" : "",
+    "price" : 54.9,
+    "barcode" : "602835492724",
+    "stock" : 10000
+  },
+  {
+    "id" : "68660915-B46A-4280-8F4D-C2EDB16BFB21",
+    "name" : "Ranova Tavuk Etli ve Balkabaklı Sindirim Sistemi Destekleyici Lolipop Kedi Ödül Maması (1,4 g)",
+    "description" : "",
+    "price" : 54.9,
+    "barcode" : "602835492731",
+    "stock" : 10000
+  },
+  {
+    "id" : "B9D346B4-91D3-40A7-9B79-180EC2CB9B28",
+    "name" : "Ranova Tavuk Etli ve Yaban Mersinli Bağışıklık Destekleyici Lolipop Kedi Ödül Maması (1,4 g)",
+    "description" : "",
+    "price" : 54.9,
+    "barcode" : "602835492748",
+    "stock" : 10000
+  },
+  {
+    "id" : "DD559179-65AD-4097-8B0E-2BFC966BC7B3",
+    "name" : "Ranova Tavuk Etli ve Arpa Otlu Malt İçerikli Kurutulmuş Lolipop Kedi Ödül Maması (1,4 g)",
+    "description" : "",
+    "price" : 54.9,
+    "barcode" : "602835492755",
+    "stock" : 10000
+  },
+  {
+    "id" : "ECE3097F-10CA-4E4D-8CAD-4044E7131623",
+    "name" : "Crocus Tavuk Etli, Ton Balıklı & Somonlu Krema Kedi Ödül Maması (30 x 15 g)",
+    "description" : "",
+    "price" : 420,
+    "barcode" : "8681085429867",
+    "stock" : 10000
+  },
+  {
+    "id" : "5A9AC100-10F9-426B-BC0F-FAF686C92189",
+    "name" : "Crocus Somon Balıklı Krema Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 75,
+    "barcode" : "8681085429850",
+    "stock" : 10000
+  },
+  {
+    "id" : "A631390A-6D2C-42D3-89F2-C547C93087B6",
+    "name" : "Crocus Ton Balıklı Krema Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 75,
+    "barcode" : "8681085429843",
+    "stock" : 10000
+  },
+  {
+    "id" : "BEEE7617-518C-49C7-AB87-FFF5DBD76050",
+    "name" : "Crocus Tavuk Etli Krema Kedi Ödül Maması (4 x 15 g)",
+    "description" : "",
+    "price" : 75,
+    "barcode" : "8681085429836",
+    "stock" : 10000
+  },
+  {
+    "id" : "6335252E-5D7D-4791-A426-63A69776B88E",
+    "name" : "Garden Mix Ton Balıklı Ezmeli Kedi Ödülü (80 g)",
+    "description" : "",
+    "price" : 80,
+    "barcode" : "8681085429768",
+    "stock" : 10000
+  },
+  {
+    "price" : 80,
+    "barcode" : "8681085429775",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "88C1E5DD-EF05-4B78-B879-B158176FC7CB",
+    "name" : "Garden Mix Somon Etli Ezmeli Kedi Ödülü (80 g)"
+  },
+  {
+    "price" : 80,
+    "barcode" : "8681085429751",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "69FCFE04-7554-421D-894A-AA6135F2E273",
+    "name" : "Garden Mix Tavuk Etli Ezmeli Kedi Ödülü (80 g)"
+  },
+  {
+    "price" : 129.9,
+    "barcode" : "8682291405119",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "BF90A7CC-8232-4823-AC6B-CA0748B997E8",
+    "name" : "Royalist Yengeçli Sıvı Kedi Ödül Maması (75 g)"
+  },
+  {
+    "price" : 55,
+    "barcode" : "8698995033862",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "7ECF68CB-F58B-4B8C-B291-4939B9C05333",
+    "name" : "Reflex Plus Meaty Sticks Tavuk Etli ve Kızılcıklı Kısırlaştırılmış Yetişkin Kedi Çubuk Ödül Maması (3 x 5 g)"
+  },
+  {
+    "price" : 55,
+    "barcode" : "8698995033879",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "7273473C-2BDF-4520-8A6E-E82C8C8AD61D",
+    "name" : "Reflex Plus Meaty Sticks Somonlu Yetişkin Kedi Çubuk Ödül Maması (3 x 5 g)"
+  },
+  {
+    "price" : 199,
+    "barcode" : "8850477020535",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "0B49E83D-A476-4542-8640-1BAB84FEE550",
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Keçi Sütlü Yetişkin Kedi Ödül Maması (4 x 15 g)"
+  },
+  {
+    "price" : 40,
+    "barcode" : "8850477018587",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "A7246849-F41F-442D-AFB1-FA994BC1ED21",
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Katsuo Balıklı Kedi Ödül Maması (15 g)"
+  },
+  {
+    "price" : 40,
+    "barcode" : "8850477018570",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "C844A95E-BA41-476B-AFEC-B1EF91417E97",
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Maguro Balıklı Kedi Ödül Maması (15 g)"
+  },
+  {
+    "price" : 40,
+    "barcode" : "8850477020467",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "84B8BD1E-5ABA-44B4-87AA-640D586EA57D",
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Domatesli Kedi Ödül Maması (15 g)"
+  },
+  {
+    "price" : 189,
+    "barcode" : "8850477006867",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "074CB0EE-178F-4857-A60A-9F68FCEB19DA",
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Taurinli Kedi Ödül Maması (4 x 15 g)"
+  },
+  {
+    "price" : 189,
+    "barcode" : "8850477006874",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "F35DD0FD-FB46-4FE6-AE8C-7EE8142B4639",
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Probiyotikli Kedi Ödül Maması (4 x 15 g)"
+  },
+  {
+    "price" : 189,
+    "barcode" : "8850477006881",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "1CC6B4CF-FFEB-4455-9720-128A66131143",
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Biotinli Kedi Ödül Maması (4 x 15 g)"
+  },
+  {
+    "price" : 189,
+    "barcode" : "8850477006898",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "9B6DFF79-A542-404B-9679-BB411740464E",
+    "name" : "Me-O Creamy Treats Ton Balıklı ve Turna Yemişli Kedi Ödül Maması (4 x 15 g)"
+  },
+  {
+    "price" : 425,
+    "barcode" : "8681085430801",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "0B58FBF0-D2DC-41E3-9822-1F489C82F1BB",
+    "name" : "Crocus Somon Karides ve Yengeç Aromalı Sıvı Kedi Ödül Maması (30 x 15 g)"
+  },
+  {
+    "price" : 80,
+    "barcode" : "8681085430757",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "39B88090-089D-444F-8D32-2F86CD73FBE1",
+    "name" : "Garden Mix Tavuk Etli ve Karides Ezmeli Kedi Ödülü (80 g)"
+  },
+  {
+    "price" : 75,
+    "barcode" : "8681144151951",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "5D272FFD-7E8D-4F07-A34E-719AE1F9D4D4",
+    "name" : "EuroGold Tavuk Etli ve Yabanmersinli Kedi Ödül Maması (1,5 g)"
+  },
+  {
+    "price" : 75,
+    "barcode" : "8681144151937",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "A03D2D66-D7D7-49AD-BFAF-910EED0E1087",
+    "name" : "EuroGold Tavuk Etli ve Balkabaklı Kedi Ödül Maması (1,5 g)"
+  },
+  {
+    "price" : 75,
+    "barcode" : "8681144151944",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "F086F9DF-EAA0-4FDF-93DD-1518A775FA56",
+    "name" : "EuroGold Tavuk Etli ve Kızılcıklı Kedi Ödül Maması (1,5 g)"
+  },
+  {
+    "price" : 99,
+    "barcode" : "8698995035811",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "A282DABD-384A-48A1-A758-358619DA3CE6",
+    "name" : "Reflex Plus Meat Fillet Tavuk Etli Fileto (30 g)"
+  },
+  {
+    "price" : 99,
+    "barcode" : "8698995035828",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "A0D3D551-7C70-4666-B157-7B1535F40B0B",
+    "name" : "Reflex Plus Meat Fillet Ton Balığı Fileto (30 g)"
+  },
+  {
+    "price" : 99,
+    "barcode" : "8698995035835",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "7593AFDB-8B8D-4CD3-9D83-0C74155FC8F9",
+    "name" : "Reflex Plus Meat Fillet Uskumru Balıklı Fileto (30 g)"
+  },
+  {
+    "price" : 140,
+    "barcode" : "8858772604450",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "120B262F-071D-45EA-8B51-6F69E43F0E48",
+    "name" : "Jinny Somonlu ve Ton Balıklı Tüy Yapısını Destekleyen Creamy Kedi Ödülü (5 x 15 g)"
+  },
+  {
+    "price" : 140,
+    "barcode" : "8858772604443",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "461B6005-1439-4A7B-8ED9-5214902CEE3A",
+    "name" : "Jinny Ton Balıklı Deniz Taraklı Sindirim Destekleyici Creamy Kedi Ödülü (5 x 15 g)"
+  },
+  {
+    "price" : 140,
+    "barcode" : "8858772604436",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "2FA090DD-A034-4649-98BE-3977A6109C44",
+    "name" : "Jinny Ton Balıklı Urinary Destekleyici Creamy Kedi Ödülü (5 x 15 g)"
+  },
+  {
+    "price" : 140,
+    "barcode" : "8858772604429",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "C4C3110C-25BA-44F3-ACD7-42585D7BE99E",
+    "name" : "Jinny Ton Balıklı Bağışıklık Güçlendirici Creamy Kedi Ödülü (5 x 15 g)"
+  },
+  {
+    "price" : 140,
+    "barcode" : "8858772604412",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "CF3B90A2-2CE6-4E84-8FA9-8F41D0B2B9A4",
+    "name" : "Jinny Tavuk Etli Beyin ve Göz Destekli Creamy Kedi Ödülü (5 x 15 g)"
+  },
+  {
+    "price" : 629.9,
+    "barcode" : "5060412212496",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "F1DB895A-396D-4B9E-9329-71719CECE37C",
+    "name" : "Ever Clean Fast Acting Odour Control Hızlı Koku Etkili Kedi Kumu (6 L)"
+  },
+  {
+    "price" : 629.9,
+    "barcode" : "5018704410068",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "1283795E-2B20-433F-B5EC-603BFB206126",
+    "name" : "Ever Clean Multi Kristal Doğal Kedi Kumu (6 L)"
+  },
+  {
+    "price" : 139,
+    "barcode" : "8681900005047",
+    "stock" : 10,
+    "description" : "",
+    "id" : "6882A081-2FEE-4FAE-8C5D-254331F71456",
+    "name" : "Felin Bentonit Pudra Kokulu İnce Taneli Kedi Kumu (10 L)"
+  },
+  {
+    "price" : 139,
+    "barcode" : "8681900005078",
+    "stock" : 10,
+    "description" : "",
+    "id" : "61930955-E39A-4AD5-B7CD-9D39D06795D0",
+    "name" : "Felin Sabun Kokulu İnce Taneli Kedi Kumu (10 L)"
+  },
+  {
+    "price" : 139,
+    "barcode" : "861900005078",
+    "stock" : 10,
+    "description" : "",
+    "id" : "297A4FF2-773C-4975-A468-AA30B2A843CE",
+    "name" : "Felin Lavanta Kokulu Kedi Kumu (10 L)"
+  },
+  {
+    "price" : 249.9,
+    "barcode" : "8682578203926",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "91F2CDC3-D779-47CB-95F9-992AD7DDAB59",
+    "name" : "Hillbons Pudra Kedi Kumu (10 L)"
+  },
+  {
+    "price" : 79,
+    "barcode" : "8681900005016",
+    "stock" : 10,
+    "description" : "",
+    "id" : "14BEDB43-40E6-48A1-AE30-8D390D6F5E8A",
+    "name" : "Felin Bentonit Marsilya Sabunu Kokulu İnce Taneli Kedi Kumu (5 L)"
+  },
+  {
+    "price" : 249.9,
+    "barcode" : "8698995011471",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "ED857632-69B4-4051-B0F2-F2EA77E886D1",
+    "name" : "Proline Bentonit Süper Topaklanan Marsilya Sabunu Kokulu İnce Taneli Kedi Kumu (5 L)"
+  },
+  {
+    "price" : 79,
+    "barcode" : "8681900005009",
+    "stock" : 10,
+    "description" : "",
+    "id" : "BA0A514F-9A09-4CE1-B564-309F343DEA47",
+    "name" : "Felin Topaklanan Pudra Kokulu İnce Taneli Kedi Kumu (5 L)"
+  },
+  {
+    "price" : 130,
+    "barcode" : "8682578203872",
+    "stock" : 10000,
+    "description" : "",
+    "id" : "B4F1C036-4C52-4DAA-BA0B-C6A84FFAE5D9",
+    "name" : "Hillbons Lavanta Kedi Kumu (5 L)"
+  },
+  {
+    "price" : 249.9,
+    "name" : "Hillbons Marsilya Sabunu Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8682578203933",
+    "stock" : 10000,
+    "id" : "90B8DDFB-F7C5-4623-B5F9-83C3DEEF2FE2"
+  },
+  {
+    "price" : 249.9,
+    "name" : "Proline Bentonit Lavanta Kokulu İnce Taneli Kedi Kumu (5 L)",
+    "description" : "",
+    "barcode" : "8698995026819",
+    "stock" : 9999,
+    "id" : "249AF513-8675-4763-8027-DBDD7A212370"
+  },
+  {
+    "price" : 400,
+    "name" : "Proline Parfümsüz İnce Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "869995010139",
+    "stock" : 10000,
+    "id" : "C9088766-DE3D-403B-92D0-76DCCA5D9154"
+  },
+  {
+    "price" : 410,
+    "name" : "Reflex Klinik Özel Formüllü Topaklanan Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "8698995025188",
+    "stock" : 10,
+    "id" : "E55DA4BC-0731-4E8C-B921-2BC5A6077CED"
+  },
+  {
+    "price" : 550,
+    "name" : "Reflex Klinik Özel Formüllü Topaklanan Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8698995026918",
+    "stock" : 10000,
+    "id" : "58D663AE-9677-4026-99E7-04F6893362CC"
+  },
+  {
+    "price" : 550,
+    "name" : "Reflex Topaklanan Aktif Karbonlu Normal Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8698995026895",
+    "stock" : 10000,
+    "id" : "31442BC0-BDDD-45F1-84C9-3DF74A871425"
+  },
+  {
+    "price" : 410,
+    "name" : "Reflex Topaklanan Aktif Karbonlu İnce Taneli Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "8698995025164",
+    "stock" : 10000,
+    "id" : "2E7D4707-C0DA-4598-9268-F164D69301E7"
+  },
+  {
+    "price" : 249.9,
+    "name" : "Hillbons Lavanta Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8682578203919",
+    "stock" : 10000,
+    "id" : "51981D86-0D4E-4513-8AD9-97BFF2A44F34"
+  },
+  {
+    "price" : 629.9,
+    "name" : "Ever Clean Spring Garden Topaklanan Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "5060412214155",
+    "stock" : 10000,
+    "id" : "6862E6E7-FF54-45D3-A172-B7293A52DD88"
+  },
+  {
+    "price" : 629.9,
+    "name" : "Ever Clean Ekstra Güçlü Topaklanan Kokulu İnce Taneli Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "5060255492185",
+    "stock" : 10000,
+    "id" : "FA270DB4-E75F-473C-8502-F228DD52FEF1"
+  },
+  {
+    "price" : 899,
+    "name" : "Ever Clean Ekstra Güçlü Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "5060255490044",
+    "stock" : 10000,
+    "id" : "DBDA9F89-004D-4ABF-9D8C-1C6104C48C4F"
+  },
+  {
+    "price" : 130,
+    "name" : "Hillbons Pudra Kedi Kumu (5 L)",
+    "description" : "",
+    "barcode" : "8682578203889",
+    "stock" : 10000,
+    "id" : "D2CF55AA-84FB-4F0B-8445-06EF7961449D"
+  },
+  {
+    "price" : 629.9,
+    "name" : "Ever Clean Lavanta Parfümlü Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "5060255492284",
+    "stock" : 10000,
+    "id" : "85185BDD-37B7-4E9C-9ADA-39D978869822"
+  },
+  {
+    "price" : 400,
+    "name" : "Proline Topaklanan Bebek Pudrası Kokulu İnce Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8698995010146",
+    "stock" : 10000,
+    "id" : "6492708A-70F1-47B9-BD5D-2FB760B304C2"
+  },
+  {
+    "price" : 400,
+    "name" : "Proline Bentonit Süper Topaklanan Marsilya Sabunu Kokulu İnce Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8698995011709",
+    "stock" : 10000,
+    "id" : "EC3D6D73-2BF7-4A98-A7E1-F0CDF3F7FF25"
+  },
+  {
+    "price" : 249.9,
+    "name" : "Proline İnce Taneli Süper Topaklanan Parfümsüz Bentonit Kedi Kumu (5 L)",
+    "description" : "",
+    "barcode" : "8698995010122",
+    "stock" : 9999,
+    "id" : "15E39BF7-9DA4-428A-B799-990DD94A4097"
+  },
+  {
+    "price" : 550,
+    "name" : "Reflex Hassas Kediler İçin Parfümsüz Topaklanan İnce Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8698995026925",
+    "stock" : 10000,
+    "id" : "E5449B94-0AE8-46A5-879F-ADB2FC880156"
+  },
+  {
+    "price" : 130,
+    "name" : "Hillbons Marsilya Sabunu Kedi Kumu (5 L)",
+    "description" : "",
+    "barcode" : "8682578203896",
+    "stock" : 10000,
+    "id" : "7A47967D-0A4C-408C-A424-AE576AD80C7E"
+  },
+  {
+    "price" : 195,
+    "name" : "Trendline Silika Kristal Kedi Kumu (3,6 L)",
+    "description" : "",
+    "barcode" : "5086387214761",
+    "stock" : 10000,
+    "id" : "17A3EB23-B6BB-44F6-8035-8D3F3255F07C"
+  },
+  {
+    "price" : 249.9,
+    "name" : "Proline Topaklanan Aloe Veralı Kedi Kumu (5 L)",
+    "description" : "",
+    "barcode" : "8698995030090",
+    "stock" : 9999,
+    "id" : "A1D868AB-DB6C-4B96-882B-EE97EE34FA0A"
+  },
+  {
+    "price" : 410,
+    "name" : "Reflex Hassas Kediler İçin Parfümsüz Topaklanan İnce Taneli Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "8698995025195",
+    "stock" : 10,
+    "id" : "75A79685-5504-4CBF-A05C-251AA4AC2B83"
+  },
+  {
+    "price" : 249.9,
+    "name" : "Proline Topaklanan Bebek Pudralı İnce Taneli Kedi Kumu (5 L)",
+    "description" : "",
+    "barcode" : "8397273546215",
+    "stock" : 10000,
+    "id" : "FBF50DEE-3B77-488C-8D1D-0E9732AE61DB"
+  },
+  {
+    "price" : 550,
+    "name" : "Reflex Topaklanan Aktif Karbonlu Granül İnce Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8698995026901",
+    "stock" : 10000,
+    "id" : "EC7DC295-E4E7-4949-8177-B56F11EFED0A"
+  },
+  {
+    "price" : 400,
+    "name" : "Proline İnce Taneli Lavanta Kokulu Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8698995026826;48456356484561",
+    "stock" : 10000,
+    "id" : "0F878146-32EC-4CA5-8681-14986F7FE991"
+  },
+  {
+    "price" : 410,
+    "name" : "Reflex Topaklanan Granül Aktif Karbonlu İnce Taneli Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "8698995025171",
+    "stock" : 10,
+    "id" : "768CB5E4-CFC5-42B1-8428-26A1D470057D"
+  },
+  {
+    "price" : 670,
+    "name" : "Ever Clean Bentonit Patilere Yapışmayan Aktif Karbon Kedi Kumu (6 L)",
+    "description" : "",
+    "barcode" : "5060412214124",
+    "stock" : 10000,
+    "id" : "42369B7A-A1BD-4B80-A3D3-1508BEE26335"
+  },
+  {
+    "price" : 760,
+    "name" : "Proline Bentonit Lavanta Kokulu Kedi Kumu (20 L)",
+    "description" : "",
+    "barcode" : "8698995030144",
+    "stock" : 10000,
+    "id" : "4C2F4A34-4834-48A3-B6C9-F2B5E703E790"
+  },
+  {
+    "price" : 760,
+    "name" : "Proline Bentonit Bebek Pudrası Kokulu Kedi Kumu (20 L)",
+    "description" : "",
+    "barcode" : "8698995030137",
+    "stock" : 10000,
+    "id" : "B5BE4A7C-8554-46E8-BB24-727138D36A77"
+  },
+  {
+    "price" : 450,
+    "name" : "Proline Aktif Karbonlu Topaklanan Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8698995031202",
+    "stock" : 10000,
+    "id" : "6BF63863-6E3C-4B14-B4BC-5CFF4784604A"
+  },
+  {
+    "price" : 760,
+    "name" : "Proline Bentonit Süper Topaklanan Marsilya Sabunu Kokulu İnce Taneli Kedi Kumu (20 L)",
+    "description" : "",
+    "barcode" : "8698995030151",
+    "stock" : 10000,
+    "id" : "7DA4A8FF-900B-4DA1-A145-44B3B8D0541C"
+  },
+  {
+    "price" : 790,
+    "name" : "Proline Topaklanan Aktif Karbonlu Kedi Kumu (20 L)",
+    "description" : "",
+    "barcode" : "8698995031219",
+    "stock" : 10000,
+    "id" : "662E8590-6068-463A-B51B-8A50B493E635"
+  },
+  {
+    "price" : 169,
+    "name" : "SanCat Bebek Pudralı İnce Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8680308405046",
+    "stock" : 10000,
+    "id" : "D6B02F8B-ADAE-4EB2-80EF-425C937FA120"
+  },
+  {
+    "price" : 149,
+    "name" : "SanCat Lavantalı İnce Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8680308405039",
+    "stock" : 10000,
+    "id" : "66B3C306-0A47-4465-ABEC-C7985ABBD369"
+  },
+  {
+    "price" : 179,
+    "name" : "SanCat Marsilya Sabunlu İnce Taneli Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8680308405022",
+    "stock" : 10000,
+    "id" : "8BD08DA8-FD99-44DD-8754-2537511C6403"
+  },
+  {
+    "price" : 179,
+    "name" : "Prochoice Bebek Pudralı Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8681465606543",
+    "stock" : 10000,
+    "id" : "792ED352-977B-4E8A-A02E-5124932DCCBB"
+  },
+  {
+    "price" : 179,
+    "name" : "Prochoice Lavanta Kokulu Kedi Kumu (10 L)",
+    "description" : "",
+    "barcode" : "8681465606536",
+    "stock" : 10000,
+    "id" : "D74320EA-8F5F-40FF-91BE-391AFD114099"
+  },
+  {
+    "price" : 179,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "34E3328A-8188-4091-A8EE-FB8F665DEACE",
+    "barcode" : "8681465606529",
+    "name" : "Prochoice Marsilya Sabunlu Kedi Kumu (10 L)"
+  },
+  {
+    "price" : 629.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "D643E7CB-D5D8-4A52-88C9-3591BE17351A",
+    "barcode" : "5060412218863",
+    "name" : "Ever Clean Naturally Doğal Parfümsüz Topaklanan Kedi Kumu (6 L)"
+  },
+  {
+    "price" : 225,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "96D68FA3-6F18-478A-830A-499BFCC1A536",
+    "barcode" : "8684306671540",
+    "name" : "Petiva Aktif Karbon Kedi Kumu (10 L)"
+  },
+  {
+    "price" : 249.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "034D1EAF-CE1C-4A84-888E-91AFBAEE34E6",
+    "barcode" : "8684306671533",
+    "name" : "Petiva Aktif Karbon Kedi Kumu (8 L)"
+  },
+  {
+    "price" : 95,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "2BEE1836-FBCF-47CF-845B-85B3FC83F127",
+    "barcode" : "8680308405053",
+    "name" : "SanCat Bebek Pudralı İnce Taneli Kedi Kumu (5 L)"
+  },
+  {
+    "price" : 95,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "EFDCD1FB-E26C-4849-8866-A9A6B18F7832",
+    "barcode" : "8680308405059",
+    "name" : "Sancat Marsilya Sabunu Kokulu Premium Kedi Kumu (5 L)"
+  },
+  {
+    "price" : 199.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "B9592EC9-1B5D-492C-8D6C-27BBACB82E99",
+    "barcode" : "8684533000083",
+    "name" : "Army Bentonit Bebek Pudralı Kedi Kumu (10 L)"
+  },
+  {
+    "price" : 199.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "E57BAEF0-A3AC-4D7E-A2E7-C614760D36F1",
+    "barcode" : "8684533000090",
+    "name" : "Army Bentonit Marsilya Kokulu Kedi Kumu (10 L)"
+  },
+  {
+    "price" : 329,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "AD08B6E1-B6A8-4B50-8B0B-D9FBF72240B2",
+    "barcode" : "8682529007504",
+    "name" : "Fatih-Pet İç Mekan Tırmalama Rampası"
+  },
+  {
+    "price" : 140,
+    "description" : "",
+    "stock" : 10,
+    "id" : "AD2AE9C6-3E3E-46C6-BB87-284AED1A780F",
+    "barcode" : "6016412493495",
+    "name" : "Sunny Seat Cama Asılan Kedi Yatağı"
+  },
+  {
+    "price" : 139.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "BE5C0139-6B4E-4782-9A65-F30046AAE8CF",
+    "barcode" : "8681999485645",
+    "name" : "Petpretty Elekli Kedi Tuvalet Önü Paspası Mavi (50 x 60 cm)"
+  },
+  {
+    "price" : 189.9,
+    "description" : "",
+    "stock" : 10,
+    "id" : "9D79836E-AAE8-4642-9B2E-898E083440E4",
+    "barcode" : "8682315110231",
+    "name" : "Parstek Ahşap İkili Mamalık"
+  },
+  {
+    "price" : 159.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "5A8DDC67-E3F3-448B-B775-FD5F274E564F",
+    "barcode" : "6986962687388",
+    "name" : "Ans Titreşimli Fare Kedi Oyuncağı"
+  },
+  {
+    "price" : 50,
+    "description" : "",
+    "stock" : 9999,
+    "id" : "EB9BCCCB-1AC9-4761-B35A-5710242D7FB3",
+    "barcode" : "8681475624704",
+    "name" : "Catlife Kedi Oyuncağı Zilli Toplar (4'lü x 4,3 cm)"
+  },
+  {
+    "price" : 239.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "D7B729DD-44B2-4D46-AD19-E9BF751D3284",
+    "barcode" : "8681475630705",
+    "name" : "Catlife Kediler İçin Sevimli Tüylü Oyuncak Fare"
+  },
+  {
+    "price" : 169.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "186E2F8C-5B40-4B0F-9C2F-AED40F66EBBC",
+    "barcode" : "8681475619588",
+    "name" : "Catlife Reflektörlü Kedi Göğüs & Gezdirme Tasması"
+  },
+  {
+    "price" : 825,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "1063F10E-8B64-454A-AE22-74B839C6BFE7",
+    "barcode" : "8691889075351",
+    "name" : "Daisy Simit Yatak ALL002"
+  },
+  {
+    "price" : 249.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "6094A87F-B1EF-47E2-BA2F-837EE57CC233",
+    "barcode" : "8681475631030",
+    "name" : "Catlife Kediler İçin Bıyıklı Uzun Kuyruklu Catnipli Fare"
+  },
+  {
+    "price" : 60,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "9F82D7E8-F457-42C8-9610-8D369EBE85E9",
+    "barcode" : "8682631201241",
+    "name" : "Flip Fareli Hacıyatmaz Kedi Oyuncağı CT18036-T"
+  },
+  {
+    "price" : 249.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "1F6E9EA4-9D0D-4095-AD17-F29C63CDFFF0",
+    "barcode" : "8681144191070",
+    "name" : "EuroCat Catnipli Uzun Kuyruklu Fare Kedi Oyuncağı (29 cm)"
+  },
+  {
+    "price" : 189,
+    "description" : "",
+    "stock" : 10,
+    "id" : "34B07D78-93B9-40AB-B021-FF0DF9D73BF2",
+    "barcode" : "74823458135",
+    "name" : "Hitpet Kedi Tırmalama Tahtası (50 cm)"
+  },
+  {
+    "price" : 249.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "27A66DAD-E2E1-411B-A90D-E5D96A73E808",
+    "barcode" : "4016598037140",
+    "name" : "Karlie Seramik Mama Kabı (220 ml)"
+  },
+  {
+    "price" : 120,
+    "description" : "",
+    "stock" : 10,
+    "id" : "00E2D008-4555-45A2-AAEB-782A247A5046",
+    "barcode" : "8682887580060;8683175761482",
+    "name" : "Keyf 3 Katlı Kedi Oyuncağı (Mavi)"
+  },
+  {
+    "price" : 175,
+    "description" : "",
+    "stock" : 10,
+    "id" : "ECCAAACF-6781-42FC-BD45-72945EB977F3",
+    "barcode" : "6925732134912",
+    "name" : "Lion Pet Soft Kilitli Göğüs Tasması (2 x 40 cm)"
+  },
+  {
+    "price" : 140,
+    "description" : "",
+    "stock" : 10,
+    "id" : "7C4538F3-2DD9-480D-9C4C-692A5287A987",
+    "barcode" : "3921088345883",
+    "name" : "Krax Açık Kedi Tuvaleti (50 x 35 x 15 cm)"
+  },
+  {
+    "price" : 40,
+    "description" : "",
+    "stock" : 10,
+    "id" : "09D4AAAD-3C6D-477E-8375-1BD7E21AB925",
+    "barcode" : "8691234002131",
+    "name" : "Little Friends Tekli Büyük Mama Kabı"
+  },
+  {
+    "price" : 45,
+    "description" : "",
+    "stock" : 10,
+    "id" : "4F8A0FB2-9EF1-4E0A-B2E7-0343D7FC89A5",
+    "barcode" : "4456842108835",
+    "name" : "Maxi Life Simli Fiyonklu Kedi Boyun Tasması (6'lı)"
+  },
+  {
+    "price" : 189,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "DF349F86-F002-4D92-99DD-E24FF6E93C0C",
+    "barcode" : "8680067144811",
+    "name" : "Mio İnteraktif Kedi Oyuncağı Toplu Çember (23 cm)"
+  },
+  {
+    "price" : 360,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "64528320-8FD9-434C-91EE-0A79EA6A891B",
+    "barcode" : "8696219414961",
+    "name" : "Irak Plastik Taşıma Çantası (No: 2)"
+  },
+  {
+    "price" : 59.9,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "9843075F-6D4A-46FB-ACED-0B4420C8F3C4",
+    "barcode" : "8681299608324",
+    "name" : "Flip Zilli Kedi Oyuncağı (9 cm)"
+  },
+  {
+    "price" : 15,
+    "description" : "",
+    "stock" : 10,
+    "id" : "68C43E89-A3D1-4B2D-9867-F0A95E5FB1A0",
+    "barcode" : "8690000090822",
+    "name" : "Maxi Life Zilli Top Kedi Oyuncağı (3,5 cm)"
+  },
+  {
+    "price" : 120,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "C17C77F4-BBF7-4DD2-8CA7-BB7B7A5BFDF3",
+    "barcode" : "8682538366951",
+    "name" : "Nunbell 3 Katlı Kedi Başlıklı Kedi Oyuncağı"
+  },
+  {
+    "price" : 120,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "20D89407-98FD-473C-A1A4-45BABA26692E",
+    "barcode" : "6927052060346",
+    "name" : "Nunbell Tüylü Fare Kedi Oltası"
+  },
+  {
+    "price" : 219,
+    "description" : "",
+    "stock" : 10000,
+    "id" : "04527B53-7BB4-445E-B5BA-5B9F1F172E07",
+    "barcode" : "8690989906954",
+    "name" : "Petcanlar Rampa Tırmalama (20 x 40 x 21 cm)"
+  },
+  {
+    "price" : 40,
+    "description" : "",
+    "stock" : 10,
+    "id" : "C64D4246-2413-497B-999D-7C4101B95E03",
+    "barcode" : "8690000004140",
+    "name" : "Royalist Kedi Oltası Oyuncağı"
+  },
+  {
+    "price" : 50,
+    "description" : "",
+    "stock" : 10,
+    "id" : "8FCC1E4D-9ECC-4A07-BD25-F975F9A62338",
+    "barcode" : "5245343516923",
+    "name" : "Toys Kurmalı Fare Kedi Oyuncağı"
+  },
+  {
+    "stock" : 10000,
+    "id" : "270309C1-8C50-472A-96CC-661FB795E27A",
+    "name" : "Zampa Tırmalama (40 x 29 x 42 cm)",
+    "description" : "",
+    "price" : 375,
+    "barcode" : "8688701010041"
+  },
+  {
+    "stock" : 9999,
+    "id" : "2D41F434-4A78-4815-BDC5-A6DF7E765655",
+    "name" : "Zampa Rumsey Kedi Boyun Fuları Mavi (32 cm)",
+    "description" : "",
+    "price" : 45,
+    "barcode" : "8682689210851"
+  },
+  {
+    "stock" : 10,
+    "id" : "358C325A-2ECC-4139-B2A2-8FCD77C1B66C",
+    "name" : "Zampa Selby Kedi Boyun Fuları Mix Color (32 cm)",
+    "description" : "",
+    "price" : 89.9,
+    "barcode" : "8682689210912"
+  },
+  {
+    "stock" : 10000,
+    "id" : "A25A9AD3-8DA3-4B73-BE04-C4CDAD3F3E22",
+    "name" : "Irak Plastik Hazneli Mama ve Su Kabı (3,5 L)",
+    "description" : "",
+    "price" : 269.9,
+    "barcode" : "8696219414190"
+  },
+  {
+    "stock" : 10,
+    "id" : "FCC475A4-90A6-4A90-8602-D267327A00A3",
+    "name" : "Tower Of Tracks 3 Katlı 3 Toplu Kule Kedi Oyuncağı (13 x 26 cm)",
+    "description" : "",
+    "price" : 100,
+    "barcode" : "8564125748954;8695965441429"
+  },
+  {
+    "stock" : 10000,
+    "id" : "D22FD5C7-BFE9-47F8-B277-CA74B03B78F7",
+    "name" : "Pet Style Kediler İçin Çift Toplu Çark",
+    "description" : "",
+    "price" : 70,
+    "barcode" : "8690000434794;8697458623440"
+  },
+  {
+    "stock" : 10000,
+    "id" : "03D3399A-59A7-41C4-A35A-9047DDD3FCED",
+    "name" : "Buffer Hareketli Dönen Pilli Kelebek Kedi Oyuncağı",
+    "description" : "",
+    "price" : 169.9,
+    "barcode" : "5245343519498"
+  },
+  {
+    "stock" : 10000,
+    "id" : "F7EDEC60-C5AF-4205-A663-B8FBFD744359",
+    "name" : "Polo Kafes İçi Fareli Top Kedi Oyuncağı (4,5 cm)",
+    "description" : "",
+    "price" : 49.9,
+    "barcode" : "8699004293192"
+  },
+  {
+    "stock" : 10000,
+    "id" : "9F1257C7-EDB1-4E10-B0B2-C66C7AB78C6A",
+    "name" : "Lavimo Anti Yalama Isırma ve Bakım Küresi",
+    "description" : "",
+    "price" : 169.9,
+    "barcode" : "755777688912"
+  },
+  {
+    "stock" : 10000,
+    "id" : "29E5F658-1170-4A29-953A-B7FBADF35652",
+    "name" : "Zampa Usb Şarjlı Catnipli Balık Oyuncağı",
+    "description" : "",
+    "price" : 160,
+    "barcode" : "8682689212053"
+  },
+  {
+    "stock" : 10000,
+    "id" : "E4DBE6F0-9081-46AB-9551-CFFDACA849FC",
+    "name" : "Cado Pet Papatya Su Pınarı (2 L)",
+    "description" : "",
+    "price" : 850,
+    "barcode" : "8698764344236"
+  },
+  {
+    "stock" : 10000,
+    "id" : "CF6DE3FB-2548-4745-A09E-1F6160BB078E",
+    "name" : "Migno Valiz Tipi Çekçekli Mavi Yeşil Kedi Taşıma Çantası (40 x 20 x 40 cm)",
+    "description" : "",
+    "price" : 3300,
+    "barcode" : "20159710033770"
+  },
+  {
+    "stock" : 10000,
+    "id" : "66ECEB49-572D-4D06-A691-36E15222073E",
+    "name" : "Nunbell Hacı Yatmaz Fare Kedi Oyuncağı (33 x 10 cm)",
+    "description" : "",
+    "price" : 279.9,
+    "barcode" : "8699985102746"
+  },
+  {
+    "stock" : 10000,
+    "id" : "3702200E-175F-4C8B-A8D2-9AA2E97E57F6",
+    "name" : "Nunbell Mama Hazneli Hacı Yatmaz Yeşil Kedi Oyuncağı",
+    "description" : "",
+    "price" : 220,
+    "barcode" : "8682538366173"
+  },
+  {
+    "stock" : 10000,
+    "id" : "39F8D9CE-BF81-43D8-AAF2-6C5D21B520CF",
+    "name" : "Migno Valiz Tipi Çekçekli Kırmızı Kedi Taşıma Çantası (45 x 20 x 43 cm)",
+    "description" : "",
+    "price" : 3300,
+    "barcode" : "20159710033771"
+  },
+  {
+    "stock" : 10000,
+    "id" : "6D6369BB-C059-415F-825B-AE13B5CB2819",
+    "name" : "Beavers Sesli Hareketli Peluş Kedi Oyuncağı",
+    "description" : "",
+    "price" : 189.9,
+    "barcode" : "2023120800129;8662214514616"
+  },
+  {
+    "stock" : 10000,
+    "id" : "98FE9DA1-B90F-4780-90FB-167539209E65",
+    "name" : "Fabess Otomatik İnteraktif Kedi Oyuncağı (5 cm)",
+    "description" : "",
+    "price" : 320,
+    "barcode" : "5678902023579"
+  },
+  {
+    "stock" : 10000,
+    "id" : "7282100D-A5BB-4AE9-8DB5-3808BD4EBC13",
+    "name" : "Irak Plastik Kapalı Siyah Kedi Tuvaleti (38 x 50 x 38,5 cm)",
+    "description" : "",
+    "price" : 440,
+    "barcode" : "86962194227685"
+  },
+  {
+    "stock" : 10000,
+    "id" : "1ED74E14-E739-4A02-AE64-A9C0DAC903B6",
+    "name" : "Pet Pretty Üçlü Kedi Oyun Tüneli (85 x 50 cm)",
+    "description" : "",
+    "price" : 449,
+    "barcode" : "2023081101815"
+  },
+  {
+    "stock" : 10000,
+    "id" : "9EF19C6D-DACD-4AC4-8B74-0B4997FCFCF8",
+    "name" : "Migno Valiz Tipi Çekçekli Siyah Kedi Taşıma Çantası (45 x 23 x 45 cm)",
+    "description" : "",
+    "price" : 3300,
+    "barcode" : "3015971003346"
+  },
+  {
+    "stock" : 10000,
+    "id" : "AA306171-B8BC-43A0-82FE-121F1E4AF268",
+    "name" : "Pet Pretty Pilli Oynayan Fare Kedi Oyuncağı",
+    "description" : "",
+    "price" : 199,
+    "barcode" : "5678902024691"
+  },
+  {
+    "stock" : 10000,
+    "id" : "B50162CD-8B18-45DE-9945-FCF2A967E9FC",
+    "name" : "Chat Vantuzlu Kedi Oltası",
+    "description" : "",
+    "price" : 200,
+    "barcode" : "8662214524097"
+  },
+  {
+    "stock" : 10000,
+    "id" : "07241291-07C0-4DBF-9401-BB3866F923CD",
+    "name" : "Vogue Katlanabilir Kedi Tüneli (15 x 15 x 15 cm)",
+    "description" : "",
+    "price" : 449,
+    "barcode" : "8662214524066"
+  },
+  {
+    "stock" : 10000,
+    "id" : "75FF4DDE-F96D-4C1E-A626-94C3CB33FC69",
+    "name" : "Catit Catnipli Kedi Kaşıma Aparatı",
+    "description" : "",
+    "price" : 69.9,
+    "barcode" : "8967856756760"
+  },
+  {
+    "stock" : 10000,
+    "id" : "E13200DE-CF6F-440E-A9A6-3C576FE426A0",
+    "name" : "Pet Garden Filtreli Kapalı Kedi Tuvaleti (37 x 48 x 42 cm)",
+    "description" : "",
+    "price" : 375,
+    "barcode" : "8681085421021"
+  },
+  {
+    "stock" : 9999,
+    "id" : "82C31982-8335-48C3-91AC-C3BBAAB5D3C2",
+    "name" : "Bio PetActive Aloe Vera Özlü Kedi Şampuanı (250 ml)",
+    "description" : "",
+    "price" : 169,
+    "barcode" : "8698931093479"
+  },
+  {
+    "stock" : 10000,
+    "id" : "CE377463-EE1B-456F-9F4E-E376C9CBD42E",
+    "name" : "Bio PetActive Catnip Oyun Spreyi (100 ml)",
+    "description" : "",
+    "price" : 130,
+    "barcode" : "8698931092410"
+  },
+  {
+    "stock" : 10000,
+    "id" : "A163073B-9431-4DA3-BE10-B1A7C9C1A1EE",
+    "name" : "Bio PetActive Lavanta ve Biberiye Özlü Toz Kedi Şampuanı (150 g)",
+    "description" : "",
+    "price" : 189.9,
+    "barcode" : "8698931093318"
+  },
+  {
+    "stock" : 10000,
+    "id" : "C8B1CA75-487F-4C4F-9F71-EFD8FE0B5A66",
+    "name" : "Bio PetActive Vitalicat Yavru Kedi Vitamin Macunu (100 ml)",
+    "description" : "",
+    "price" : 220,
+    "barcode" : "8698931093639"
+  },
+  {
+    "stock" : 10000,
+    "id" : "C317582C-2DAB-4489-807B-038A795A6360",
+    "name" : "Bio PetActive Vitalicat Multivitamin Kedi Macunu (100 ml)",
+    "description" : "",
+    "price" : 220,
+    "barcode" : "8698931093288"
+  },
+  {
+    "stock" : 10000,
+    "id" : "45F34F83-D619-4A7C-8EAE-995F76D592AA",
+    "name" : "Bio PetActive Malt Kedi Macunu (100 ml)",
+    "description" : "",
+    "price" : 220,
+    "barcode" : "8698931093875"
+  },
+  {
+    "stock" : 9999,
+    "id" : "B2DA301A-D313-43B4-83D5-CBDF0E55F546",
+    "name" : "Bio PetActive Yavru Kedi Süt Tozu (200 g)",
+    "description" : "",
+    "price" : 400,
+    "barcode" : "8698931093226"
+  },
+  {
+    "stock" : 10000,
+    "id" : "7B7BDFDD-2EDF-4B5B-B091-9D6D16DAC400",
+    "name" : "Dr. Heigel's Yavru Kedi Anne Sütü Tozu (200 g)",
+    "description" : "",
+    "price" : 124.9,
+    "barcode" : "8682376250146"
+  },
+  {
+    "stock" : 10000,
+    "id" : "0F6A0868-DBD1-45AF-8377-90447BE344AF",
+    "name" : "Bio PetActive Cati Hairball Malt Kedi Macunu (25 ml)",
+    "description" : "",
+    "price" : 120,
+    "barcode" : "8698931093851"
+  },
+  {
+    "stock" : 10,
+    "id" : "B66EB41C-313C-4997-8F91-7FFE740F3471",
+    "name" : "Onton Roller Tüy Toplama Rulosu (60 Yaprak)",
+    "description" : "",
+    "price" : 60,
+    "barcode" : "8698684376386"
+  },
+  {
+    "stock" : 10,
+    "id" : "9A6AC23F-B156-43AA-BEAF-662FD48E1BBF",
+    "name" : "Furminator Kısa Tüylü Kediler İçin Tarak (L)",
+    "description" : "",
+    "price" : 300,
+    "barcode" : "811794010942"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "name" : "CatDog Life Fosforlu Kedi Tarağı (14 x 10 cm)",
+    "price" : 70,
+    "id" : "3C7FE0DF-82F4-4423-AFD6-9AB86E9A41A2",
+    "barcode" : "8681475614811"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Lion Doğal Catnip Kedi Otu (20 g)",
+    "price" : 75,
+    "id" : "B6F717CD-E273-4269-92A7-95C832A5D881",
+    "barcode" : "8682754951870;8692012083427"
+  },
+  {
+    "description" : "",
+    "stock" : 9999,
+    "name" : "Magic Power Doğal Koku Giderici Sabun (25 g)",
+    "price" : 15,
+    "id" : "12662C47-86AE-4DBD-8844-FA8AF2DA1D14",
+    "barcode" : "0733813496912;733813496912"
+  },
+  {
+    "description" : "",
+    "stock" : 9999,
+    "name" : "Magic Power Lavantalı Koku Temizleyici (25 g)",
+    "price" : 25,
+    "id" : "CEE153F1-F340-4BAD-B57E-1BE0A04ED82C",
+    "barcode" : "0733813496875;733813496875"
+  },
+  {
+    "description" : "",
+    "stock" : 9999,
+    "name" : "Magic Power Alfa Special Kedi Kumu Koku Giderici (25 g)",
+    "price" : 15,
+    "id" : "A88BFBDC-9F9D-4C7C-A13E-324EC449481E",
+    "barcode" : "8683429670010"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "name" : "Nunbell Uzun Telli Pire Tarağı",
+    "price" : 35,
+    "id" : "A5BC65BC-897B-4D2B-8FB3-4731E144338F",
+    "barcode" : "8651005000292"
+  },
+  {
+    "description" : "",
+    "stock" : 9999,
+    "name" : "Pet Quatro Kedi Çimi Fileli",
+    "price" : 65,
+    "id" : "E34C1151-ACD8-4794-A0E8-FCDDCB6A71B3",
+    "barcode" : "8321121855136"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "name" : "Pet Supplies Kedi Tırnak Makası",
+    "price" : 70,
+    "id" : "C8E963A2-705F-4A98-BDBD-0C820288F619",
+    "barcode" : "86202106000405"
+  },
+  {
+    "description" : "",
+    "stock" : 9999,
+    "name" : "Magic Power Kavunlu Kedi Kumu Koku Giderici (25 g)",
+    "price" : 25,
+    "id" : "AF1E94BF-C562-45CD-A7F4-8055CDA0C3BF",
+    "barcode" : "0733813496899;733813496899"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Puffy Love Hayvan Dostu Tüy Tutmaz Tekstil Spreyi (750 ml)",
+    "price" : 89.9,
+    "id" : "DDB53FBE-0422-456F-B13D-F9DD1CF5F091",
+    "barcode" : "8683130000076"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "name" : "Tubby Tüy Toplama Tarama Fırçası",
+    "price" : 110,
+    "id" : "373375A6-3C70-4AD3-8427-884B78C06218",
+    "barcode" : "8680965202101"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Puffy Love Hayvan Dostu Leke Çıkarıcı Sprey (750 ml)",
+    "price" : 89.9,
+    "id" : "0DADE9ED-1478-44AE-9720-2AD11270973A",
+    "barcode" : "8683130000069"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "name" : "Welfare Yıkanabilir Toz Alma Rulosu (2'li)",
+    "price" : 60,
+    "id" : "AB032383-E5FD-46DC-AEB4-E13F87216620",
+    "barcode" : "8682529007566;8690532383454"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Sholk Hijyenik Tüy ve Pati Temizleme Mendili (60'lı)",
+    "price" : 69.9,
+    "id" : "29FD52F8-CE12-4E74-B462-56C2A4E4D3A8",
+    "barcode" : "8690536905607"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Plastart PT330 EKO Kapalı Kedi Tuvaleti (38,5 x 60 x 40,5 cm)",
+    "price" : 649,
+    "id" : "570F1B04-D643-4382-B2C7-164749CC41C1",
+    "barcode" : "8696219417245"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Proff Tüy Toparlayıcı Rulo (50 Yaprak)",
+    "price" : 60,
+    "id" : "FBD73B59-D376-4CB7-B31D-721A29EC3224",
+    "barcode" : "8681503003150"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Catnip Avokado Kedi Çimi Topu",
+    "price" : 75,
+    "id" : "8212ECC5-BC45-4768-9ED1-0B5D7D03553A",
+    "barcode" : "20500000686610"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Kiki Excellent Sabun Kokulu Kedi Kumu Koku Giderici (25 g)",
+    "price" : 25,
+    "id" : "2DA612E2-E702-4A59-ACB5-CFDE42A2785F",
+    "barcode" : "8683762340489"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Kiki Excellent Çilek Kokulu Koku Giderici (25 g)",
+    "price" : 25,
+    "id" : "81476506-92A9-4731-B295-0912F9AA4C98",
+    "barcode" : "8683762340502"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Kiki Excellent Yasemin Kokulu Kedi Kumu Koku Giderici (25 g)",
+    "price" : 25,
+    "id" : "78D47AEB-DAD9-4A55-B27E-3B5415D56685",
+    "barcode" : "8683762340519"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Kiki Excellent Pudra Kokulu Kedi Kumu Koku Giderici (25 g)",
+    "price" : 25,
+    "id" : "5A0BE05E-F321-4392-B7BE-ACC716F1E5B8",
+    "barcode" : "8683762340533"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Bio PetActive Tüy Parlatıcı Sprey (100 ml)",
+    "price" : 169.9,
+    "id" : "5A9657B1-4B21-4A8C-8FCA-63628192C27E",
+    "barcode" : "8698931094353"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Cattie Kum Toplayıcı Fonsiyonel Siyah Kedi Paspası (50 x 75 cm)",
+    "price" : 219.9,
+    "id" : "2D1EE385-FD34-4305-AEB1-E846C4F2D006",
+    "barcode" : "8680782133312"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Plast Art Kahverengi Kapalı Kedi Tuvaleti (38 x 60 x 45,5 cm)",
+    "price" : 649,
+    "id" : "20449FFE-0675-4FA2-8AF0-871F7A4CBD1D",
+    "barcode" : "8696219415227"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Dr. Power Dış Parazit Etkili Bitkisel Şampuan (200 g)",
+    "price" : 199.9,
+    "id" : "27793915-A1D2-4AEA-BB3D-DBD9588FCD48",
+    "barcode" : "11205487361132"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Spectrum Kedi Tüy Yumağı Önlemeyi Destekleyen Malt Macunu (100 g)",
+    "price" : 170,
+    "id" : "E3FC18A3-8585-4FE9-8CDA-FECFF42A9358",
+    "barcode" : "8698995032308"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Spectrum Kısırlaştırılmış Kediler İçin Vitamin ve Mineralli Paste (30 g)",
+    "price" : 74.9,
+    "id" : "297807FA-12AB-4F85-A0A5-B9F4D2D895AA",
+    "barcode" : "8698995032353"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Spectrum Kedi Tüy Yumağı Önlemeye Yardımcı Malt Paste (30 g)",
+    "price" : 74.9,
+    "id" : "96EAE73F-69EC-4D6A-84DE-29EDBE8968B3",
+    "barcode" : "8698995032346"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Spectrum Rahatlık ve Sakinlik Anti Stres Paste (30 g)",
+    "price" : 74.9,
+    "id" : "70C0267E-4C4C-4319-9630-03977664C510",
+    "barcode" : "8698995032377"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Pet Brush Buharlı Tüy Toplama Tarağı",
+    "price" : 229.9,
+    "id" : "B9AAD127-F48F-4641-A2C9-7CED9B21E8B6",
+    "barcode" : "6985668875686;8662214521133"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Pet Garden Jumbo Boy Kapalı Tuvalet Kabı (65 x 45 x 45,5 cm)",
+    "price" : 1150,
+    "id" : "5AF61CC0-6CC1-4ABB-8FFF-CA87DF74C05B",
+    "barcode" : "8681085429713"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Proline Tüy Yumağı Önleyici Malt Macunu (100 g)",
+    "price" : 180,
+    "id" : "C544770C-36A7-4502-87D4-1C857DA385B5",
+    "barcode" : "8698995035002"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Garden Mix Tüy Yumağı Önleyici Kedi Malt Macunu (100 g)",
+    "price" : 169.9,
+    "id" : "6B0B7DF3-9762-4E9A-A219-AA0FE1DBA5FE",
+    "barcode" : "8681085430429"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Reflex Care Kedi Kumu Torbası 82 x 50 cm (7'li)",
+    "price" : 169.9,
+    "id" : "1ACB3512-F556-439C-87F8-35213E902917",
+    "barcode" : "86989950365800;8698995036580"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Royal Canin Küçük Irk Yavru Köpek Maması (1,5 kg)",
+    "price" : 1069,
+    "id" : "6B6CE38A-36C3-43EA-A361-DC316F272732",
+    "barcode" : "3182550793612"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Royal Canin Küçük Irk Yavru Köpek Pouch Yaş Mama (12 x 85 g)",
+    "price" : 1079,
+    "id" : "776DD87A-9861-4639-8460-D448E116F5CE",
+    "barcode" : "9003579008201"
+  },
+  {
+    "price" : 2599,
+    "barcode" : "3182550932707",
+    "stock" : 10000,
+    "name" : "Royal Canin Mini Starter Anne ve Bebek Küçük Irk Yavru Köpek Maması (4 kg)",
+    "description" : "",
+    "id" : "A7CCFD6A-E776-4619-8F10-70A8DEEDE14A"
+  },
+  {
+    "price" : 400,
+    "barcode" : "8698931093233",
+    "stock" : 9999,
+    "name" : "Bio PetActive Yavru Köpek Süt Tozu (200 g)",
+    "description" : "",
+    "id" : "2025B690-7219-43C4-977C-07D1B437F53A"
+  },
+  {
+    "price" : 1550,
+    "barcode" : "7613035123809;sc7613035123809",
+    "stock" : 10000,
+    "name" : "Purina Pro Plan Somonlu Küçük Irk Yavru Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "3D602BE6-BEB7-44CD-BFD5-1B21661A324C"
+  },
+  {
+    "price" : 1450,
+    "barcode" : "7613035114340",
+    "stock" : 10000,
+    "name" : "Purina Pro Plan Tavuk Etli Küçük Irk Yavru Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "6C6CF5D7-6493-4DA8-B520-EE322AD873A0"
+  },
+  {
+    "price" : 899,
+    "barcode" : "8682328740183",
+    "stock" : 10000,
+    "name" : "Pro Performance Ultra Premium Mini Küçük Irk Yavru Köpek Maması (2 kg)",
+    "description" : "",
+    "id" : "EEBE3F3D-963E-4A42-8EA9-1D9DF65E648C"
+  },
+  {
+    "price" : 549,
+    "barcode" : "8698995028721",
+    "stock" : 10000,
+    "name" : "Reflex Biftek Etli ve Pirinçli Yavru Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "D26A5424-36B3-413C-819B-3FCA60806E87"
+  },
+  {
+    "price" : 899,
+    "barcode" : "8682328740169",
+    "stock" : 10000,
+    "name" : "Pro Performance Kuzu Etli ve Yaban Mersinli Yavru Köpek Maması (2 kg)",
+    "description" : "",
+    "id" : "23A52FAA-DEC7-4116-A709-57B7AF76844E"
+  },
+  {
+    "price" : 599,
+    "barcode" : "8698995010634",
+    "stock" : 10000,
+    "name" : "Reflex Kuzu Etli ve Pirinçli Tüm Irklar Yavru Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "F85A9960-A7CC-4101-9507-A08BB275BCC2"
+  },
+  {
+    "price" : 2299,
+    "barcode" : "3182550793032",
+    "stock" : 10,
+    "name" : "Royal Canin Küçük Irk Yavru Köpek Maması (4 kg)",
+    "description" : "",
+    "id" : "BC9A816B-E35D-4FDE-9369-F089EB42E39A"
+  },
+  {
+    "price" : 599,
+    "barcode" : "8698995003391",
+    "stock" : 10000,
+    "name" : "Reflex Plus Tavuk Etli Küçük Irk Yavru Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "1A81BC08-A873-4D5B-87CB-59B2C4123FC2"
+  },
+  {
+    "price" : 1315,
+    "barcode" : "3182550793001",
+    "stock" : 10,
+    "name" : "Royal Canin Küçük Irk Yavru Köpek Maması (2 kg)",
+    "description" : "",
+    "id" : "2E5579DB-67A3-412B-858D-08722DAC0B21"
+  },
+  {
+    "price" : 1199,
+    "barcode" : "3182550743471",
+    "stock" : 10000,
+    "name" : "Royal Canin Yorkshire Terrier Yavru Köpek Maması (1,5 kg)",
+    "description" : "",
+    "id" : "69BAB89E-ED18-431F-B500-C6A2B2301E24"
+  },
+  {
+    "price" : 49.9,
+    "barcode" : "8699245866186",
+    "stock" : 10000,
+    "name" : "Ro Dog Kuzu Etli Yavru Köpek Konserve Maması (400 g)",
+    "description" : "",
+    "id" : "1BB23419-2226-4B32-A499-C325433B54C5"
+  },
+  {
+    "price" : 489.9,
+    "barcode" : "8698995030793",
+    "stock" : 10000,
+    "name" : "Proline Kuzu Etli ve Pirinçli Yavru Köpek Maması (2,2 kg)",
+    "description" : "",
+    "id" : "3BC52E1E-322A-4F72-BB75-0158EFB40513"
+  },
+  {
+    "price" : 175,
+    "barcode" : "8698995012126",
+    "stock" : 10000,
+    "name" : "Spectrum Yavru Köpek Süt Tozu (150 g)",
+    "description" : "",
+    "id" : "67A16B0B-8946-47F0-B03E-A397CA99CB1F"
+  },
+  {
+    "price" : 850,
+    "barcode" : "8698995010214",
+    "stock" : 10000,
+    "name" : "King Biftek Etli Yetişkin Köpek Maması (15 kg)",
+    "description" : "",
+    "id" : "47429670-2FB9-4C9D-AD7D-C68E37E4A9E5"
+  },
+  {
+    "price" : 329.9,
+    "barcode" : "8698995013451",
+    "stock" : 10000,
+    "name" : "Enjoy Premium Kuzu Etli ve Pirinçli Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "B17B4ADB-B044-49E9-83EB-B779DA4EA88D"
+  },
+  {
+    "price" : 599,
+    "barcode" : "8698995010672;8698995028752",
+    "stock" : 10000,
+    "name" : "Reflex Balıklı ve Pirinçli Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "AE7898C0-6D53-4AE1-B1CF-4CF53F14A1B2"
+  },
+  {
+    "price" : 1069,
+    "barcode" : "3182550793728",
+    "stock" : 10000,
+    "name" : "Royal Canin Küçük Irk Yetişkin Köpek Maması (1,5 kg)",
+    "description" : "",
+    "id" : "B143750A-1DAC-43DA-980C-922D75ECC142"
+  },
+  {
+    "price" : 599,
+    "barcode" : "8698995003414",
+    "stock" : 10000,
+    "name" : "Reflex Plus Tavuk Etli Mini ve Küçük Irk Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "E6460923-66DF-4BED-8652-EBAE4899D281"
+  },
+  {
+    "price" : 329.9,
+    "barcode" : "8698995011297",
+    "stock" : 10000,
+    "name" : "King Biftek Etli Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "3D462814-9852-4581-AB27-CA2DF38FDBF2"
+  },
+  {
+    "price" : 1450,
+    "barcode" : "7613035114920",
+    "stock" : 10000,
+    "name" : "Purina Pro Plan Tavuk Etli Küçük Irk Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "0A318E82-08D7-4337-95EF-DAE9AD736415"
+  },
+  {
+    "price" : 899,
+    "barcode" : "8682328740084",
+    "stock" : 10000,
+    "name" : "Pro Performance Mini Kuzu Etli ve Yaban Mersinli Yetişkin Köpek Maması (2 kg)",
+    "description" : "",
+    "id" : "250BC239-F32B-4F22-ACFC-D2DB56649AC1"
+  },
+  {
+    "price" : 899,
+    "barcode" : "8682328740091",
+    "stock" : 10000,
+    "name" : "Pro Performance Somonlu ve Yaban Mersinli Küçük Irk Yetişkin Köpek Maması (2 kg)",
+    "description" : "",
+    "id" : "2C2DB4D5-5491-4800-8A1F-89553CCB4528"
+  },
+  {
+    "price" : 1550,
+    "barcode" : "7613036611268;7613035124721",
+    "stock" : 10000,
+    "name" : "Purina Pro Plan Hassas Sindirim Kuzu Etli Küçük Irk Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "6D359DE7-C159-4BA0-B014-6C2CA78AED67"
+  },
+  {
+    "price" : 899,
+    "barcode" : "8682328740190",
+    "stock" : 10000,
+    "name" : "Pro Performance Kuzu Etli ve Yaban Mersinli Küçük Irk Yetişkin Köpek Maması (2 kg)",
+    "description" : "",
+    "id" : "5F9728FD-E3D9-47C8-A45A-AD2BCD3C4C92"
+  },
+  {
+    "price" : 899,
+    "barcode" : "8682328740176",
+    "stock" : 10000,
+    "name" : "Pro Performance Kuzu Etli Kısırlaştırılmış Köpek Maması (2 kg)",
+    "description" : "",
+    "id" : "E946F280-6386-477C-A3B9-A9A37D1EE7BA"
+  },
+  {
+    "price" : 2340,
+    "barcode" : "8010276036520",
+    "stock" : 10000,
+    "name" : "N&D Tahılsız, Okyanus Balıklı & Bal Kabaklı Küçük Irk Yetişkin Köpek Maması (2,5 kg)",
+    "description" : "",
+    "id" : "DC56D1D7-B671-4649-9894-7E311A889A5F"
+  },
+  {
+    "price" : 1699,
+    "barcode" : "7613035114777",
+    "stock" : 10000,
+    "name" : "Purina Pro Plan Hassas Cilt Somonlu Orta Irk Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "CD587A96-CFAA-45A3-9B51-E4FC2018DFA8"
+  },
+  {
+    "price" : 1550,
+    "barcode" : "7613035114890;7613036735674",
+    "stock" : 10000,
+    "name" : "Purina Pro Plan Hassas Cilt Somonlu Küçük Irk Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "653263CC-D3E6-48EC-BB0A-6480DC2722F1"
+  },
+  {
+    "price" : 2340,
+    "barcode" : "8010276021816",
+    "stock" : 10000,
+    "name" : "N&D Tahılsız, Kuzu Etli & Yaban Mersinli Küçük Irk Yetişkin Köpek Maması (2,5 kg)",
+    "description" : "",
+    "id" : "1800125E-EF90-4867-9378-176BBF8AB6D6"
+  },
+  {
+    "price" : 599,
+    "barcode" : "8698995011365;8698995028769",
+    "stock" : 10000,
+    "name" : "Reflex Kuzu Etli, Pirinçli & Sebzeli Tüm Irklar Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "B9629F79-DCA6-4880-86E2-FFE089767501"
+  },
+  {
+    "price" : 1315,
+    "barcode" : "3182550402170",
+    "stock" : 10,
+    "name" : "Royal Canin Küçük Irk Yetişkin Köpek Maması (2 kg)",
+    "description" : "",
+    "id" : "4F6FEA2B-7C50-425F-B481-21984391E03B"
+  },
+  {
+    "price" : 2299,
+    "barcode" : "3182550727822",
+    "stock" : 10,
+    "name" : "Royal Canin Küçük Irk Yetişkin Köpek Maması (4 kg)",
+    "description" : "",
+    "id" : "6BDE6214-6756-4FDD-BF00-B71818C7A5CB"
+  },
+  {
+    "price" : 599,
+    "barcode" : "8698995028738",
+    "stock" : 10000,
+    "name" : "Reflex Tavuk Etli Küçük Irk Yetişkin Köpek Mama (3 kg)",
+    "description" : "",
+    "id" : "BF1F7DDD-6820-4575-9D41-5875D6B098C0"
+  },
+  {
+    "price" : 1949,
+    "barcode" : "3182550867719",
+    "stock" : 10000,
+    "name" : "Royal Canin Poodle Yetişkin Köpek Maması (3 kg)",
+    "description" : "",
+    "id" : "53AA9B99-EB3E-4F4A-892C-A33D48307A2A"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "3C6D3D20-86DF-4492-B940-189E6604E57E",
+    "name" : "Reflex Plus Somonlu Küçük Irk Yetişkin Köpek Maması (3 kg)",
+    "price" : 599,
+    "barcode" : "8698995003421"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "B2B041A5-D9E5-4C86-9510-21AB9C791A27",
+    "name" : "Reflex Kuzu Etli ve Pirinçli Orta ve Büyük Irk Yetişkin Köpek Mama (3 kg)",
+    "price" : 599,
+    "barcode" : "8698995010603;8698995028776"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "82FB5DA4-F15D-49FE-A9F4-B03EAC4AF455",
+    "name" : "Royal Canin Yorkshire Terrier Yetişkin Köpek Maması (1,5 kg)",
+    "price" : 1099,
+    "barcode" : "3182550716857"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "id" : "F8E68750-F21F-496D-B797-8442471CAF29",
+    "name" : "Thunder Yetişkin Köpek Maması (15 kg)",
+    "price" : 975,
+    "barcode" : "8698995027243"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "id" : "E887621B-3ABB-4417-8C93-7192A090A084",
+    "name" : "Trendline Kuzu Etli ve Pirinçli Yetişkin Köpek Maması (1 kg)",
+    "price" : 150,
+    "barcode" : "8698995011327"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "57908676-5FBE-40B5-8256-9506654E8558",
+    "name" : "Rainbow Kuzu Etli Yetişkin Köpek Maması (15 kg)",
+    "price" : 750,
+    "barcode" : "8699245855982"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "E4BE5D5F-587B-4C9C-8EE6-4D5BB59D35D6",
+    "name" : "Royal Canin Büyük Irk Yetişkin Köpekler İçin Kümes Hayvanlı Yaş Mama (410 g)",
+    "price" : 199,
+    "barcode" : "9003579029879"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "CF72E6D1-8989-4072-AF26-77BAF8EE39EB",
+    "name" : "Royal Canin Küçük Irk Yetişkin Köpekler İçin Kümes Hayvanlı Yaş Mama (195 g)",
+    "price" : 139.9,
+    "barcode" : "9003579029633"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "A4BB9CD7-28A5-41FE-9BD5-B103D169EB43",
+    "name" : "Royal Canin Küçük Irk 2 - 10 Ay Yavru Köpek Konserve Maması (85 g)",
+    "price" : 99,
+    "barcode" : "9003579008218"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "C564CE16-29E1-434E-A873-3C09CCF4B9D1",
+    "name" : "Royal Canin Starter Anne & Bebek Köpek Konserve Maması (195 g)",
+    "price" : 159.9,
+    "barcode" : "s003579311462"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "DC28A262-09B2-477D-BA95-A7CAD4F42957",
+    "name" : "Royal Canin Küçük Irk Yetişkin Köpek Konserve Maması (85 g)",
+    "price" : 99,
+    "barcode" : "9003579008256"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "id" : "2C197D9C-539B-4914-99F5-2E653A4D26E2",
+    "name" : "Royal Canin Starter Anne & Bebek Köpek Konserve Maması (195 g)",
+    "price" : 35,
+    "barcode" : "407700195;9003579311462"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "CA89E376-D9A3-470B-8B70-B342042AE5D5",
+    "name" : "Jessy Sığır Etli Yetişkin Köpek Konserve Maması (400 g)",
+    "price" : 59.9,
+    "barcode" : "8683400976124"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "5E56776C-191E-47AE-808E-620E15BC5557",
+    "name" : "Jessy Kuzu Etli Yavru Köpek Konserve Maması (400 g)",
+    "price" : 59.9,
+    "barcode" : "8683400976117"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "505175DE-BBBD-4E52-A3FE-80922C034002",
+    "name" : "Jessy Kuzu Etli Yetişkin Köpek Konservesi (400 g)",
+    "price" : 59.9,
+    "barcode" : "8683400976131"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "AE89C4AD-152A-40A3-9233-A4B9377E0A95",
+    "name" : "Proline Dana Etli, Soslu & Et Parçalı Köpek Konservesi (400 g)",
+    "price" : 75,
+    "barcode" : "8698995031929"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "FFE8829A-24FA-4E04-BE3B-0A336631674B",
+    "name" : "Proline Kuzu Etli Yetişkin Köpek Konservesi (400 g)",
+    "price" : 75,
+    "barcode" : "8698995031936"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "1DB92BDC-C77A-43FE-899E-B66C8CE2C0A8",
+    "name" : "Proline Kuzu Etli Konserve Yavru Köpek Maması (400 g)",
+    "price" : 75,
+    "barcode" : "8698995031967"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "F0169EA5-32DC-4D02-874B-03D3D744362E",
+    "name" : "Proline Parça Dana Etli Ezme Konserve Köpek Maması (395 g)",
+    "price" : 75,
+    "barcode" : "8698995031943"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "08E056C0-71A9-485A-9CC7-A3E4FCBD6121",
+    "name" : "Proline Kuzu Etli ve Bal Kabaklı Yetişkin Köpek Konservesi (395 g)",
+    "price" : 75,
+    "barcode" : "8698995031950"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "6B036A3E-AE1A-453D-89D2-DB185FEB6A07",
+    "name" : "Reflex Plus Sos İçinde Et Parçacıklı ve Somonlu Yetişkin Köpek Maması (400 g)",
+    "price" : 80,
+    "barcode" : "8698995032704"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "7F62C5B4-2858-4BB2-92D9-93ECDCE53723",
+    "name" : "King Sos İçerisinde Et Parçacıklı Kuzu Etli Yetişkin Köpek Konservesi (400 g)",
+    "price" : 80,
+    "barcode" : "8698995037662"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "05FE06E5-696E-4834-A5EC-21FE1B3CA6C2",
+    "name" : "King Sos İçerisinde Et Parçacıklı Dana Etli Yetişkin Köpek Konservesi (400 g)",
+    "price" : 80,
+    "barcode" : "8698995037679"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "743C0627-448B-4FB5-B471-85F9798FA3B3",
+    "name" : "Deli Bon Deri Natural Press Kemik Köpek Ödülü 12 cm (4'lü)",
+    "price" : 319.9,
+    "barcode" : "8680782160080"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "DF3527CF-8285-47A2-98D7-95FF92D519CC",
+    "name" : "Deli Bon Gerçek Deriden Sütlü Press Kemik Köpek Ödülü 12 cm (4'lü)",
+    "price" : 319.9,
+    "barcode" : "8680782160073"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "AFCE5B7B-7842-4ADF-9265-77B5BBFD669F",
+    "name" : "Deli Bon Deri Kalın Burgu Çubuk Köpek Ödülü (25'li)",
+    "price" : 180,
+    "barcode" : "8680782160271"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "2707A94E-D1BB-4EC0-98A5-59E52F073012",
+    "name" : "Deli Bon Deri Press Kemik Köpek Ödülü 7 cm (4'lü)",
+    "price" : 149.9,
+    "barcode" : "8680782160011;868078216011"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "204A09C4-F3E2-493B-A218-19957175F789",
+    "name" : "Doglife Press Kemik Beyaz (2 x 50 g)",
+    "price" : 169.9,
+    "barcode" : "8681475627026"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "D3B49101-4EE1-4DFA-BE89-59A9B070268C",
+    "name" : "Doglife Beyaz Burgu Çubuk Köpek Çiğneme Kemiği (50 x 6 g)",
+    "price" : 479.9,
+    "barcode" : "8681475627101"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "3F95A748-9DB5-4FF9-8358-390E0B8DA679",
+    "name" : "Deli Bon Deri Beyaz Cips Köpek Ödülü (400 g)",
+    "price" : 419.9,
+    "barcode" : "8680782160455"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "5F57E20C-8E49-4A3D-A9BC-DF7724DFDDC5",
+    "name" : "Deli Bon Deri Press Kemik Köpek Ödülü 7 cm (8'li)",
+    "price" : 279.9,
+    "barcode" : "8680782160035"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "4DA45B6F-0C21-44DB-8C9D-1A30BEBC683A",
+    "name" : "Doglife Press Kemik White 3'lü (30 g)",
+    "price" : 169.9,
+    "barcode" : "8681475627019"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "F2A365A3-43C3-40BB-9470-7499708761FA",
+    "name" : "Deli Bon Deri Natural Cips Köpek Ödülü (400 g)",
+    "price" : 419.9,
+    "barcode" : "8680782160462"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "B4D2E3F2-3962-40D3-9D0E-0F5C740349D6",
+    "name" : "Deli Bon Deri Twisted S Burgu Çubuk Köpek Ödülü (20'li)",
+    "price" : 110,
+    "barcode" : "8680782160219"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "92F5D369-94D6-4C1D-8461-5BE1E1C45139",
+    "name" : "Doglife Köpek İçin Press Kemik Köpek Ödülü (6 x 20 g)",
+    "price" : 225,
+    "barcode" : "8681475627002"
+  },
+  {
+    "description" : "",
+    "stock" : 10000,
+    "id" : "26F0D6FD-E4FC-427F-BF14-1F4F8C03CB94",
+    "name" : "Doglife Düğümlü Kemik White 3'lü (18 - 20 g)",
+    "price" : 99.9,
+    "barcode" : "8681475626920"
+  },
+  {
+    "id" : "A2D1F305-5B19-4945-919B-F2082557868F",
+    "name" : "Doglife Burgu Çubuk White Köpek Ödülü (25'li)",
+    "barcode" : "8681475627118",
+    "description" : "",
+    "price" : 249.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "D3A9453D-D7C8-42C5-857D-FCC49FC24B8B",
+    "name" : "Deli Bon Deri Natural Press Kemik Köpek Ödülü 7 cm (8'li)",
+    "barcode" : "8680782160042",
+    "description" : "",
+    "price" : 279.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "D51434F5-00B1-4FDF-8AE6-AEA84211D750",
+    "name" : "Doglife Press Kemik White Köpek Ödülü (25'li)",
+    "barcode" : "8681475626999",
+    "description" : "",
+    "price" : 369.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "E122FD58-94F3-4604-ADF9-E3D1E72C1AE5",
+    "name" : "Doglife Munchy Donut Köpek Ödülü (2'li)",
+    "barcode" : "8681475634086",
+    "description" : "",
+    "price" : 44,
+    "stock" : 10000
+  },
+  {
+    "id" : "81885B18-F20F-4B13-B9E3-9CBF8065A450",
+    "name" : "Deli Bon Deri Press Beyaz Köpek Çiğneme Kemiği 12 cm (2'li)",
+    "barcode" : "8680782160554",
+    "description" : "",
+    "price" : 169.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "2E53B7F2-189B-4C0E-BAE4-FF6598A6A0FF",
+    "name" : "Deli Bon Munchy Kalın Çubuk Karışık Renk Köpek Ödül Kemiği (15'li)",
+    "barcode" : "8680782130502",
+    "description" : "",
+    "price" : 119.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "EFD361A0-00F2-40C7-AE7E-9ADD7001FDC5",
+    "name" : "Doglife Munchy Stick Karışık Renkli Burgu Çubuk (25 x 6 g)",
+    "barcode" : "8681475634031",
+    "description" : "",
+    "price" : 139.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "E2AB67D1-28BF-4261-AACD-70BE4FAF00B6",
+    "name" : "Doglife Sütlü Düğüm Köpek Çiğneme Kemiği (6 x 10 g)",
+    "barcode" : "8681475626913",
+    "description" : "",
+    "price" : 99.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "213D336D-AF18-4D84-B46F-1FE0AF07DC78",
+    "name" : "Doglife Munchy Flat (20'li x 10 g)",
+    "barcode" : "8681475634048",
+    "description" : "",
+    "price" : 149.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "E39E8C7A-661E-44BE-A4C7-2BB04355AC1C",
+    "name" : "Doglife Düğümlü Kemik White 2'li (30 g)",
+    "barcode" : "8681475626937",
+    "description" : "",
+    "price" : 84.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "6A18B137-0BD3-4B56-B9E9-5B7B9EF8870A",
+    "name" : "Doglife Beyaz Burgu Çubuk Köpek Çiğneme Kemiği (10'lu)",
+    "barcode" : "8681475627125",
+    "description" : "",
+    "price" : 129.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "85767F93-D8EF-4CD9-B310-F595DBE5F499",
+    "name" : "Deli Bon Deri Natural Press Kemik Köpek Ödülü 7 cm (4'lü)",
+    "barcode" : "8680782160028",
+    "description" : "",
+    "price" : 149.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "7467CE22-09F1-4B80-910C-C533112010F3",
+    "name" : "Deli Bon Kalın Beyaz Burgu Çubuk Köpek Ödül Kemiği (50'li)",
+    "barcode" : "8680782160257",
+    "description" : "",
+    "price" : 439.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "D4C5110B-67BC-4219-A7DC-B1D87E580C5B",
+    "name" : "M-Pets Tavukla Sarılmış Köpek Ödül Maması (105 g)",
+    "barcode" : "6953182714781",
+    "description" : "",
+    "price" : 159.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "16EDFBC0-0773-4369-A87B-97DBD0A6A38D",
+    "name" : "M-Pets Wrapped Tavuk Etli Köpek Ödülü (97 g)",
+    "barcode" : "6953182714798",
+    "description" : "",
+    "price" : 144.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "824D2167-35B1-43DD-8581-61EDA84F531E",
+    "name" : "M-Pets Köpek Kemiği Ördek Eti Sargılı Düğüm Deri Köpek Ödülü (3 x 105 g)",
+    "barcode" : "6953182714903",
+    "description" : "",
+    "price" : 159.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "C2CE995F-4590-4E0A-BE60-26E4DB622741",
+    "name" : "M-Pets Wrapped With Ördek Etli Köpek Ödülü (97 g)",
+    "barcode" : "6953182714897;6953182714910",
+    "description" : "",
+    "price" : 144.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "1F3E2E8A-DD10-4441-B448-16D863E95253",
+    "name" : "M-Pets Duo Bone Wrapped With Chicken Köpek Ödülü (84 g)",
+    "barcode" : "6953182714835",
+    "description" : "",
+    "price" : 149.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "12DE0C69-5FE9-4352-BE85-2B7F047E3A02",
+    "name" : "M-Pets Wrapped Tavuk Etli Köpek Ödülü (84 g)",
+    "barcode" : "6953182714774",
+    "description" : "",
+    "price" : 159.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "394054F1-617F-4A48-80DE-9EE3F5263A98",
+    "name" : "Reflex Av Hayvanlı ve Tavuk Etli Yetişkin Köpek Ödül Maması (150 g)",
+    "barcode" : "8698995025287",
+    "description" : "",
+    "price" : 120,
+    "stock" : 10000
+  },
+  {
+    "id" : "E9E6C594-1523-45C8-AF3F-E8559267D606",
+    "name" : "Reflex Kuzu Etli Dilim Küp Tüm Irklar İçin Yetişkin Köpek Ödülü (80 g)",
+    "barcode" : "8698995003100",
+    "description" : "",
+    "price" : 165,
+    "stock" : 10000
+  },
+  {
+    "id" : "CA46A951-1C09-4A21-A9AB-62732589ED1B",
+    "name" : "Reflex Ördek Etli Yetişkin Köpek Ödülü (80 g)",
+    "barcode" : "8698995003049",
+    "description" : "",
+    "price" : 165,
+    "stock" : 10000
+  },
+  {
+    "id" : "97FC463E-5D50-4561-BDE2-FBD6D782D828",
+    "name" : "Reflex Dog Tavuk Etli Bagetler Köpek Ödülü (80 g)",
+    "barcode" : "8698995028929",
+    "description" : "",
+    "price" : 165,
+    "stock" : 10000
+  },
+  {
+    "id" : "2C9FC3C8-98A1-46BF-9A12-38656E0B69E0",
+    "name" : "Reflex Biftek Etli Sandviç Çubuk Tüm Irklar İçin Yetişkin Köpek Ödülü (80 g)",
+    "barcode" : "8698995003070",
+    "description" : "",
+    "price" : 165,
+    "stock" : 10000
+  },
+  {
+    "id" : "98EEFB42-46C2-4984-8D40-FCC486FB489B",
+    "name" : "Reflex Dog Ördek Etli Çubuklar Köpek Ödülü (80 g)",
+    "barcode" : "8698995028899;8698995028912",
+    "description" : "",
+    "price" : 165,
+    "stock" : 10000
+  },
+  {
+    "id" : "DB3C6E6F-982D-4D8F-9FF7-3F3515CDE5CA",
+    "name" : "Reflex Kuzu Etli ve Pirinçli Kalpler Köpek Ödül Maması (150 g)",
+    "barcode" : "8698995029162",
+    "description" : "",
+    "price" : 120,
+    "stock" : 9999
+  },
+  {
+    "id" : "3D94B0D4-102C-4AF9-8AF9-271E7B8CF538",
+    "name" : "Reflex Yumuşak Kuzu Eti Parçacıklı Köpek Ödülü (80 g)",
+    "barcode" : "8698995030083;8698995003087",
+    "description" : "",
+    "price" : 165,
+    "stock" : 10000
+  },
+  {
+    "id" : "35A3D408-E826-4309-8940-4C9999AE5580",
+    "name" : "Reflex Semi-Moist Mix Bones Köpek Ödül Kemiği (150 g)",
+    "barcode" : "8698995029131",
+    "description" : "",
+    "price" : 120,
+    "stock" : 10000
+  },
+  {
+    "id" : "CCA9E3A8-B33A-40B0-ADC9-8C51889979E3",
+    "name" : "Reflex Kuzu & Pirinç Large Köpek Ödülü (150 g)",
+    "barcode" : "8698995029155",
+    "description" : "",
+    "price" : 120,
+    "stock" : 9999
+  },
+  {
+    "id" : "2A24D586-7DAE-4740-AC30-34FC6F4F72F3",
+    "name" : "Reflex Somonlu ve Pirinçli Köpek Ödül Kemiği (150 g)",
+    "barcode" : "8698995029179",
+    "description" : "",
+    "price" : 120,
+    "stock" : 9999
+  },
+  {
+    "id" : "D30992F7-2956-4392-846E-68599B52140C",
+    "name" : "Sfs Kurutulmuş Dana Gırtlağı Köpek Ödülü (100 g)",
+    "barcode" : "8682858219135",
+    "description" : "",
+    "price" : 114.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "DDA07470-7BA2-4F04-9C46-F48F20D82799",
+    "name" : "Sfs Kurutulmuş Dana Sırt Siniri Köpek Ödülü (100 g)",
+    "barcode" : "8682858219012",
+    "description" : "",
+    "price" : 114.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "61FE6C37-56A6-4C3C-87B6-FC7FD1D59BA5",
+    "name" : "Sfs Kurutulmuş Dana Akciğeri Köpek Ödülü (100 g)",
+    "barcode" : "8682858219128",
+    "description" : "",
+    "price" : 114.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "6C27E5D8-4DC2-4B83-8BCA-DC9DF0B27C07",
+    "name" : "Reflex Ördek Etli Köpek Ödül Çubuğu (3 x 11 g)",
+    "barcode" : "8698995027007",
+    "description" : "",
+    "price" : 55,
+    "stock" : 10000
+  },
+  {
+    "id" : "D78E159C-4291-4C13-80AA-0EE4C8197226",
+    "name" : "Sfs Kurutulmuş Dana İşkembe Köpek Ödülü (100 g)",
+    "barcode" : "8682858219036",
+    "description" : "",
+    "price" : 114.9,
+    "stock" : 10000
+  },
+  {
+    "id" : "4D3129C9-05D4-4FBF-B221-DE74BA469A6E",
+    "name" : "Sfs Kurutulmuş Kuzu Kafa Derisi Köpek Ödülü (100 g)",
+    "barcode" : "8682858219098",
+    "description" : "",
+    "price" : 114.9,
+    "stock" : 10000
+  },
+  {
+    "price" : 165,
+    "name" : "Reflex Ördek Sandviç Çubuk Köpek Ödülü (80 g)",
+    "id" : "06CEF539-8C82-439F-8CB5-380A74EB8852",
+    "barcode" : "8698995003018",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 165,
+    "name" : "Reflex Tavuk Etli Çıtır Çubuk Köpek Ödülü (80 g)",
+    "id" : "67A88B5E-C25B-4F5E-9DBE-E644E153B2C1",
+    "barcode" : "8698995028905",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 114.9,
+    "name" : "Sfs Kurutulmuş İnek Memesi Köpek Ödülü (100 g)",
+    "id" : "9DBA5B06-3B6D-4251-8B96-5E4CEEA29F02",
+    "barcode" : "8682858219111",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 114.9,
+    "name" : "Sfs Kurutulmuş Dana Kafa Derisi Köpek Ödülü (100 g)",
+    "id" : "E04B292C-7F86-48EE-A500-D7FFF9E18983",
+    "barcode" : "8682858219104",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 55,
+    "name" : "Reflex Tavuk Etli Köpek Ödül Çubuğu (3 x 11 g)",
+    "id" : "A0C01A41-E93A-45DE-973D-2E0BFD985585",
+    "barcode" : "8698995012751",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 114.9,
+    "name" : "Sfs Kurutulmuş Dana Kulak Köpek Ödülü (100 g)",
+    "id" : "023B232A-B72F-4266-B5C7-C5F0BE9AA779",
+    "barcode" : "8682858219081",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 89.9,
+    "name" : "Doglife Düğümlü Kemik White (50 g)",
+    "id" : "664FCA87-EA6E-4BAD-8A9D-22E38A49A2AE",
+    "barcode" : "8681475626944",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 160,
+    "name" : "Deli Bon Deri Press Kemik Köpek Ödülü 12 cm (2'li)",
+    "id" : "846722BE-2066-41D7-9E98-6099BA7A9B19",
+    "barcode" : "8680782160059",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 114.9,
+    "name" : "Sfs Kurutulmuş Dana Kuyruklu Köpek Ödülü (100 g)",
+    "id" : "3E07B1B1-E0CC-4E2B-B26B-BEDEDF4DA979",
+    "barcode" : "8682858219043",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 55,
+    "name" : "Reflex Somonlu Köpek Ödül Çubuğu (3 x 11 g)",
+    "id" : "36AE8864-E124-4519-88D4-7316CB877415",
+    "barcode" : "8698995026994",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 50,
+    "name" : "Wanpy Taze Tavuk Etli ve Havuçlu Köpek Et Ezmesi (90 g)",
+    "id" : "335C13E9-AE0F-4BF4-B236-14675E180153",
+    "barcode" : "8682631203559;6927749870203",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 50,
+    "name" : "Wanpy Taze Ördek Etli ve Havuçlu Köpek Et Ezmesi (90 g)",
+    "id" : "569A56C8-501B-4CC2-A36A-C2C63610E5EB",
+    "barcode" : "6927749870210",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 50,
+    "name" : "Wanpy Sığır Etli ve Havuçlu Ezme Köpek Maması (90 g)",
+    "id" : "FF460989-E827-4562-86DC-037BB41CECCB",
+    "barcode" : "6927749870227",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 50,
+    "name" : "Wanpy Kuzu Etli ve Havuçlu Ezme Köpek Maması (90 g)",
+    "id" : "D12F1824-EA4A-415E-A1C4-C0DAE20AA850",
+    "barcode" : "6927749870234",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 120,
+    "name" : "Reflex Ördek Etli Düğümlü Köpek Çiğneme Kemiği (40 g)",
+    "id" : "A79B98B4-A5C7-47A1-8A10-0B6A38DC286A",
+    "barcode" : "8698995029964",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 135,
+    "name" : "Reflex Kuzu Etli Pul Köpek Ödülü (80 g)",
+    "id" : "125268E6-3D0E-4DF3-8F40-E6F6EEA47777",
+    "barcode" : "8698995030052",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 140,
+    "name" : "Reflex Ördek Etli Düğümlü Köpek Çiğneme Kemiği (80 g)",
+    "id" : "BDF8ACB0-5C50-4798-99A3-8C4A8EC3EBA6",
+    "barcode" : "8698995029988",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 135,
+    "name" : "Reflex Balık Deri Sargılı Somon Etli Çubuk Köpek Ödülü (80 g)",
+    "id" : "EB70BFC0-B5C2-4084-BBB6-4A0A5CB4D7DA",
+    "barcode" : "8698995030069",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 280,
+    "name" : "Reflex Tavuk Eti Sargılı Çift Düğümlü Köpek Çiğneme Kemiği (8 x 12,5 g)",
+    "id" : "BB0F5266-16D6-4E44-B499-99F9E207DED5",
+    "barcode" : "8698995030014",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 280,
+    "name" : "Reflex Ördek Etli Düğümlü Köpek Çiğneme Kemiği 8'li (100 g)",
+    "id" : "DB170DC6-8541-4566-8A02-F6413D133A08",
+    "barcode" : "8698995029995",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 280,
+    "name" : "Reflex Tavuk Etli Düğümlü Köpek Çiğneme Kemiği 8'li (100 g)",
+    "id" : "4161F7E2-E328-49AB-B78A-2B25E2D60CFD",
+    "barcode" : "8698995030007",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 120,
+    "name" : "Reflex Tavuk Etli Çift Düğümlü Köpek Çiğneme Kemiği (40 g)",
+    "id" : "084498C5-0201-4C68-BEDA-67A5CB8D8783",
+    "barcode" : "8698995029971",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 280,
+    "name" : "Reflex Ördek Etli Çift Düğümlü Köpek Çiğneme Kemiği 8'li (100 g)",
+    "id" : "4C83DDCD-D7C5-46AC-B2C4-A0365320B315",
+    "barcode" : "8698995030021",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 135,
+    "name" : "Reflex Somonlu Dilimli Köpek Ödül Maması (80 g)",
+    "id" : "58EB8099-EA1F-4E13-9D42-387D1AA7A325",
+    "barcode" : "8698995030045",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 149.9,
+    "name" : "Deli Bon Deri Pres Kemik Barbekü (4 x 7 cm)",
+    "id" : "BB1A36D3-2709-448B-A629-7A5E14F95E3F",
+    "barcode" : "8680782133947",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 120,
+    "name" : "Garden Mix Ördek Etli Sushi Köpek Ödül Maması (75 g)",
+    "id" : "9AD8C80E-A1DF-40B0-AA7D-B140A8D99A26",
+    "barcode" : "8681085428860",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 120,
+    "name" : "Garden Mix Tavuk Etli Kemik Köpek Ödülü (75 g)",
+    "id" : "F4A74ED0-E185-4558-92D5-6760C5A15B37",
+    "barcode" : "8681085428822",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 120,
+    "name" : "Garden Mix Tavuk Sargılı Kemik Köpek Ödülü (75 g)",
+    "id" : "C4413AC8-B9DB-48F0-8C1A-7F8D9EB50361",
+    "barcode" : "8681085428846",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 120,
+    "name" : "Garden Mix Sargılı Pres Kemik Köpek Ödülü (75 g)",
+    "id" : "84A7CBF4-09A8-45AA-BB9B-FC6E82092FAF",
+    "barcode" : "8681085428921",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 120,
+    "name" : "Garden Mix Gurme Köpek Ödülü (75 g)",
+    "id" : "6F2E591A-DF22-44DB-9196-209B786B3BB8",
+    "barcode" : "8681085428945",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 100,
+    "name" : "M-Pets Creamy Morina Balıklı ve Biftekli Köpek Ödülü (4 x 15 g)",
+    "id" : "72EB5BEC-5A83-43C2-9913-677FB65F71CD",
+    "barcode" : "6953182712565",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 100,
+    "name" : "M-Pets Creamy Tavuk Etli Köpek Ödülü (4 x 15 g)",
+    "id" : "1E6A3492-43FD-466E-A287-B591BE5EA83C",
+    "barcode" : "6953182712572",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 100,
+    "name" : "M-Pets Creamy Ton Balıklı Köpek Ödül Kreması (4 x 15 g)",
+    "id" : "B1244630-C241-47E8-84A6-7332E2E21DA5",
+    "barcode" : "6953182712589",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 100,
+    "name" : "M-Pets Creamy Somonlu ve Sığır Etli Köpek Ödül Kreması (4 x 15 g)",
+    "id" : "9FCCD954-D065-45B4-AF15-A8AA5FF141AC",
+    "barcode" : "6953182712558",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 100,
+    "name" : "M-Pets Creamy Yengeç Etli Ödül Maması (4 x 15 g)",
+    "id" : "27E5CEEE-1839-445B-A246-CCC92CA7885C",
+    "barcode" : "6953182712619",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "price" : 100,
+    "name" : "M-Pets Creamy Ton Balıklı ve Deniz Taraklı Ödül Maması (4 x 15 g)",
+    "id" : "CFE7745B-E27A-42DB-BCEC-81A29B27CC9C",
+    "barcode" : "6953182712602",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "stock" : 10000,
+    "id" : "FC4A0032-9E4F-4799-8239-5B7A08C16988",
+    "barcode" : "6953182712596",
+    "description" : "",
+    "price" : 100,
+    "name" : "M-Pets Creamy Somon Balıklı Ödül Maması (4 x 15 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "413D1D91-C78F-4737-979C-F9DEB6CEE9D4",
+    "barcode" : "7613287106452",
+    "description" : "",
+    "price" : 174.9,
+    "name" : "Purina Pro Plan Diş Bakımı Orta Irk Köpek Ödül Maması (15'li)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "4C3CE73F-AFCF-4C9C-A05B-5A40B4F5A370",
+    "barcode" : "8698995032964",
+    "description" : "",
+    "price" : 150,
+    "name" : "Reflex Snackies Natural Pancar ve Ördek Göğsü Köpek Ödülü (80 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "6A6577F0-5964-41A4-979F-04299BD82EE5",
+    "barcode" : "8698995033015",
+    "description" : "",
+    "price" : 170,
+    "name" : "Reflex Snackies Natural Kuzu Etli Küp Köpek Ödülü (90 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "F038C9C7-AF49-434A-B8EB-5990AF00690A",
+    "barcode" : "8698995033046",
+    "description" : "",
+    "price" : 170,
+    "name" : "Reflex Snackies Natural Tavuklu ve Alaska Mezgitli Sushi Köpek Ödülü (90 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "74FA5133-5734-401B-A208-76A368F28662",
+    "barcode" : "8681085429799",
+    "description" : "",
+    "price" : 80,
+    "name" : "Garden Mix Somon Etli Ezmeli Köpek Ödülü (80 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "67356738-D055-4D9F-87F4-7F8CB12CC240",
+    "barcode" : "8681085429782",
+    "description" : "",
+    "price" : 80,
+    "name" : "Garden Mix Kuzu Etli Ezmeli Köpek Ödülü (80 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "1F0ABA79-CE07-474B-A540-596BD714FB94",
+    "barcode" : "8682858219203",
+    "description" : "",
+    "price" : 114.9,
+    "name" : "Sfs Kurutulmuş Kuzu Ciğer Köpek Ödülü (100 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "779CDEEC-06F6-451C-B5C9-C63195C5CCA1",
+    "barcode" : "8682858219241",
+    "description" : "",
+    "price" : 114.9,
+    "name" : "Sfs Kurutulmuş Tavuk Ayak Köpek Ödülü (100 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "EE979925-9BDC-4CBF-867E-474EECEC9BA9",
+    "barcode" : "6953182726548",
+    "description" : "",
+    "price" : 199,
+    "name" : "M-Pets BBQ Kings Leg Roasts Tavuk Etli Köpek Ödül Maması (70 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "FF840C24-7943-48CE-BAF4-32B66F53F179",
+    "barcode" : "6953182726524",
+    "description" : "",
+    "price" : 199,
+    "name" : "M-Pets BBQ Kings Spare Ribs Tavuk Etli Köpek Ödül Maması (85 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "9491EB8F-895C-4A9D-8B40-929B6DD818BD",
+    "barcode" : "6953182726531",
+    "description" : "",
+    "price" : 199,
+    "name" : "M-Pets BBQ Kings Tavuk Etli Köpek Ödül Maması (90 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "C93AE1C4-190B-4925-8B97-D434A374200D",
+    "barcode" : "8698995033886",
+    "description" : "",
+    "price" : 65,
+    "name" : "Reflex Plus Meaty Sticks Somonlu Yetişkin Köpek Çubuk Ödül Maması (3 x 11 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "49BFC2FE-771F-4A1C-A220-E38BC45058A7",
+    "barcode" : "8698995033893",
+    "description" : "",
+    "price" : 65,
+    "name" : "Reflex Plus Meaty Sticks Kuzu Etli Yetişkin Köpek Çubuk Ödül Maması (3 x 11 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "C003A447-8B71-4DD0-9529-74B99F6C4031",
+    "barcode" : "8698995033909",
+    "description" : "",
+    "price" : 65,
+    "name" : "Reflex Plus Meaty Sticks Ördek Etli ve Kaz Etli Yetişkin Köpek Çubuk Ödül Maması (3 x 11 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "A2D00F1C-80AB-4C23-BF2C-568A4668A9C1",
+    "barcode" : "8698995033916",
+    "description" : "",
+    "price" : 65,
+    "name" : "Reflex Plus Meaty Sticks Biftekli Yetişkin Köpek Çubuk Ödül Maması (3 x 11 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "A23D60B5-128E-4191-BB25-71494BF9CD89",
+    "barcode" : "8680782160561",
+    "description" : "",
+    "price" : 169.9,
+    "name" : "Deli Bon Naturel Vakumlu Deri Pres S Boy Kemik (2'li - 12 cm)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "B599DAD0-D015-44A0-A778-DB07A0B1D1FE",
+    "barcode" : "8681085431426",
+    "description" : "",
+    "price" : 140,
+    "name" : "Garden Mix Kuzu Kaburgalı Köpek Ödülü (75 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "3B64F4CA-0D2F-4F95-88B2-03ADC3D237FD",
+    "barcode" : "8681085431464",
+    "description" : "",
+    "price" : 140,
+    "name" : "Garden Mix Tavuk, Ördek ve Balkabaklı Dambıl Köpek Ödülü (75 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "45E6614D-AE4E-4B66-AC51-9CF9502C7314",
+    "barcode" : "8698995033824",
+    "description" : "",
+    "price" : 80,
+    "name" : "Reflex Plus Smoothie Biftekli ve Mangolu Yetişkin Köpek Sıvı Ödül Maması (85 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "2738533F-FA4A-4F51-9D1E-D17EBCD979C4",
+    "barcode" : "8698995033831",
+    "description" : "",
+    "price" : 80,
+    "name" : "Reflex Plus Smoothie Hindi,Ördek Etli ve Elmalı Yetişkin Köpek Sıvı Ödül Maması (85 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "0E29C74B-F237-403D-AD1C-A6E27782E390",
+    "barcode" : "8698995033855",
+    "description" : "",
+    "price" : 80,
+    "name" : "Reflex Plus Smoothie Kuzu Etli ve Ananaslı Yetişkin Köpek Sıvı Ödül Maması (85 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "E52D621D-934B-47B0-B547-2BA0819135C5",
+    "barcode" : "8698995033848",
+    "description" : "",
+    "price" : 80,
+    "name" : "Reflex Plus Smoothie Ton Balıklı ve Kivili Yetişkin Köpek Sıvı Ödül Maması (85 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "D5EA30E4-B462-4CB9-9B9F-2C022EF8CEAB",
+    "barcode" : "8698995033817",
+    "description" : "",
+    "price" : 80,
+    "name" : "Reflex Plus Smoothie Kuzu Etli ve Papayalı Yavru Köpek Sıvı Ödül Maması (85 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "459B08F9-972D-4B92-A025-CA63A88B002D",
+    "barcode" : "8698995035682",
+    "description" : "",
+    "price" : 159,
+    "name" : "Reflex Plus Cookie Bites Mini Marrow Bones Köpek Ödül Maması (150 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "24CF7AA9-6FF3-473D-A775-BD22AFECA38F",
+    "barcode" : "8698995035699",
+    "description" : "",
+    "price" : 159,
+    "name" : "Reflex Plus Cookie Bites Mini Sandwiches Köpek Ödül Maması (150 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "E8BE8260-ECAA-48A5-98E5-BFAE4FF4B6D5",
+    "barcode" : "8698995035712",
+    "description" : "",
+    "price" : 159,
+    "name" : "Reflex Plus Cookie Bites Mini Hearts Köpek Ödül Maması (150 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "A5A03172-E064-4437-A81D-4CE681D9B866",
+    "barcode" : "8698995035729",
+    "description" : "",
+    "price" : 159,
+    "name" : "Reflex Plus Cookie Bites Mini Teddy Bears Köpek Ödül Maması (150 g)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "39CEEC94-101B-428F-8306-E569B33B001B",
+    "barcode" : "8655234581270",
+    "description" : "",
+    "price" : 240,
+    "name" : "Alfdog Air Flex Soft Göğüs Tasması No: 1 (S)"
+  },
+  {
+    "stock" : 10,
+    "id" : "29F31057-44CA-44A3-A8C7-A605B74AE3C2",
+    "barcode" : "8698764341853",
+    "description" : "",
+    "price" : 819.9,
+    "name" : "Cado Pet Gladyatör Bel Tasması Deri (M)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "F4D8CF69-CB08-40DD-9FC4-64B8AC19F17C",
+    "barcode" : "8698942012490",
+    "description" : "",
+    "price" : 169,
+    "name" : "Tailpetz Köpek Boyun Tasması Cube Renkli Küp Desenli Small (25 - 40 cm)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "3DC13572-F0C4-47C3-8011-FA1058E77FB2",
+    "barcode" : "8698942012155",
+    "description" : "",
+    "price" : 169,
+    "name" : "Tailpetz Wave Boyun Tasması Small (25 - 40 cm)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "6AD8EE65-AAA4-4961-A536-F6ACA179294D",
+    "barcode" : "8698942011691",
+    "description" : "",
+    "price" : 189,
+    "name" : "Tailpetz Alliens Boyun Tasması Medium"
+  },
+  {
+    "stock" : 10000,
+    "id" : "1DD348EC-146F-4591-B308-68A100D1D3A2",
+    "barcode" : "8698942013459",
+    "description" : "",
+    "price" : 189,
+    "name" : "Tailpetz Spirit Boyun Tasması (M)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "E54C469F-E223-455C-B265-FF9446CF4EA5",
+    "barcode" : "8698942013305",
+    "description" : "",
+    "price" : 169,
+    "name" : "Tailpetz Spirit Boyun Tasması 25 - 40 cm (S)"
+  },
+  {
+    "stock" : 10000,
+    "id" : "CC2E8C78-7246-4FA9-8E47-FDC8FA68CDF4",
+    "barcode" : "8698942014371",
+    "description" : "",
+    "price" : 189,
+    "name" : "Tailpetz Space Köpek Boyun Tasması (M)"
+  },
+  {
+    "id" : "738779BA-550D-4DB3-A3B5-908A355DB11D",
+    "price" : 189,
+    "barcode" : "8698942014012",
+    "name" : "Tailpetz Pass Boyun Tasması (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "EFEE07F1-85C1-4078-B999-3C4CA18DC897",
+    "price" : 129.9,
+    "barcode" : "8698942014944",
+    "name" : "Tailpetz Cube Gezdirme Kayışı (140 x 2 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "82F03EA9-C130-4E6F-BE9A-FC97E9818E51",
+    "price" : 189,
+    "barcode" : "8698942012544",
+    "name" : "Tailpetz Köpek Boyun Tasması Cube Renkli Küp Desenli Medium (30 - 50 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "7661F86A-F4FD-4EE2-A7A5-B191BC004DB5",
+    "price" : 200,
+    "barcode" : "8698942019093",
+    "name" : "Tailpetz Leopard H-Tipi Göğüs Tasması (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "E4FD9C90-AD1F-4335-A979-1B33903D8FF5",
+    "price" : 260,
+    "barcode" : "8655234581263",
+    "name" : "Alfdog Air Flex Soft Göğüs Tasması No: 2 (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "FF74B40F-9B63-4339-854E-4CD46EA7B46A",
+    "price" : 169,
+    "barcode" : "8698942013619",
+    "name" : "Tailpetz Leopard Boyun Tasması 25 - 40 cm (S)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "8EA60929-25D3-4648-B580-069568B04F5B",
+    "price" : 189,
+    "barcode" : "8698942012896",
+    "name" : "Tailpetz Ethnic Boyun Tasması (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "D1BEA679-68F0-4C39-BB79-C5D71961C3A3",
+    "price" : 189,
+    "barcode" : "8698942012285",
+    "name" : "Tailpetz Wave Boyun Tasması Medium (30 x 50 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "1C7B35B3-E5C3-4590-9F9E-F588E493CD78",
+    "price" : 189,
+    "barcode" : "8698942011325",
+    "name" : "Tailpetz Köpek Boyun Tasması Boo Kuru Kafa Desenli Medium (30 - 50 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "C23DE60C-9A31-418E-B9F9-8A32BED209F1",
+    "price" : 189,
+    "barcode" : "8698942011950",
+    "name" : "Tailpetz Bubbles Köpek Boyun Tasması (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "36775152-2F2C-4303-BE47-57AE2CF14F95",
+    "price" : 169,
+    "barcode" : "8698942014265",
+    "name" : "Tailpetz Space Köpek Boyun Tasması 25 - 40 cm (S)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "35E4934D-3711-4272-A512-C9AF2C682986",
+    "price" : 189,
+    "barcode" : "8698942013794",
+    "name" : "Tailpetz Leopard Boyun Tasması (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "8E8DF9F4-F356-4056-A6EE-5FC60D4C5A83",
+    "price" : 129.9,
+    "barcode" : "8698929222355",
+    "name" : "Tailpetz Gezdirme Kayışı Saks Mavisi M (2 x 140 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "1BBADBC4-68F4-44C6-B2D6-A8258DBE77D9",
+    "price" : 200,
+    "barcode" : "8698942017365",
+    "name" : "Tailpetz Cube H-Tipi Göğüs Tasması (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "62B1EB2F-2371-4355-B23B-EA2712514DFC",
+    "price" : 189,
+    "barcode" : "8698942020730",
+    "name" : "Tailpetz Prism Küçük Orta Irk Köpek Boyun Tasması M (30 x 50 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "5FF249D9-ED1A-49A0-BF55-5E28490D8186",
+    "price" : 189,
+    "barcode" : "8698942020372",
+    "name" : "Tailpetz Paisley Orta-Büyük Irk Köpek Boyun Tasması M (30 x 50 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "FBE6DB79-54FB-48A0-AFA4-A4EA93D9DA28",
+    "price" : 169,
+    "barcode" : "8698942021911",
+    "name" : "Tailpetz Amazon Collar Köpek Boyun Tasması (S)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "82019774-FC2E-4178-8D64-19C8CF869E12",
+    "price" : 189,
+    "barcode" : "8698942021645",
+    "name" : "Tailpetz Rainbow Küçük - Orta Irk Köpek Boyun Tasması M (30 x 50 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "2361FECA-8525-4C24-9B8E-AB328B849F88",
+    "price" : 129.9,
+    "barcode" : "8698942022550",
+    "name" : "Tailpetz Amazon Köpek Gezdirme Kayışı M (140 x 2 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "B006C353-A9A6-4E6E-9A8F-25A1350E5E10",
+    "price" : 129.9,
+    "barcode" : "8698942022192",
+    "name" : "Tailpetz Paisley Köpek Gezdirme Kayışı M (140 x 2 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "64C94C23-4422-4753-900B-870C9FF8BABF",
+    "price" : 169,
+    "barcode" : "8698942021553",
+    "name" : "Tailpetz Rainbow Küçük Irk Boyun Tasması S Beden (25 x 40 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "24E6DE3A-44BD-43CF-95F8-283003D378AC",
+    "price" : 189,
+    "barcode" : "8698942021096",
+    "name" : "Tailpetz Amazon Boyun Tasması (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "2D06E423-FA37-4130-8E1E-1CB02E1703AF",
+    "price" : 189,
+    "barcode" : "8698942021287",
+    "name" : "Tailpetz Splash Boyun Tasması (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "8AB748F9-1DE3-40BB-A589-1C894F9C2FD8",
+    "price" : 120,
+    "barcode" : "686016119332",
+    "name" : "Demirhan Ayarlanabilir Işıklı Köpek Boyun Tasması M",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "3259744D-05E0-459D-93FF-5EC088F7E044",
+    "price" : 120,
+    "barcode" : "6953013819326",
+    "name" : "Demirhan Ayarlanabilir Işıklı Köpek Tasması S",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "4EBF25C5-7E4A-4042-9187-0EBDED812129",
+    "price" : 269.9,
+    "barcode" : "6927014684252",
+    "name" : "Nunbell Köpekler İçin Bit, Pire & Kene Uzaklaştırıcı Tasma (52 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "06472164-CD35-48EB-8A27-56AF769DD292",
+    "price" : 249.9,
+    "barcode" : "6927014684245",
+    "name" : "Nunbell Köpekler İçin Bit, Pire & Kene Uzaklaştırıcı Tasma (36 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "8798B82A-AA83-4A14-820A-C082A1F165A9",
+    "price" : 90,
+    "barcode" : "8681475629549",
+    "name" : "Doglife Köpekler İçin Zilli Kravat",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "842D7181-06FD-4C15-9A61-437E6EFD1F4C",
+    "price" : 150,
+    "barcode" : "8696219415074;8696219414183",
+    "name" : "Irak Plastik Hazneli Mama ve Su Kabı (1,5 L)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "4DBBF727-2805-43CD-9495-DDC717377E88",
+    "price" : 120,
+    "barcode" : "8680589172361",
+    "name" : "Benny Köpek Oyuncağı Sert Top (L)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "EA51F4A4-CE9E-477C-B432-A6094B626AB2",
+    "price" : 99,
+    "barcode" : "8680589172354",
+    "name" : "Benny Köpek Oyuncağı Sert Top (M)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "3D276BA5-DEB4-4965-B956-6C72D440008E",
+    "price" : 120,
+    "barcode" : "6920210000604",
+    "name" : "Can's Küçük Öten Horoz Oyuncak",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "64AF0212-6A38-4D21-9686-A9FCE45B8ACD",
+    "price" : 89.9,
+    "barcode" : "8681475622571",
+    "name" : "Doglife Kauçuk Diş Kaşıma Kemiği (12 cm)",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "BA789389-9C9D-48C7-B2A4-34AB8A24771A",
+    "price" : 69.9,
+    "barcode" : "8681475622526",
+    "name" : "Doglife Köpekler İçin Çember Oyuncak",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "6B4A0D87-1DA5-411F-B45D-4B2DE53B073C",
+    "price" : 89.9,
+    "barcode" : "8681475628382",
+    "name" : "Doglife Köpekler İçin Heart Shape Oyuncak",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "EA5F7DF4-E158-4E81-B221-16C982F753B9",
+    "price" : 54.9,
+    "barcode" : "8681475622748",
+    "name" : "Doglife Köpekler İçin Kauçuk Dumbell Oyuncak",
+    "stock" : 10000,
+    "description" : ""
+  },
+  {
+    "id" : "631C1A65-591E-4F65-8918-D6ADD3A7FD6C",
+    "barcode" : "8681475629242",
+    "description" : "",
+    "name" : "Doglife Köpekler İçin Silikon Ayakkabı 4'lü (S)",
+    "stock" : 10000,
+    "price" : 179.9
+  },
+  {
+    "id" : "8C89DFA3-FA29-4064-BE54-3CA391E233D2",
+    "barcode" : "8681475629556",
+    "description" : "",
+    "name" : "Doglife Köpekler İçin Zilli Papyon",
+    "stock" : 10000,
+    "price" : 75
+  },
+  {
+    "id" : "0ED82FD7-7EB0-4098-958C-C4D2BEF2E4C0",
+    "barcode" : "8681475622632",
+    "description" : "",
+    "name" : "Doglife Zilli Dambıl Köpek Oyuncağı",
+    "stock" : 10000,
+    "price" : 79.9
+  },
+  {
+    "id" : "DF72E8D6-80E1-4641-8FAC-DBD6C8819DCD",
+    "barcode" : "8712695103486",
+    "description" : "",
+    "name" : "Eastland Öten Peluş Baykuş Köpek Oyuncağı (27 cm)",
+    "stock" : 10000,
+    "price" : 469
+  },
+  {
+    "id" : "35000030-C6B9-40BA-BCEA-4E5D48BC538A",
+    "barcode" : "8681475622601;8681475622618",
+    "description" : "",
+    "name" : "Doglife Kauçuk Zilli Dumbell",
+    "stock" : 10000,
+    "price" : 99.9
+  },
+  {
+    "id" : "66FC5C8C-8B6D-4227-869D-5E2241B24D6E",
+    "barcode" : "8681475622472",
+    "description" : "",
+    "name" : "Doglife Emzik Zilli Köpek Oyuncağı",
+    "stock" : 10000,
+    "price" : 129.9
+  },
+  {
+    "id" : "7E4EB62A-E2DF-406F-AE32-C2D509EE6347",
+    "barcode" : "8681475627279",
+    "description" : "",
+    "name" : "Doglife Hedgehog Köpek Oyuncağı",
+    "stock" : 10000,
+    "price" : 99.9
+  },
+  {
+    "id" : "F278F321-BFDA-47A5-B8C4-22EBD8BAD1F9",
+    "barcode" : "5400585008418",
+    "description" : "",
+    "name" : "Flamingo Sosisli İpli Köpek Oyuncağı (70 cm)",
+    "stock" : 10000,
+    "price" : 249.9
+  },
+  {
+    "id" : "7F496946-4E3D-44DD-A3E8-CCF60DFB19F8",
+    "barcode" : "8009632050768",
+    "description" : "",
+    "name" : "GimDog Plastik Mama Kabı Oval Yeşil L (29 x 10 cm)",
+    "stock" : 10,
+    "price" : 40
+  },
+  {
+    "id" : "3457E843-5012-43DE-86AA-09F7591395A4",
+    "barcode" : "8696219414923",
+    "description" : "",
+    "name" : "Irak Plastik Köpek Taşıma Çantası No: 1 (32,5 x 48 x 31 cm)",
+    "stock" : 10000,
+    "price" : 279.9
+  },
+  {
+    "id" : "4A63E588-0E1A-4DF3-9816-465994BCE3EC",
+    "barcode" : "53202767",
+    "description" : "",
+    "name" : "Lavista Ana Kucağı S (Füme)",
+    "stock" : 10000,
+    "price" : 450
+  },
+  {
+    "id" : "E76EE66E-6CD3-47FB-BA1C-A6E9BA40095E",
+    "barcode" : "8009632050812",
+    "description" : "",
+    "name" : "GimDog Plastik Mama Kabı Pembe L (22 cm)",
+    "stock" : 10,
+    "price" : 40
+  },
+  {
+    "id" : "CE0B4C2E-4930-4CA4-8E6C-5B016299B59C",
+    "barcode" : "53202763",
+    "description" : "",
+    "name" : "Lavista Ana Kucağı Gri Pembe (L)",
+    "stock" : 10000,
+    "price" : 450
+  },
+  {
+    "id" : "16507CF0-1C69-4B4B-B75C-3C6B9BAF847E",
+    "barcode" : "53202755",
+    "description" : "",
+    "name" : "Lavista Ana Kucağı S (Mavi)",
+    "stock" : 10000,
+    "price" : 450
+  },
+  {
+    "id" : "1B506CF1-678B-4FAD-BAC8-859539279200",
+    "barcode" : "6927046010050",
+    "description" : "",
+    "name" : "Nunbell Köpekler İçin Araç İçi Yeşil Emniyet Kemeri",
+    "stock" : 10000,
+    "price" : 149.9
+  },
+  {
+    "id" : "1E89B9F2-F058-4726-A46B-76BC553839A2",
+    "barcode" : "8682754950736",
+    "description" : "",
+    "name" : "Lion Sesli Vinil Halter Köpek Oyuncağı (12 cm)",
+    "stock" : 10000,
+    "price" : 89.9
+  },
+  {
+    "id" : "75C95F2E-ECE9-4341-9341-39B787D1711A",
+    "barcode" : "9897110061608",
+    "description" : "",
+    "name" : "Pawstar Yıldız Gabardin Köpek Ceket (L)",
+    "stock" : 9999,
+    "price" : 275
+  },
+  {
+    "id" : "2A86C1E3-FA23-4B18-AD75-24871D3C385B",
+    "barcode" : "8694537039323",
+    "description" : "",
+    "name" : "Petamin Plastik Kemik Dental Çatal Oyuncak",
+    "stock" : 9999,
+    "price" : 70
+  },
+  {
+    "id" : "D35532E2-46E8-4E2E-AEE4-2600B6EE12E3",
+    "barcode" : "8681999482569",
+    "description" : "",
+    "name" : "Petpretty Spesiyal Simit Polar Yatak Mor (50 x 50 x 15 cm)",
+    "stock" : 10000,
+    "price" : 599.9
+  },
+  {
+    "id" : "88A9C5FC-DC84-48AD-A96F-410CBBC3D653",
+    "barcode" : "8694537039538",
+    "description" : "",
+    "name" : "Termo Plastik Köpek Oyuncağı Yeşil (13 cm)",
+    "stock" : 10,
+    "price" : 120
+  },
+  {
+    "id" : "C248E316-A428-41AB-A580-D055B09F243F",
+    "barcode" : "9897110061622",
+    "description" : "",
+    "name" : "Pawstar Yıldız Gabardin Köpek Ceket (2XL)",
+    "stock" : 9999,
+    "price" : 275
+  },
+  {
+    "id" : "494AF462-1672-4EE4-BE3E-F9F272C40264",
+    "barcode" : "8886467541032",
+    "description" : "",
+    "name" : "Pawise Sesli Top Köpek Ödül Oyuncağı (11,5 cm)",
+    "stock" : 10000,
+    "price" : 140
+  },
+  {
+    "id" : "1ED0C2B7-2CD8-4AD2-9DA2-71A0FA461378",
+    "barcode" : "4011905035369",
+    "description" : "",
+    "name" : "Trixie Lateks Horoz Köpek Oyuncağı (23 cm)",
+    "stock" : 10000,
+    "price" : 239.9
+  },
+  {
+    "id" : "191900DE-AC71-4161-8E34-E9C7D8C674A2",
+    "barcode" : "9897110043147",
+    "description" : "",
+    "name" : "Pawstar Yıldız Gabardin Köpek Ceket (XL)",
+    "stock" : 9999,
+    "price" : 275
+  },
+  {
+    "id" : "3CE462BD-D717-4426-9B7A-A850F26E3B5A",
+    "barcode" : "8681475624230",
+    "description" : "",
+    "name" : "Soft Gentle Küçük Boy Köpek Pati Yıkama Aparatı",
+    "stock" : 9999,
+    "price" : 90
+  },
+  {
+    "id" : "24DA04C1-E227-41A5-B22C-050716022614",
+    "barcode" : "8682689201293",
+    "description" : "",
+    "name" : "Zampa Köpekler İçin Üç Renk Halter Oyuncak (15 cm)",
+    "stock" : 10000,
+    "price" : 99.9
+  },
+  {
+    "id" : "05BE97D3-8324-4E54-8687-41BB7C07520D",
+    "barcode" : "8682689202689",
+    "description" : "",
+    "name" : "Zampa Rubber Kütük Şeklinde Köpek Ödül Oyuncağı (14,5 cm)",
+    "stock" : 10000,
+    "price" : 179.9
+  },
+  {
+    "id" : "ABEB8148-17AE-4607-A7EC-6FA3483E0964",
+    "barcode" : "6927053030904",
+    "description" : "",
+    "name" : "Nunbell Silikon Topu Oyuncağı (3'lü)",
+    "stock" : 10000,
+    "price" : 239.9
+  },
+  {
+    "id" : "D1CB3354-CBE3-45D7-854B-4DD252BD1199",
+    "barcode" : "8696219414145",
+    "description" : "",
+    "name" : "Irak Plastik WC Köpek Tuvaleti",
+    "stock" : 10000,
+    "price" : 249.9
+  },
+  {
+    "id" : "F57957F9-E64A-4F58-97BB-9E18495B930E",
+    "barcode" : "8681475627781",
+    "description" : "",
+    "name" : "Doglife Köpekler İçin Top Pcs Oyuncak",
+    "stock" : 10000,
+    "price" : 139.9
+  },
+  {
+    "id" : "6F190F8F-15D0-43B1-841B-B738BE562063",
+    "barcode" : "8681475628276",
+    "description" : "",
+    "name" : "Doglife Köpekler İçin Kauçuk Dumbel Oyuncak",
+    "stock" : 10000,
+    "price" : 149.9
+  },
+  {
+    "id" : "84206DCB-C507-4AF0-9907-93FB02602721",
+    "barcode" : "799493369830",
+    "description" : "",
+    "name" : "Royalist Giysili Ördek Köpek Oyuncağı",
+    "stock" : 10000,
+    "price" : 379.9
+  },
+  {
+    "id" : "E682B591-A812-41F2-88F9-B2782E28773F",
+    "barcode" : "799493369816",
+    "description" : "",
+    "name" : "Royalist Kirpi Köpek Oyuncağı (15 cm)",
+    "stock" : 10000,
+    "price" : 489.9
+  },
+  {
+    "id" : "C536A8CF-FEDC-4ACB-B380-C16C5400BDE0",
+    "barcode" : "8681475615313",
+    "description" : "",
+    "name" : "Doglife Köpekler İçin Sert Oyun Topu (20 cm)",
+    "stock" : 10000,
+    "price" : 89.9
+  },
+  {
+    "id" : "F4311C77-F8FE-46FA-A5FA-91547A9B41C0",
+    "barcode" : "8662214512766",
+    "description" : "",
+    "name" : "Petvogue Sesli Top Köpek Oyuncağı",
+    "stock" : 10000,
+    "price" : 49.9
+  },
+  {
+    "id" : "D97B42C3-D571-4BFC-B89D-FEC4A8165557",
+    "barcode" : "8683642010938",
+    "description" : "",
+    "name" : "Pawstar Sport Küçük Irk Mor Köpek Yeleği (S)",
+    "stock" : 10000,
+    "price" : 359.9
+  },
+  {
+    "description" : "",
+    "price" : 359.9,
+    "barcode" : "8683642010945",
+    "stock" : 10000,
+    "id" : "F34D9544-A9ED-4042-A48B-80138CA63A8A",
+    "name" : "Pawstar Sport Küçük Irk Mor Köpek Yeleği (M)"
+  },
+  {
+    "description" : "",
+    "price" : 359.9,
+    "barcode" : "8683642010952",
+    "stock" : 10000,
+    "id" : "BA435AC5-C2BC-45E8-A188-93AA69EB9CAB",
+    "name" : "Pawstar Sport Küçük Irk Mor Köpek Yeleği (L)"
+  },
+  {
+    "description" : "",
+    "price" : 359.9,
+    "barcode" : "8683642010969",
+    "stock" : 10000,
+    "id" : "E524DFC1-10C8-496E-B2CE-B1D2A9318E3E",
+    "name" : "Pawstar Sport Küçük Irk Mor Köpek Yeleği (XL)"
+  },
+  {
+    "description" : "",
+    "price" : 469.9,
+    "barcode" : "8845636985213",
+    "stock" : 10000,
+    "id" : "02A0EE1C-2598-4CE6-B667-2DBE74BFF725",
+    "name" : "Lion Pet Kuyruklu Peluş Köpek Oyuncak (6 cm)"
+  },
+  {
+    "description" : "",
+    "price" : 199.9,
+    "barcode" : "8681455639838",
+    "stock" : 10000,
+    "id" : "80C5F006-C3AC-45BC-BEC8-60436F976208",
+    "name" : "Ally Paws Köpek Ayakkabısı XS (No: 1)"
+  },
+  {
+    "description" : "",
+    "price" : 199.9,
+    "barcode" : "8681455639852",
+    "stock" : 10000,
+    "id" : "60F6FAA5-E5A6-4124-986A-AB42A608516D",
+    "name" : "Ally Paws Köpek Ayakkabısı M (No: 3)"
+  },
+  {
+    "description" : "",
+    "price" : 199.9,
+    "barcode" : "8681455639869",
+    "stock" : 10000,
+    "id" : "7032DE64-BCD9-42CA-A20A-81DC6D378115",
+    "name" : "Ally Paws Köpek Ayakkabısı L (No: 4)"
+  },
+  {
+    "description" : "",
+    "price" : 199.9,
+    "barcode" : "8681475639845",
+    "stock" : 10000,
+    "id" : "3A0AE9D2-5426-4532-A648-E2FB6EB0977E",
+    "name" : "Ally Paws Köpek Ayakkabısı S (No: 2)"
+  },
+  {
+    "description" : "",
+    "price" : 199.9,
+    "barcode" : "8681475639890",
+    "stock" : 10000,
+    "id" : "A42F21AE-01A7-43E3-B07A-7913DD865AE7",
+    "name" : "Ally Paws Köpek Ayakkabısı XXXL (4'lü)"
+  },
+  {
+    "description" : "",
+    "price" : 469,
+    "barcode" : "8712695101581;8712695103301",
+    "stock" : 10000,
+    "id" : "21720D27-F781-462B-8877-AE8211F8CFE2",
+    "name" : "Eastland Peluş Ördek Köpek Oyuncağı (30 cm)"
+  },
+  {
+    "description" : "",
+    "price" : 469,
+    "barcode" : "8712695105114",
+    "stock" : 10000,
+    "id" : "F3E99399-1F9D-4208-862D-5829FB01F68D",
+    "name" : "Eastland İpli Sesli Peluş Koyun Köpek Oyuncağı (25 cm)"
+  },
+  {
+    "description" : "",
+    "price" : 219,
+    "barcode" : "6317568680501",
+    "stock" : 10000,
+    "id" : "A9258431-09BF-4A30-A967-A1BE7ACFF21A",
+    "name" : "Pet Toys Senye Pembe - Mor Işıklı Top Köpek Oyuncağı (8 cm)"
+  },
+  {
+    "description" : "",
+    "price" : 200,
+    "barcode" : "8662214514586",
+    "stock" : 10000,
+    "id" : "C13F3AEE-1B9C-49B6-B92D-B68F403CE329",
+    "name" : "Demirhan Tenis Topu Köpek Oyuncağı (4'lü)"
+  },
+  {
+    "description" : "",
+    "price" : 199,
+    "barcode" : "8698931093646",
+    "stock" : 9999,
+    "id" : "89E92CE4-EEB0-41F9-9ADF-9DB49184F93D",
+    "name" : "Bio PetActive Vitalidog Paste Yavru Köpekler İçin Vitamin Macunu (100 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 110,
+    "barcode" : "8681475610028",
+    "stock" : 10000,
+    "id" : "7DC8B2E2-BAAF-48E7-960B-CC787817202E",
+    "name" : "Doglife Giyotin Köpek Tırnak Makası"
+  },
+  {
+    "description" : "",
+    "price" : 239.9,
+    "barcode" : "6927040081254",
+    "stock" : 10000,
+    "id" : "2C7EFD4B-181E-4FE2-A837-9421EE486056",
+    "name" : "Nunbell Çelik Mama Kabı İkili Tel Ayaklı (17 cm)"
+  },
+  {
+    "description" : "",
+    "price" : 110,
+    "barcode" : "8698931093752",
+    "stock" : 9999,
+    "id" : "6DD27386-E0D7-4D6E-95C0-F0498F697B6C",
+    "name" : "Bio PetActive Trainer Yavru ve Genç Köpekler İçin Tuvalet Eğitim Spreyi (100 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 139.9,
+    "barcode" : "8698931091475",
+    "stock" : 10000,
+    "id" : "79D0C74F-E836-4F7C-ABE4-E615E96E3162",
+    "name" : "Bio PetActive Köpek Tüy ve Deri Bakım Damlası 10-20 kg (3 x 3 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 199.9,
+    "barcode" : "8698931093042",
+    "stock" : 10000,
+    "id" : "186AEA59-0847-42D1-849E-E197C9B6C9EC",
+    "name" : "Bio PetActive Aloe Vera Özlü Köpek Şampuanı (400 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 160,
+    "barcode" : "8698931093172",
+    "stock" : 10000,
+    "id" : "98C82448-0550-4835-B789-3EF2B97FCDD2",
+    "name" : "Bio PetActive Aloe Vera Özlü Köpek Şampuanı (250 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 239.9,
+    "barcode" : "8698931092533",
+    "stock" : 10000,
+    "id" : "EC1CD8E6-C0FA-4B9E-8D24-D556031F4385",
+    "name" : "Bio PetActive Beyaz Tüylü Köpek Şampuanı (250 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 239.9,
+    "barcode" : "8698931092526",
+    "stock" : 10000,
+    "id" : "6F0D8D97-2DB4-4F44-862D-D5C3C3881281",
+    "name" : "Bio PetActive Black Pearl Siyah Tüylü Köpek Şampuanı (250 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 225,
+    "barcode" : "8698931094278",
+    "stock" : 10000,
+    "id" : "F0BE2F83-8801-420C-BDBB-307F6518086C",
+    "name" : "Bio PetActive Coprophagia Stool Eating Deterrent Köpekler İçin Dışkı Yeme Önleyici (60'lı)"
+  },
+  {
+    "description" : "",
+    "price" : 199,
+    "barcode" : "8698931093097",
+    "stock" : 9999,
+    "id" : "0A3CA3E1-4CD2-4828-9125-8AE858AC80C1",
+    "name" : "Bio PetActive Fancy Dişi Köpek Parfümü (50 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 239.9,
+    "barcode" : "8698931092540",
+    "stock" : 10000,
+    "id" : "8AB58B4A-81CF-40F6-BC9B-32806791E3A9",
+    "name" : "Bio PetActive Easy Grooming Uzun Tüylü Köpek Şampuanı (250 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 199,
+    "barcode" : "86989310931101",
+    "stock" : 9999,
+    "id" : "889B26E0-D0D8-4B42-A776-9C23F40FB462",
+    "name" : "Bio PetActive Flashy Parfüm (50 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 189.9,
+    "barcode" : "8698931093301",
+    "stock" : 10000,
+    "id" : "0796E723-C75A-4E53-8EF0-A118FCEBD232",
+    "name" : "Bio PetActive Lavanta ve Biberiye Özlü Toz Köpek Şampuan (150 g)"
+  },
+  {
+    "description" : "",
+    "price" : 229.9,
+    "barcode" : "8698931093837",
+    "stock" : 10000,
+    "id" : "8C7203D9-17DE-486D-A10C-2F906792A02D",
+    "name" : "Bio PetActive Herbalguard Antiseptik Köpek Bit Pire Şampuanı (250 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 199.9,
+    "barcode" : "8698931093059",
+    "stock" : 10000,
+    "id" : "19D09075-D2F9-4F4E-AF3C-3DCC14557497",
+    "name" : "Bio PetActive Papatya Özlü Yavru Köpek Şampuanı (400 ml)"
+  },
+  {
+    "description" : "",
+    "price" : 259.9,
+    "barcode" : "8698931094155",
+    "stock" : 10000,
+    "id" : "17637B3C-8B59-42C1-BF66-36011D3DB6BF",
+    "name" : "Bio PetActive Paw Nose Pati ve Burun Kremi (50 g)"
+  },
+  {
+    "description" : "",
+    "price" : 120,
+    "barcode" : "7860059681123",
+    "stock" : 10,
+    "id" : "8563073D-5FE2-49A0-B907-3E5224B8D24B",
+    "name" : "Captain's Premium Çiş Pedi 60 x 90 cm (10'lu)"
+  },
+  {
+    "description" : "",
+    "price" : 60,
+    "barcode" : "6901234567878",
+    "stock" : 10,
+    "id" : "10B1D7D3-5529-4082-96E1-64BC9A27A8C1",
+    "name" : "Elite Basmalı Tarak"
+  },
+  {
+    "description" : "",
+    "price" : 100,
+    "barcode" : "681475610066",
+    "stock" : 10000,
+    "id" : "E05C8473-448D-4CEA-9D2E-BDEC88786D72",
+    "name" : "Doglife Köpek Tırnak Makası Small"
+  },
+  {
+    "description" : "",
+    "price" : 149.9,
+    "barcode" : "8681475610110",
+    "stock" : 10000,
+    "id" : "52B34823-6EC3-4F5E-B791-40AB8530A19B",
+    "name" : "Doglife Köpekler İçin Tırnak Makası Mavi Large (16 cm)"
+  },
+  {
+    "description" : "",
+    "price" : 100,
+    "barcode" : "8681475610172",
+    "stock" : 10000,
+    "id" : "A4569DF1-09B4-4780-9CB4-4C4D7CC4DB96",
+    "name" : "Doglife Köpek Tırnak Makası (S)"
+  },
+  {
+    "description" : "",
+    "price" : 100,
+    "barcode" : "6909645601341",
+    "stock" : 10000,
+    "id" : "9D87EB26-CBEA-45F6-ABBC-884F03C6A36C",
+    "name" : "Cado Pet Köpekler İçin Pati Yıkama (10 x 15 cm)"
+  },
+  {
+    "name" : "Furminator Kısa Tüylü Köpekler İçin Tüy Tarağı (L)",
+    "id" : "E426B589-F604-4C20-8E9A-41EFA2DD1F61",
+    "barcode" : "811794010881",
+    "description" : "",
+    "price" : 300,
+    "stock" : 10
+  },
+  {
+    "name" : "Furminator Long Hair Uzun Tüylü Tüy Toplayıcı Tarak (XL)",
+    "id" : "C656D540-C022-4FF2-A9A2-7D93BD02F917",
+    "barcode" : "811794010911",
+    "description" : "",
+    "price" : 325,
+    "stock" : 10
+  },
+  {
+    "name" : "Bio PetActive Elagance Dişi Köpek Parfümü (50 ml)",
+    "id" : "639CE251-01A3-471B-BA16-0E3635ADAE70",
+    "barcode" : "8698931093103",
+    "description" : "",
+    "price" : 199,
+    "stock" : 9999
+  },
+  {
+    "name" : "Bio PetActive Vitalidog Paste Köpek Vitamin Macunu (100 ml)",
+    "id" : "4A8D2526-A14F-4958-AED2-B271B0757A7F",
+    "barcode" : "869893109250222",
+    "description" : "",
+    "price" : 199,
+    "stock" : 9999
+  },
+  {
+    "name" : "Nunbell Kıtık Açıcı Çengel Tarak (M)",
+    "id" : "87FCE13E-F299-4C94-A764-F12C2562059D",
+    "barcode" : "6927056040276",
+    "description" : "",
+    "price" : 180,
+    "stock" : 10000
+  },
+  {
+    "name" : "Nunbell Kıtık Açıcı Tek Taraflı Tarak (22 x 3 cm)",
+    "id" : "C530A995-15C6-4CAB-A8AA-31B0886AA684",
+    "barcode" : "6927056040184",
+    "description" : "",
+    "price" : 65,
+    "stock" : 10000
+  },
+  {
+    "name" : "Jokey Kırtasiye Köpek Dışkı Toplama Poşeti (4'lü)",
+    "id" : "116177D0-94CB-4497-8C22-5F906466F56D",
+    "barcode" : "9002260026968",
+    "description" : "",
+    "price" : 40,
+    "stock" : 10000
+  },
+  {
+    "name" : "Pawstar Köpek Regl Külodu (S)",
+    "id" : "04B08521-3CC6-4F49-832B-F9BEC094DC45",
+    "barcode" : "9897110060663",
+    "description" : "",
+    "price" : 95,
+    "stock" : 10000
+  },
+  {
+    "name" : "Pawstar Köpek Regl Külodu (L)",
+    "id" : "71F4960A-C781-408F-BBA5-7EB9C9F27798",
+    "barcode" : "9897110060687",
+    "description" : "",
+    "price" : 95,
+    "stock" : 10000
+  },
+  {
+    "name" : "Pawstar Köpek Regl Külodu (XS)",
+    "id" : "BE2B02A6-8402-4486-918E-3C524D69FD33",
+    "barcode" : "9897110060656",
+    "description" : "",
+    "price" : 95,
+    "stock" : 10000
+  },
+  {
+    "name" : "Pet Style Köpek Regl Külodu No: 1 (24 cm - 31 cm)",
+    "id" : "C9ACB5A0-491A-4339-B611-93C080A64A5B",
+    "barcode" : "86900000001",
+    "description" : "",
+    "price" : 120,
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Crazy Vanilya Kokulu Erkek Köpek Parfümü (50 ml)",
+    "id" : "D85037DF-7647-402D-8C42-384B3EBC4CC9",
+    "barcode" : "8698931093127",
+    "description" : "",
+    "price" : 199,
+    "stock" : 9999
+  },
+  {
+    "name" : "Bio PetActive Köpek Tüy ve Deri Bakım Damlası 20-40 kg (3 x 5 ml)",
+    "id" : "3343D613-551B-4FCE-A56C-31E89CB41C98",
+    "barcode" : "8698931091482",
+    "description" : "",
+    "price" : 149.9,
+    "stock" : 10000
+  },
+  {
+    "name" : "Pet Style Köpek Regl Külodu No: 3 (40 cm - 49 cm)",
+    "id" : "C6047638-3D1A-4098-B43B-9FAFE35A113D",
+    "barcode" : "86900000003",
+    "description" : "",
+    "price" : 160,
+    "stock" : 10000
+  },
+  {
+    "name" : "Sholk Hipoalerjenik Leke ve Kötü Koku Giderici Klor İçermeyen Çamaşır Suyu (750 ml)",
+    "id" : "5654671A-CF3D-49DB-BA26-7640F0DB8D29",
+    "barcode" : "8690536905638",
+    "description" : "",
+    "price" : 99,
+    "stock" : 10000
+  },
+  {
+    "name" : "Welfare Kauçuk Köpek Diş Fırçası Çiğneme Aparatı (9,5 cm)",
+    "id" : "390E9271-E0B7-4ADB-9AB8-5F74D4DA6FB7",
+    "barcode" : "6975754048353",
+    "description" : "",
+    "price" : 45,
+    "stock" : 10000
+  },
+  {
+    "name" : "Welfare Köpek Diş Fırçası Büyük Boy",
+    "id" : "F55A02E6-6862-4110-9022-D96C324DD801",
+    "barcode" : "8100000060041",
+    "description" : "",
+    "price" : 60,
+    "stock" : 10000
+  },
+  {
+    "name" : "Trixie Tüy Toplama Yedek Rulosu",
+    "id" : "E00347FA-D04B-4367-8C85-A04C3188FE17",
+    "barcode" : "4011905232300",
+    "description" : "",
+    "price" : 89.9,
+    "stock" : 10000
+  },
+  {
+    "name" : "Sholk Leke ve Kötü Koku Giderici Hijyenik Yüzey Temizleyici (1 L)",
+    "id" : "1E913BB4-4925-45E1-9EC1-8221A5BB2C09",
+    "barcode" : "8690536905621",
+    "description" : "",
+    "price" : 99,
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Sensitive Kısa Tüylü Köpek Şampuanı (250 ml)",
+    "id" : "8915FBBC-73F7-4784-BBEB-74F472A31B91",
+    "barcode" : "8698931092557",
+    "description" : "",
+    "price" : 239.9,
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Biodent Enzymatic Diş Macunu (100 ml)",
+    "id" : "AF7FF4FF-2050-4B6F-B247-0DBD9184B9C9",
+    "barcode" : "8698931094209",
+    "description" : "",
+    "price" : 300,
+    "stock" : 10000
+  },
+  {
+    "name" : "Power Time Mucize Pet Dış Parazit Etkili Bitkisel Köpek Şampuanı (200 ml)",
+    "id" : "3B9CB30B-6D6A-4EDD-95C1-0708B3AD0AA3",
+    "barcode" : "8652351478889",
+    "description" : "",
+    "price" : 120,
+    "stock" : 10000
+  },
+  {
+    "name" : "All Paws Köpekler İçin Diş İpi 10645 (20 cm)",
+    "id" : "E2F47DCD-7B6B-4C03-AF58-DB34265018B8",
+    "barcode" : "8681475636493",
+    "description" : "",
+    "price" : 145,
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Nature Köpek Tüy ve Deri Bakım Damlası 1 - 10 kg (3 x 1,5 ml)",
+    "id" : "98C09C2C-A1C5-4456-A62B-D4310C319925",
+    "barcode" : "8698931091468",
+    "description" : "",
+    "price" : 129.9,
+    "stock" : 10000
+  },
+  {
+    "name" : "Supreme Ekstra Emici Evcil Hayvan Eğitim Pedi 60 x 90 cm (30’lu)",
+    "id" : "FCA444BD-DB74-48E5-BECE-0C5E5F09E762",
+    "barcode" : "8684207638000",
+    "description" : "",
+    "price" : 319.9,
+    "stock" : 10000
+  },
+  {
+    "name" : "Dr. Power Dış Parazit Etkili Köpek Şampuanı (200 ml)",
+    "id" : "792D5CC8-6976-4BE1-8A4F-40AB3F4ED52C",
+    "barcode" : "8682588753927;8697695496236",
+    "description" : "",
+    "price" : 199.9,
+    "stock" : 10000
+  },
+  {
+    "name" : "Golden Diapers Köpek Bezi S (10'lu)",
+    "id" : "41A3563F-EA80-48B8-B7FB-1B5D741A901A",
+    "barcode" : "8682723814519",
+    "description" : "",
+    "price" : 300,
+    "stock" : 10000
+  },
+  {
+    "name" : "Golden Diaper Köpek Alt Bağlama Bezi (M)",
+    "id" : "C4ACCA06-5937-42BF-950F-23B9E3466974",
+    "barcode" : "8682723814526",
+    "description" : "",
+    "price" : 320,
+    "stock" : 10000
+  },
+  {
+    "name" : "Golden Diaper Köpek Alt Bağlama Bezi (L)",
+    "id" : "108ED615-DDAB-44CE-A21E-BB5E69B70F78",
+    "barcode" : "8682723814533",
+    "description" : "",
+    "price" : 360,
+    "stock" : 10000
+  },
+  {
+    "name" : "Golden Kedi Köpek Çiş Pedi 60 x 90 cm (10'lu)",
+    "id" : "F2421372-4EE5-4405-BCFF-27F8684E5C5E",
+    "barcode" : "8682723814038",
+    "description" : "",
+    "price" : 110,
+    "stock" : 10000
+  },
+  {
+    "name" : "Enjoy Meyveli Muhabbet Kuş Yemi (400 g)",
+    "id" : "F0FCE9CC-BC42-4A2E-8AAE-7C6191F30075",
+    "barcode" : "8698995005760",
+    "description" : "",
+    "price" : 50,
+    "stock" : 10000
+  },
+  {
+    "name" : "Enjoy Mix Muhabbet Kuşu Yemi (400 g)",
+    "id" : "E32365FA-EA4F-4608-8D8E-8BC0CAAB487A",
+    "barcode" : "8698995005777",
+    "description" : "",
+    "price" : 50,
+    "stock" : 10000
+  },
+  {
+    "name" : "Enjoy Paraket Yemi (700 g)",
+    "id" : "3B932BE0-8817-48AE-A3E2-192BB78C5E67",
+    "barcode" : "86989950005791;8698995005791",
+    "description" : "",
+    "price" : 90,
+    "stock" : 10000
+  },
+  {
+    "name" : "Nature Plan Paraket Sultan Cennet Papağanı Yemi (800 g)",
+    "id" : "BE1E8BD8-7E30-4D93-A318-D471D2898C3C",
+    "barcode" : "8699004230548",
+    "description" : "",
+    "price" : 140,
+    "stock" : 10000
+  },
+  {
+    "name" : "Nature Plan Kanarya Yemi (500 g)",
+    "id" : "632CF243-0DE4-4D52-A665-959B66024411",
+    "barcode" : "8699004230531",
+    "description" : "",
+    "price" : 140,
+    "stock" : 10000
+  },
+  {
+    "name" : "Kardelen Aynalı Kuş Salıncağı",
+    "id" : "E1020F9A-EEDA-46DF-BF06-4A70325625CD",
+    "barcode" : "8680624801119",
+    "description" : "",
+    "price" : 40,
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "6540E552-6953-4BDF-94B6-EDA8471C3DC2",
+    "name" : "Birdlife Kuş Salıncağı (12 cm)",
+    "price" : 35,
+    "barcode" : "8680440705097",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "BD7F778F-6404-4FF5-9786-D4E9795EA0A8",
+    "name" : "Birdlife Yer Mamalığı",
+    "price" : 10,
+    "barcode" : "8690000430635",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "639A2537-7EEC-446E-9E25-844320238F0A",
+    "name" : "Eastland Ahşap Kuş Yuvası (11 x 13 x 18 cm)",
+    "price" : 100,
+    "barcode" : "8697421495205",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "6E234088-68CE-43EA-BDD2-E3D2F5AD96E3",
+    "name" : "Fit Fly Boncuklu Ahşap Tünekli Kuş Salıncağı (15 x 24 cm)",
+    "price" : 35,
+    "barcode" : "1910001155762;910001155762",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "BBAD3F39-2D01-42E0-B492-662821B35564",
+    "name" : "Fit Fly Kuş Yuvası İçin Yıldız Keçe (14 cm)",
+    "price" : 20,
+    "barcode" : "8680067140561",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "BA2450D9-0CC2-46D5-97E3-0E2F23039230",
+    "name" : "Fit Fly Tahta Tünek (40 cm)",
+    "price" : 20,
+    "barcode" : "1910000364134",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "BF539713-0D25-41F2-AE89-F1ED95804608",
+    "name" : "Fit Fly Akıllı Yemlik",
+    "price" : 69.9,
+    "barcode" : "8681299602506",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "AFB6D28B-41A9-4B56-877B-96B9489882E0",
+    "name" : "Cicimpet Renkli Kafes Tülü (M)",
+    "price" : 60,
+    "barcode" : "058585890596;58585890596",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "8B427E07-18EC-491E-B33E-8A3655FC59A7",
+    "name" : "Cicimpet Kafes Tülü Renkli (S)",
+    "price" : 60,
+    "barcode" : "05596596956;5596596956",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "468C3980-9A49-4702-8FF5-2589A05C86A3",
+    "name" : "Joyful Kanarya Iç Yuva Plastik",
+    "price" : 15,
+    "barcode" : "2417724743430",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "9F5FE5B8-8AFA-4BDD-A497-AF1D1515C974",
+    "name" : "Karlie Ahşap Kuş Salıncağı (13 x 13 x 13 cm)",
+    "price" : 39.9,
+    "barcode" : "4016598883716",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "80A65C0D-197A-4105-87B3-B057F169401B",
+    "name" : "Cicimpet Renkli Kafes Tülü (L)",
+    "price" : 60,
+    "barcode" : "048151548956;48151548956",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "6C401C6E-4AF5-4BC7-9C6D-58B59AB06D0B",
+    "name" : "Ti-Sert Büyük Gaga Kuş Suluk (200 ml)",
+    "price" : 30,
+    "barcode" : "8680067140455",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "11211361-7C14-4C55-9534-556B450DFA9A",
+    "name" : "Ti-Sert Bıcı Bıcı Kuş Banyosu (12 x 12 x 13 cm)",
+    "price" : 79.9,
+    "barcode" : "8680067140486",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "EB7DA04A-E649-48AD-8D0B-175DF01E1C52",
+    "name" : "Ti-Sert Kristal Plastik Yemlik",
+    "price" : 25,
+    "barcode" : "8680067140370",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "8A22E627-F3CA-46CB-A649-A96E926195D9",
+    "name" : "Birdlife Üçgen Kuş Salıncağı",
+    "price" : 39.9,
+    "barcode" : "8680440705035",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "0BD25E3C-78C7-4CEB-B242-49936D2AD453",
+    "name" : "Fit Fly Kanarya İç Yuva Plastik",
+    "price" : 25,
+    "barcode" : "8680067140554",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "2F160CBB-D1A8-4C65-8044-4243B3851A57",
+    "name" : "Vitaking Kuş Kumu (200 g)",
+    "price" : 45,
+    "barcode" : "8690391061227",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "BC6F93BA-40CB-43E5-91C8-C946BAD2C327",
+    "name" : "Deep Multisol Kuş Vitamini (30 ml)",
+    "price" : 75,
+    "barcode" : "8698931091000",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "A873DCD6-2EE5-4751-B0E2-61305A092BFF",
+    "name" : "Dr. Heigel's E + SE Vitaminli Kızgınlaştırıcı (50 ml)",
+    "price" : 59.9,
+    "barcode" : "8682376250122",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "41986874-0A8B-4E44-BE08-F31841C7F3EC",
+    "name" : "Majo Dermabit Kuş Spreyi (200 ml)",
+    "price" : 69,
+    "barcode" : "8680614007439",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "876E93BF-0C9E-4851-AFB1-12C46FB1DB37",
+    "name" : "Nutri Fresh Kuşlar İçin Astım",
+    "price" : 59.9,
+    "barcode" : "8682376200257",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "50C66275-2D77-4770-A98D-F4B4E16C2F2F",
+    "name" : "Nutri Diarex İshal Kesici & Sindirim Düzenleyici (50 ml)",
+    "price" : 59.9,
+    "barcode" : "8682376200165",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "8A4D5B35-DCB8-428B-8756-1F4A4FE146F2",
+    "name" : "Nutri Süper Bird Multivitamin (50 ml)",
+    "price" : 59.9,
+    "barcode" : "8682376200189",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "4DF53420-DA94-4E7A-8DC8-A4F6D015AB16",
+    "name" : "Quik Kuşlar İçin Mineral Blok Gaga Taşı (5 cm)",
+    "price" : 25,
+    "barcode" : "8680468041047",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "1E12D941-8AF0-4C9F-90E4-052F12983BA2",
+    "name" : "Quik Kuşlar İçin Büyük Boy Mürekkep Balığı Kemiği",
+    "price" : 75,
+    "barcode" : "8680468040958",
+    "stock" : 9999
+  },
+  {
+    "description" : "",
+    "id" : "129CF640-7DA6-44B4-99D6-FBCA2D8BDD4A",
+    "name" : "Vitaking Kalamar Kemiği",
+    "price" : 65,
+    "barcode" : "8690391062064",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "E80F537C-33A1-49BA-A4FF-E9CB7E81415C",
+    "name" : "Uzak Doğu Renkli Plastik Yapraklı Akvaryum Bitkisi (16 cm)",
+    "price" : 49.9,
+    "barcode" : "6949678100039",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "B1E33B49-9302-4929-BE2E-1BFB096D4C13",
+    "name" : "Natural Colors Renkli Akvaryum Taşı (1 kg)",
+    "price" : 39.9,
+    "barcode" : "8695005302161",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "ECB4554C-FBB1-4B39-BB8D-B8F483619882",
+    "name" : "Orijin Pet Akvaryumlar İçin Yuvarlak Hava Taşı (3 cm)",
+    "price" : 15,
+    "barcode" : "6920299354179",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "14166730-58E8-467B-B00B-BB08AB6AFDAC",
+    "name" : "Atlantik 1200F Akvaryum İç Filtre (8 W)",
+    "price" : 499,
+    "barcode" : "8698764340245",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "3F72EFC8-83F9-4444-BCBC-BEF6AC04F6B0",
+    "name" : "Aquawing Aq008 Tek Çıkışlı Hava Motoru (2,5 W)",
+    "price" : 249.9,
+    "barcode" : "8681475613104",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "8EEDF4F5-1596-4AA7-B595-0974425F26DB",
+    "name" : "Smart Akvaryum Isıtıcısı (300 W)",
+    "price" : 489.9,
+    "barcode" : "9900000258025",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "52594D5B-169E-469E-880B-98459D386049",
+    "name" : "Smart Akvaryum Isıtıcısı (100 W)",
+    "price" : 469.9,
+    "barcode" : "8011192541398;9900000258023",
+    "stock" : 10000
+  },
+  {
+    "description" : "",
+    "id" : "E8998D39-15B8-43DB-AF9B-1B77D34F1E9F",
+    "name" : "Dr. Heigel's Contra Aqua Deri Losyonu (30 ml)",
+    "price" : 35,
+    "barcode" : "8682376250320",
+    "stock" : 10
+  },
+  {
+    "description" : "",
+    "id" : "CFBDF202-8318-4149-8556-3AE400522E42",
+    "name" : "Flip Vidalı Hamster Çarkı (12 cm)",
+    "price" : 35,
+    "barcode" : "6928797810845",
+    "stock" : 9999
+  },
+  {
+    "name" : "Nature Plan Tavşan Yemi (800 g)",
+    "price" : 80,
+    "id" : "98627E46-F2B0-465B-A88C-9A44C6EB7AD7",
+    "description" : "",
+    "barcode" : "8699004230135",
+    "stock" : 10000
+  },
+  {
+    "name" : "Naturel Plane Tavşan Yemi (800 g)",
+    "price" : 140,
+    "id" : "016F1C03-E1CF-4BFC-B243-DE05624260C7",
+    "description" : "",
+    "barcode" : "8699004230586",
+    "stock" : 10000
+  },
+  {
+    "name" : "Enjoy Kemirgen Yemi (700 g)",
+    "price" : 75,
+    "id" : "75661456-A5BF-4F22-90ED-A18227178755",
+    "description" : "",
+    "barcode" : "8698995005814",
+    "stock" : 10000
+  },
+  {
+    "name" : "Fizzy Kemirgen Yoncası (350 g)",
+    "price" : 90,
+    "id" : "BF436D84-B555-4B90-B346-55A7F33D2611",
+    "description" : "",
+    "barcode" : "8682368290433",
+    "stock" : 10000
+  },
+  {
+    "name" : "Zampa Kemirgenler İçin Suluk (125 ml)",
+    "price" : 180,
+    "id" : "6509A7A0-2717-464A-BFA4-96EC27A56894",
+    "description" : "",
+    "barcode" : "8682689201002",
+    "stock" : 10000
+  },
+  {
+    "name" : "Baysa Tüy Toplayıcı Gırgırlı BYS 930",
+    "price" : 120,
+    "id" : "56CB492A-A88B-4856-9BE4-DFB3BAB77491",
+    "description" : "",
+    "barcode" : "8682966139301",
+    "stock" : 10000
+  },
+  {
+    "name" : "Proff Tüy Toparlayıcı Rulo (1 + 2 Yedek)",
+    "price" : 180,
+    "id" : "59F0ED9E-5887-4617-8286-2A4DD5CE1CE3",
+    "description" : "",
+    "barcode" : "8681503003235",
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Kedi ve Köpek Gözyaşı Lekesi Temizleyici Losyon (50 ml)",
+    "price" : 90,
+    "id" : "00E9E94D-680B-4C4C-9ABA-BAB11E16B83F",
+    "description" : "",
+    "barcode" : "8698931093325",
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Kedi ve Köpek Temizlemek İçin Islak Mendil (25'li)",
+    "price" : 89.9,
+    "id" : "836F4071-0413-4A5A-8EA1-8AD2E2346656",
+    "description" : "",
+    "barcode" : "8698931093677",
+    "stock" : 9999
+  },
+  {
+    "name" : "Bio PetActive Aloe Vera ve Buğday Özlü Kedi ve Köpek Köpük Şampuan (200 ml)",
+    "price" : 249,
+    "id" : "69C05D52-13D9-4BBE-8CD2-D763300A3454",
+    "description" : "",
+    "barcode" : "8698931093073",
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Kedi ve Köpek Kulak Temizleme Losyonu (100 ml)",
+    "price" : 90,
+    "id" : "06253159-8062-413D-8CA8-38087E6450D0",
+    "description" : "",
+    "barcode" : "8698931093295",
+    "stock" : 10000
+  },
+  {
+    "name" : "Furminator Kedi ve Köpek Tarağı S",
+    "price" : 295,
+    "id" : "64E12A2C-DAF8-4F7B-A552-66B43F91E27D",
+    "description" : "",
+    "barcode" : "81179401092",
+    "stock" : 10
+  },
+  {
+    "name" : "Fun Wizard Kedi ve Köpek Tüy Toplama Fırça Seti",
+    "price" : 90,
+    "id" : "67F16D50-5C80-414B-9C3F-4569A4E7990B",
+    "description" : "",
+    "barcode" : "6919990074745;8521487563243",
+    "stock" : 10000
+  },
+  {
+    "name" : "Furminator Kedi ve Köpek Tüy Tarağı M (6,8 cm)",
+    "price" : 295,
+    "id" : "125B1142-3351-44EB-85D1-DC1B9CB04B2A",
+    "description" : "",
+    "barcode" : "854460001127",
+    "stock" : 10
+  },
+  {
+    "name" : "Pet Style Yavru Kedi ve Köpek Biberon Seti (50 ml)",
+    "price" : 95,
+    "id" : "008F8083-8AE2-49D3-9970-B261C45A2685",
+    "description" : "",
+    "barcode" : "8697458623459",
+    "stock" : 10
+  },
+  {
+    "name" : "Puffy Love Kedi ve Köpek Beyaz Çiçek Kokulu Yüzey Temizleyici (960 ml)",
+    "price" : 89.9,
+    "id" : "DE58BCD5-C80B-426C-BF10-94C6058CBCDF",
+    "description" : "",
+    "barcode" : "8683130001844",
+    "stock" : 10000
+  },
+  {
+    "name" : "Royalist Çift Taraflı Kedi ve Köpek Tarağı",
+    "price" : 84.9,
+    "id" : "0B52B208-0894-4206-AC28-D138C51F1DB4",
+    "description" : "",
+    "barcode" : "8690000002245",
+    "stock" : 10
+  },
+  {
+    "name" : "Nerox Kedi ve Köpek Tüy Toplama Rulosu (60 Yaprak)",
+    "price" : 60,
+    "id" : "29BD0CE9-BA31-4D18-AD95-3B3FFFF3CC50",
+    "description" : "",
+    "barcode" : "8681689904562",
+    "stock" : 10
+  },
+  {
+    "name" : "Nunbell Tek Taraflı Kıtık Açıcı Köpek Tarağı",
+    "price" : 245,
+    "id" : "B6618F86-32C7-4161-A62B-3B75D3DD88A4",
+    "description" : "",
+    "barcode" : "6092700010360",
+    "stock" : 10000
+  },
+  {
+    "name" : "Verseche Arc Kedi ve Köpek Parfümü (50 ml)",
+    "price" : 100,
+    "id" : "B08D18FB-D48F-4A89-B908-C8D2AEE212A5",
+    "description" : "",
+    "barcode" : "3461721500090;3461721500092",
+    "stock" : 10000
+  },
+  {
+    "name" : "Petzoom Jiletli Kedi ve Köpek Tarağı",
+    "price" : 249.9,
+    "id" : "64D5EF3C-E2A9-4322-BF16-96C757518393",
+    "description" : "",
+    "barcode" : "8682538366913",
+    "stock" : 10000
+  },
+  {
+    "name" : "Welfare Kedi ve Köpek Tüy Toplayıcı Eldiven",
+    "price" : 69.9,
+    "id" : "3C61F5D1-699F-4DB1-ABD8-9462EAF0F73E",
+    "description" : "",
+    "barcode" : "15336720336;153367203361;153387603381;6541357452110",
+    "stock" : 10
+  },
+  {
+    "name" : "Clean Basmalı Kedi ve Köpek Tarağı Mavi",
+    "price" : 120,
+    "id" : "D1FAA22A-D5FC-445F-88C3-2923119B9B1F",
+    "description" : "",
+    "barcode" : "5678902022195;5245343218865;2022051700010",
+    "stock" : 10000
+  },
+  {
+    "name" : "Royalist Beauty Kedi ve Köpek Parfümü (100 ml)",
+    "price" : 189.9,
+    "id" : "D116F396-1B50-403D-9B98-2490F860E65B",
+    "description" : "",
+    "barcode" : "8682291404679",
+    "stock" : 10000
+  },
+  {
+    "name" : "Clean Basmalı Kedi ve Köpek Tarağı Pembe",
+    "price" : 120,
+    "id" : "D8952DE0-55D2-4D88-9180-7FA63DDFD711",
+    "description" : "",
+    "barcode" : "8662214510199",
+    "stock" : 10000
+  },
+  {
+    "name" : "Hepsipatili Şampuan Hazneli Silikon Banyo Fırçası",
+    "price" : 60,
+    "id" : "21B7C9BD-A064-4825-A256-9C81DD8D14BC",
+    "description" : "",
+    "barcode" : "6997963613436",
+    "stock" : 10000
+  },
+  {
+    "name" : "Golden Kedi ve Köpek Alıştırma Pedi 60 x 90 cm (30'lu)",
+    "price" : 270,
+    "id" : "509F50F3-1D03-4D93-9D3A-86610A8B8DEA",
+    "description" : "",
+    "barcode" : "8682723814021",
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Pure Paws Pati Temizleme Köpüğü (150 ml)",
+    "price" : 230,
+    "id" : "3FF14D00-68CC-4DFA-8BC8-FD18D6430E7B",
+    "description" : "",
+    "barcode" : "8698931094414",
+    "stock" : 10000
+  },
+  {
+    "name" : "Petpretty Kedi ve Köpek Parmak Diş Fırçası",
+    "price" : 40,
+    "id" : "FB7A70A8-6485-4C69-86DF-3952F6F13E1F",
+    "description" : "",
+    "barcode" : "6902002015010",
+    "stock" : 10000
+  },
+  {
+    "name" : "Golden Diaper Köpek Alt Bağlama Bezi (XS)",
+    "price" : 280,
+    "id" : "6BD0C8B6-2A4B-4256-B788-6753DF1F2218",
+    "description" : "",
+    "barcode" : "8682723814502",
+    "stock" : 10000
+  },
+  {
+    "name" : "Reflex Care Kaydırmaz Köpek Alıştırma Pedi (30'lu - 60 x 90 cm)",
+    "price" : 360,
+    "id" : "74C338FF-33B3-47DC-B6AB-8E2A336AC660",
+    "description" : "",
+    "barcode" : "8698995033220",
+    "stock" : 10000
+  },
+  {
+    "name" : "Reflex Care Evcil Hayvan Temizleme Mendili (50 Yaprak)",
+    "price" : 75,
+    "id" : "32554608-60B2-455E-8956-08311B70FDF8",
+    "description" : "",
+    "barcode" : "8698995034579",
+    "stock" : 10000
+  },
+  {
+    "name" : "Garden Mix Kedi ve Köpekler İçin Balık Yağı (200 ml)",
+    "price" : 259.9,
+    "id" : "6B810217-07BB-460B-A904-A8A72B6DDCB6",
+    "description" : "",
+    "barcode" : "8681085430481",
+    "stock" : 10000
+  },
+  {
+    "name" : "Bio PetActive Biodent Mist Kedi ve Köpek Ağız Bakım Spreyi (50 ml)",
+    "price" : 225,
+    "id" : "74A44BF4-BA42-4D76-A789-38B91F38FAB5",
+    "description" : "",
+    "barcode" : "8698931094766",
+    "stock" : 10000
+  },
+  {
+    "name" : "Proff Geniş Yüzeyler İçin Large Tüy Toplayıcı Rulo (60 Yaprak)",
+    "price" : 180,
+    "id" : "930C366A-0467-4269-8C1D-F2780DD06E9E",
+    "description" : "",
+    "barcode" : "8681503003440",
+    "stock" : 10000
+  },
+  {
+    "name" : "Reflex Care Nergis Çiçeği Kokulu Evcil Hayvanlar Çok Amaçlı Hijyenik Temizleme Mendili (50'li)",
+    "price" : 109.9,
+    "id" : "57257209-5375-47FC-B179-038C21BBC11E",
+    "description" : "",
+    "barcode" : "8698995037594",
+    "stock" : 10000
+  },
+  {
+    "barcode" : "53202852",
+    "price" : 819.9,
+    "id" : "EFA64326-6E1B-41EA-8626-4ADE2FF01A54",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Lavista Tomris Kedi ve Köpek Taşıma Çantası Kırmızı (25 x 40 x 25 cm)"
+  },
+  {
+    "barcode" : "8681475623943",
+    "price" : 379.9,
+    "id" : "4945A94B-5EFD-4750-BB56-C4168176617B",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Doglife Panda Şekilli Kedi ve Köpek Mama & Su Kabı (2 Adet)"
+  },
+  {
+    "barcode" : "80106901784553",
+    "price" : 349.9,
+    "id" : "FECF3912-9079-45C6-A9AC-8218BF8AD3F6",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Ferplast Peluş Pembe Domuz Hışırtılı Köpek Diş Kaşıma Oyuncağı (25 cm)"
+  },
+  {
+    "barcode" : "8698931092397",
+    "price" : 45,
+    "id" : "ECDEC11E-D6AC-4CE6-8455-998F5F3FB1A6",
+    "description" : "",
+    "stock" : 9999,
+    "name" : "Bio PetActive Nursing Bottle Kedi ve Köpek Biberonu (100 ml)"
+  },
+  {
+    "barcode" : "8681999482804",
+    "price" : 225,
+    "id" : "522B8FA2-3471-4E41-970F-E13DFD552F58",
+    "description" : "",
+    "stock" : 10,
+    "name" : "Petpretty Kedi ve Köpek Taşıma Kabı Küçük (47 x 29 x 33 cm)"
+  },
+  {
+    "barcode" : "8690000434701",
+    "price" : 179,
+    "id" : "0879BACF-570A-48F8-9A88-EBC6CA63F62D",
+    "description" : "",
+    "stock" : 10,
+    "name" : "PetMaster Box Orta Boy Kedi ve Köpek Taşıma Kutusu"
+  },
+  {
+    "barcode" : "86836420032006",
+    "price" : 279.9,
+    "id" : "ADDF0C34-42CA-4DCC-8D91-3AEA2F794062",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Pawstar Pötikareli Kahverengi Kedi ve Köpek Gömleği"
+  },
+  {
+    "barcode" : "8696219415067",
+    "price" : 150,
+    "id" : "10C2D61E-DE56-4FEC-A579-CB112C453B93",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Plastart Hazneli Kedi Köpek Mama ve Su Kabı (1,5 L)"
+  },
+  {
+    "barcode" : "2022090101311;8690000004676",
+    "price" : 120,
+    "id" : "5E1BE284-7F7D-416C-885B-C2F783713BEE",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Demirhan Clean Gri Basmalı Tarak"
+  },
+  {
+    "barcode" : "8683642031094",
+    "price" : 679.9,
+    "id" : "8E20D29F-E048-4E5C-B3CB-D2ECAEB80716",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Pawstar Kırmızı Crossbody Kedi ve Köpek Taşıma Çantası"
+  },
+  {
+    "barcode" : "8662214514654",
+    "price" : 99.9,
+    "id" : "8548C782-2C0C-49D6-8553-AD64CDD37364",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Glipet Hareketli Tırtıl Kedi ve Köpek Oyuncağı (17 cm)"
+  },
+  {
+    "barcode" : "8690000008056",
+    "price" : 1499,
+    "id" : "554F8030-86C3-4971-A014-0E6179E4CD64",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Chakie Kedi ve Köpek İçin Kulübe Yatak (40 x 49 x 56 cm)"
+  },
+  {
+    "barcode" : "1589526585486",
+    "price" : 1350,
+    "id" : "B1983094-CC54-4C82-A586-09FC0E47A143",
+    "description" : "",
+    "stock" : 10000,
+    "name" : "Migno Nexus Astronot Pembe Kedi ve Köpek Taşıma Çantası (44 x 34 x 32 cm)"
+  }
+]
