@@ -1,10 +1,10 @@
 [
   {
-    "description" : "pet",
-    "stock" : 112,
-    "price" : 123,
+    "description" : "1234",
+    "price" : 12345,
     "name" : "pet",
     "barcode" : "1",
-    "id" : "12DDD2E6-47F1-406D-9B8D-18EB9A2097DF"
+    "stock" : 1111,
+    "id" : "CDAD4D46-0898-435A-8239-3407A9CE5C4F"
   }
 ]
