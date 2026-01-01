@@ -185,9 +185,9 @@ class DataManager: ObservableObject {
             self.saveProductsToLocal()
             print("✅ Product added to list: \(product.name) (Total: \(self.products.count))")
         }
-        // GitHub'a push et (arka planda, yeniden yükleme yapma)
+        // GitHub'a push et (sadece products, sales ayrı kaydedilecek)
         Task {
-            await syncToGitHub()
+            await syncProductsToGitHub()
         }
     }
     
@@ -202,9 +202,40 @@ class DataManager: ObservableObject {
                 print("✅ Product updated in list: \(product.name)")
             }
         }
-        // GitHub'a push et (arka planda, yeniden yükleme yapma)
+        // GitHub'a push et (sadece products, sales ayrı kaydedilecek)
         Task {
-            await syncToGitHub()
+            await syncProductsToGitHub()
+        }
+    }
+    
+    /// Sadece products'ı GitHub'a kaydeder (sales'i kaydetmez)
+    private func syncProductsToGitHub() async {
+        guard githubService.hasAPIURL() || githubService.hasToken() else {
+            await MainActor.run {
+                lastError = "GitHub bağlantısı bulunamadı"
+            }
+            return
+        }
+        
+        // Firma seçili değilse kaydetme
+        guard companyManager.currentCompany != nil else {
+            return
+        }
+        
+        let productsPath = companyManager.getCompanyDataPath(file: "products.json")
+        
+        do {
+            try await githubService.saveProducts(products, path: productsPath)
+            print("✅ Products synced successfully")
+            await MainActor.run {
+                lastError = nil
+            }
+        } catch {
+            let errorMsg = "Ürünler kaydedilemedi: \(error.localizedDescription)"
+            await MainActor.run {
+                lastError = errorMsg
+            }
+            print("❌ Error syncing products: \(error)")
         }
     }
     
@@ -258,13 +289,49 @@ class DataManager: ObservableObject {
     
     // MARK: - Sales Management
     func addSale(_ sale: Sale) {
-        sales.append(sale)
-        saveSalesToLocal()
-        cleanupOldSales()
+        // Satışı hemen ekle (MainActor'da @Published değişkeni güncelle)
+        Task { @MainActor [weak self] in
+            guard let self = self else { return }
+            self.sales.append(sale)
+            self.saveSalesToLocal()
+            self.cleanupOldSales()
+            print("✅ Sale added to list: \(sale.items.count) items, Total: \(sale.totalAmount) (Total sales: \(self.sales.count))")
+        }
+        
+        // GitHub'a push et (sadece sales, products ayrı kaydedilecek)
         Task {
-            await syncToGitHub()
-            // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
-            await loadDataFromGitHub()
+            await syncSalesToGitHub()
+        }
+    }
+    
+    /// Sadece sales'i GitHub'a kaydeder (products'ı kaydetmez)
+    private func syncSalesToGitHub() async {
+        guard githubService.hasAPIURL() || githubService.hasToken() else {
+            await MainActor.run {
+                lastError = "GitHub bağlantısı bulunamadı"
+            }
+            return
+        }
+        
+        // Firma seçili değilse kaydetme
+        guard companyManager.currentCompany != nil else {
+            return
+        }
+        
+        let salesPath = companyManager.getCompanyDataPath(file: "sales.json")
+        
+        do {
+            try await githubService.saveSales(sales, path: salesPath)
+            print("✅ Sales synced successfully")
+            await MainActor.run {
+                lastError = nil
+            }
+        } catch {
+            let errorMsg = "Satışlar kaydedilemedi: \(error.localizedDescription)"
+            await MainActor.run {
+                lastError = errorMsg
+            }
+            print("❌ Error syncing sales: \(error)")
         }
     }
     
