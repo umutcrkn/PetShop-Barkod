@@ -250,18 +250,17 @@ class GitHubService {
                 }
                 
                 throw GitHubError.httpError(httpResponse.statusCode)
-            } catch {
+            } catch let error as GitHubError {
                 lastError = error
-                // 409 hatası değilse veya son denemeyse hata fırlat
-                if !(error is GitHubError && case .httpError(409) = error as! GitHubError) || attempt == maxRetries - 1 {
-                    throw error
-                }
                 // 409 hatası ise ve daha deneme hakkı varsa devam et
-                if let gitHubError = error as? GitHubError, case .httpError(409) = gitHubError {
+                if case .httpError(409) = error, attempt < maxRetries - 1 {
                     let delay = Double(attempt + 1) * 0.5
                     try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
                     continue
                 }
+                throw error
+            } catch {
+                lastError = error
                 throw error
             }
         }
