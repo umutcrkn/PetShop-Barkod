@@ -1,17 +1,17 @@
 [
   {
+    "totalAmount" : 120,
     "items" : [
       {
-        "totalPrice" : 120,
+        "unitPrice" : 120,
         "productBarcode" : "7622100744030",
-        "quantity" : 1,
+        "id" : "74193399-C8C4-45D1-9E2A-81A8573B37D0",
+        "totalPrice" : 120,
         "productName" : "Terea",
-        "id" : "FE1F3124-DC12-4A0A-BE84-0B92A2598543",
-        "unitPrice" : 120
+        "quantity" : 1
       }
     ],
-    "totalAmount" : 120,
-    "id" : "9D3B8827-EAD7-4AFB-AB56-775880783A2B",
-    "date" : "2026-01-01T17:49:33Z"
+    "id" : "398BFD6F-42E7-483B-B1DC-B2446125A420",
+    "date" : "2026-01-01T17:50:51Z"
   }
 ]
