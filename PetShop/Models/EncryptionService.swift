@@ -52,6 +52,18 @@ class EncryptionService {
             }
             
             // GitHub'da key yoksa oluştur ve kaydet
+            // Önce tekrar kontrol et (race condition için)
+            let retryData = try? await githubService.getFileContent(path: encryptionKeyPath)
+            if let retryData = retryData, !retryData.isEmpty,
+               let keyData = try? JSONDecoder().decode(EncryptionKeyData.self, from: retryData),
+               let keyBytes = Data(base64Encoded: keyData.key) {
+                // Başka bir cihaz key'i oluşturmuş, onu kullan
+                self.key = SymmetricKey(data: keyBytes)
+                UserDefaults.standard.set(keyBytes, forKey: "EncryptionKey")
+                return
+            }
+            
+            // Hala yoksa oluştur
             let newKey = SymmetricKey(size: .bits256)
             let keyBytes = newKey.withUnsafeBytes { Data($0) }
             let keyData = EncryptionKeyData(key: keyBytes.base64EncodedString())
@@ -60,14 +72,31 @@ class EncryptionService {
             encoder.outputFormatting = .prettyPrinted
             let encodedData = try encoder.encode(keyData)
             
-            try await githubService.putFileContent(
-                path: encryptionKeyPath,
-                content: encodedData,
-                message: "Create encryption key"
-            )
-            
-            self.key = newKey
-            UserDefaults.standard.set(keyBytes, forKey: "EncryptionKey")
+            // Dosya oluşturmayı dene, 409 hatası alırsak tekrar yükle
+            do {
+                try await githubService.putFileContent(
+                    path: encryptionKeyPath,
+                    content: encodedData,
+                    message: "Create encryption key"
+                )
+                
+                self.key = newKey
+                UserDefaults.standard.set(keyBytes, forKey: "EncryptionKey")
+            } catch let error as GitHubError {
+                // 409 hatası alırsak (dosya başka bir cihaz tarafından oluşturulmuş)
+                // Tekrar yükle
+                if case .httpError(409) = error {
+                    let finalData = try await githubService.getFileContent(path: encryptionKeyPath)
+                    if !finalData.isEmpty,
+                       let keyData = try? JSONDecoder().decode(EncryptionKeyData.self, from: finalData),
+                       let keyBytes = Data(base64Encoded: keyData.key) {
+                        self.key = SymmetricKey(data: keyBytes)
+                        UserDefaults.standard.set(keyBytes, forKey: "EncryptionKey")
+                        return
+                    }
+                }
+                throw error
+            }
             
         } catch {
             print("Error loading encryption key from GitHub: \(error)")
@@ -88,13 +117,17 @@ class EncryptionService {
         if let key = key {
             return key
         }
-        // Key yüklenmemişse bekle (async yükleme için)
-        // Geçici olarak local key oluştur
+        // Key yüklenmemişse local'den yükle
         if let keyData = UserDefaults.standard.data(forKey: "EncryptionKey") {
-            return SymmetricKey(data: keyData)
+            let loadedKey = SymmetricKey(data: keyData)
+            self.key = loadedKey
+            return loadedKey
         }
+        // Local'de de yoksa yeni key oluştur (bu durumda sorun var)
+        print("Warning: Encryption key not found, creating new key. This may cause decryption failures.")
         let newKey = SymmetricKey(size: .bits256)
         UserDefaults.standard.set(newKey.withUnsafeBytes { Data($0) }, forKey: "EncryptionKey")
+        self.key = newKey
         return newKey
     }
     
@@ -119,6 +152,7 @@ class EncryptionService {
     
     func decrypt(_ encryptedText: String) -> String {
         guard let encryptedData = Data(base64Encoded: encryptedText) else {
+            print("Decryption error: Invalid base64 data")
             return encryptedText
         }
         
@@ -130,6 +164,14 @@ class EncryptionService {
             return String(data: decryptedData, encoding: .utf8) ?? encryptedText
         } catch {
             print("Decryption error: \(error)")
+            print("Encrypted text length: \(encryptedText.count)")
+            print("Key loaded: \(key != nil)")
+            // Key yüklenmemişse tekrar yüklemeyi dene
+            if key == nil {
+                Task {
+                    await loadEncryptionKey()
+                }
+            }
             return encryptedText
         }
     }
