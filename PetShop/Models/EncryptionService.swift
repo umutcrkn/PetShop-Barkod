@@ -222,7 +222,7 @@ class EncryptionService {
         }
         
         // Önce mevcut key ile dene
-        var encryptionKey = ensureKey()
+        let encryptionKey = ensureKey()
         print("Attempting decryption with current key (loaded: \(key != nil))")
         
         do {
