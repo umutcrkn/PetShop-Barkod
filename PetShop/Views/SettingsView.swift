@@ -19,7 +19,7 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Section(header: Text("GitHub Ayarları")) {
-                VStack(alignment: .leading, spacing: 8) {
+                VStack(alignment: .leading, spacing: 12) {
                     Text("GitHub Personal Access Token")
                         .font(.headline)
                     
@@ -27,14 +27,29 @@ struct SettingsView: View {
                         .font(.caption)
                         .foregroundColor(.secondary)
                     
+                    if GitHubService.shared.hasToken() {
+                        HStack {
+                            Image(systemName: "checkmark.circle.fill")
+                                .foregroundColor(.green)
+                            Text("Token kayıtlı")
+                                .foregroundColor(.green)
+                            Spacer()
+                            Button("Değiştir") {
+                                githubToken = ""
+                            }
+                            .font(.caption)
+                        }
+                        .padding(.vertical, 4)
+                    }
+                    
                     HStack {
                         if showToken {
-                            TextField("Token girin", text: $githubToken)
+                            TextField("ghp_...", text: $githubToken, prompt: Text("GitHub token'ınızı buraya yapıştırın"))
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .autocapitalization(.none)
                                 .disableAutocorrection(true)
                         } else {
-                            SecureField("Token girin", text: $githubToken)
+                            SecureField("ghp_...", text: $githubToken, prompt: Text("GitHub token'ınızı buraya yapıştırın"))
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .autocapitalization(.none)
                                 .disableAutocorrection(true)
@@ -48,22 +63,20 @@ struct SettingsView: View {
                         }
                     }
                     
-                    if !githubToken.isEmpty {
-                        Button(action: {
-                            saveToken()
-                        }) {
-                            HStack {
-                                if isSaving {
-                                    ProgressView()
-                                        .scaleEffect(0.8)
-                                }
-                                Text(isSaving ? "Kaydediliyor..." : "Token Kaydet")
+                    Button(action: {
+                        saveToken()
+                    }) {
+                        HStack {
+                            if isSaving {
+                                ProgressView()
+                                    .scaleEffect(0.8)
                             }
-                            .frame(maxWidth: .infinity)
+                            Text(isSaving ? "Kaydediliyor..." : GitHubService.shared.hasToken() ? "Token Güncelle" : "Token Kaydet")
                         }
-                        .disabled(isSaving)
-                        .buttonStyle(.borderedProminent)
+                        .frame(maxWidth: .infinity)
                     }
+                    .disabled(isSaving || githubToken.isEmpty)
+                    .buttonStyle(.borderedProminent)
                 }
                 .padding(.vertical, 4)
             }
