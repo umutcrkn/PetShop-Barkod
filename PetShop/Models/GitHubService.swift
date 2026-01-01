@@ -15,6 +15,16 @@ class GitHubService {
     private let repo = "PetShop-Barkod"
     private let baseURL = "https://api.github.com"
     
+    // API Base URL - kullanıcı tarafından ayarlanacak
+    private var apiBaseURL: String? {
+        get {
+            return UserDefaults.standard.string(forKey: "GitHubAPIURL")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "GitHubAPIURL")
+        }
+    }
+    
     // Token UserDefaults'tan alınacak (güvenlik için)
     private var token: String? {
         get {
@@ -30,12 +40,30 @@ class GitHubService {
         // Token'ı uygulama içindeki Ayarlar ekranından ekleyin
     }
     
+    // MARK: - URL Management
+    func setAPIURL(_ url: String) {
+        // URL'den sonunda / varsa kaldır
+        var cleanURL = url.trimmingCharacters(in: .whitespacesAndNewlines)
+        if cleanURL.hasSuffix("/") {
+            cleanURL = String(cleanURL.dropLast())
+        }
+        self.apiBaseURL = cleanURL
+    }
+    
+    func hasAPIURL() -> Bool {
+        return apiBaseURL != nil && !apiBaseURL!.isEmpty
+    }
+    
     // MARK: - Token Management
     func setToken(_ token: String) {
         self.token = token
     }
     
     func hasToken() -> Bool {
+        // Eğer API URL varsa token gerekmez, yoksa token kontrolü yap
+        if hasAPIURL() {
+            return true // API URL kullanılıyorsa token backend'de
+        }
         return token != nil && !token!.isEmpty
     }
     
