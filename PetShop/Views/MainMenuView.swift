@@ -90,10 +90,6 @@ struct MainMenuView: View {
         .background(Color(.systemBackground))
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
-        .onAppear {
-            // Uygulama açıldığında otomatik güncelle
-            updateSystem()
-        }
         .alert("Güncelleme", isPresented: $showUpdateAlert) {
             Button("Tamam", role: .cancel) { }
         } message: {
