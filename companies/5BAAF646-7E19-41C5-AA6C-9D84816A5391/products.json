@@ -1,18 +1,18 @@
 [
   {
-    "stock" : 10,
     "barcode" : "1",
-    "price" : 1,
-    "description" : "Mama",
+    "stock" : 10,
     "name" : "mama",
-    "id" : "995AC8BA-E3F9-43A7-9707-E40B01271102"
+    "id" : "995AC8BA-E3F9-43A7-9707-E40B01271102",
+    "description" : "Mama",
+    "price" : 1
   },
   {
-    "stock" : 20,
     "barcode" : "2",
-    "price" : 2,
-    "description" : "mama2",
+    "stock" : 20,
     "name" : "mama2",
-    "id" : "838004F7-1394-48CF-BD56-D29BFFAC6FA9"
+    "id" : "838004F7-1394-48CF-BD56-D29BFFAC6FA9",
+    "description" : "mama2",
+    "price" : 2
   }
 ]
