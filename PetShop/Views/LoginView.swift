@@ -160,6 +160,16 @@ struct LoginView: View {
     
     private func login() {
         Task {
+            // Önce admin kontrolü yap (admin bir Company değil, özel kullanıcı)
+            if username.lowercased() == "admin" && dataManager.verifyPassword(password) {
+                await MainActor.run {
+                    isLoggedIn = true
+                    username = ""
+                    password = ""
+                }
+                return
+            }
+            
             // Önce encryption key'i GitHub'dan zorla yükle (local key'i atla)
             await EncryptionService.shared.loadEncryptionKey(forceReload: true)
             
@@ -186,16 +196,6 @@ struct LoginView: View {
                 await MainActor.run {
                     errorMessage = "Giriş yapılırken bir hata oluştu: \(error.localizedDescription)"
                     showError = true
-                }
-                return
-            }
-            
-            // Eski admin girişi (backward compatibility)
-            if username.lowercased() == "admin" && dataManager.verifyPassword(password) {
-                await MainActor.run {
-                    isLoggedIn = true
-                    username = ""
-                    password = ""
                 }
                 return
             }
