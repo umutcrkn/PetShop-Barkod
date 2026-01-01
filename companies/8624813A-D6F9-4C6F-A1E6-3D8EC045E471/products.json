@@ -1,26 +1,26 @@
 [
   {
-    "barcode" : "1",
     "id" : "C1253ACC-479A-4C81-9657-9717046A4BB8",
-    "description" : "mamaa",
-    "name" : "mama",
+    "price" : 123,
+    "barcode" : "1",
     "stock" : 11,
-    "price" : 123
+    "name" : "mama",
+    "description" : "mamaa"
   },
   {
-    "barcode" : "666",
     "id" : "15D042D2-D155-422F-AA01-50396236323A",
-    "description" : "Aaa",
-    "name" : "Aaa",
+    "price" : 155,
+    "barcode" : "666",
     "stock" : 250,
-    "price" : 155
+    "name" : "Aaa",
+    "description" : "Aaa"
   },
   {
-    "barcode" : "222",
-    "id" : "8FA94AB8-F816-40B4-8164-C428F0192D7D",
-    "description" : "aaaa",
-    "name" : "aaaaaa",
-    "stock" : 111,
-    "price" : 1111111
+    "id" : "48CDB2D8-37D5-4A19-8A5C-7FC019218E3E",
+    "price" : 123456,
+    "barcode" : "12345",
+    "stock" : 12,
+    "name" : "cccccc",
+    "description" : "ccc"
   }
 ]
