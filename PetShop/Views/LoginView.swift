@@ -142,6 +142,9 @@ struct LoginView: View {
         }
         .onAppear {
             Task {
+                // Önce encryption key'i yükle
+                await EncryptionService.shared.loadEncryptionKey()
+                // Sonra firmaları yükle
                 await companyManager.loadCompanies()
             }
         }
@@ -156,24 +159,35 @@ struct LoginView: View {
     }
     
     private func login() {
-        // Önce firma girişi dene
-        if companyManager.loginCompany(username: username, password: password) {
-            isLoggedIn = true
-            username = ""
-            password = ""
-            return
+        Task {
+            // Önce encryption key'in yüklendiğinden emin ol
+            await EncryptionService.shared.loadEncryptionKey()
+            
+            // Firma girişi dene
+            if await companyManager.loginCompany(username: username, password: password) {
+                await MainActor.run {
+                    isLoggedIn = true
+                    username = ""
+                    password = ""
+                }
+                return
+            }
+            
+            // Eski admin girişi (backward compatibility)
+            if username.lowercased() == "admin" && dataManager.verifyPassword(password) {
+                await MainActor.run {
+                    isLoggedIn = true
+                    username = ""
+                    password = ""
+                }
+                return
+            }
+            
+            await MainActor.run {
+                errorMessage = "Kullanıcı adı veya parola hatalı!"
+                showError = true
+            }
         }
-        
-        // Eski admin girişi (backward compatibility)
-        if username.lowercased() == "admin" && dataManager.verifyPassword(password) {
-            isLoggedIn = true
-            username = ""
-            password = ""
-            return
-        }
-        
-        errorMessage = "Kullanıcı adı veya parola hatalı!"
-        showError = true
     }
 }
 

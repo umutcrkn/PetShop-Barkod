@@ -72,7 +72,10 @@ class CompanyManager: ObservableObject {
     }
     
     /// Firma girişi
-    func loginCompany(username: String, password: String) -> Bool {
+    func loginCompany(username: String, password: String) async -> Bool {
+        // Encryption key'in yüklendiğinden emin ol
+        await EncryptionService.shared.loadEncryptionKey()
+        
         guard let company = companies.first(where: { $0.username.lowercased() == username.lowercased() }) else {
             return false
         }
