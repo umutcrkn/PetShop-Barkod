@@ -15,6 +15,7 @@ struct LoginView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var showCompanyRegistration = false
+    @State private var showPasswordChange = false
     @State private var showError = false
     @State private var errorMessage = ""
     
@@ -99,6 +100,25 @@ struct LoginView: View {
                     }
                 }
                 .padding(.top, 10)
+                
+                // Parola değiştirme butonu (kullanıcı adı girildiyse görünür)
+                if !username.isEmpty && companyManager.companies.contains(where: { $0.username.lowercased() == username.lowercased() }) {
+                    Button(action: {
+                        // Önce firmayı seç
+                        if let company = companyManager.companies.first(where: { $0.username.lowercased() == username.lowercased() }) {
+                            companyManager.selectCompany(company)
+                            showPasswordChange = true
+                        }
+                    }) {
+                        HStack {
+                            Image(systemName: "lock.rotation")
+                            Text("Parola Değiştir")
+                        }
+                        .font(.subheadline)
+                        .foregroundColor(.orange)
+                    }
+                    .padding(.top, 5)
+                }
             }
             
             Spacer()
@@ -113,6 +133,9 @@ struct LoginView: View {
         }
         .sheet(isPresented: $showCompanyRegistration) {
             CompanyRegistrationView()
+        }
+        .sheet(isPresented: $showPasswordChange) {
+            CompanyPasswordChangeView()
         }
         .onAppear {
             Task {
