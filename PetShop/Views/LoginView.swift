@@ -32,10 +32,24 @@ struct LoginView: View {
             
             // Login Form
             VStack(spacing: 20) {
+                if companyManager.isLoading {
+                    ProgressView("Firmalar yükleniyor...")
+                        .padding()
+                }
+                
                 if !companyManager.companies.isEmpty {
-                    Text("Firma Girişi")
-                        .font(.headline)
-                        .padding(.bottom, 10)
+                    Text("Kayıtlı Firmalar: \(companyManager.companies.count)")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .padding(.bottom, 5)
+                }
+                
+                if let error = companyManager.lastError {
+                    Text(error)
+                        .font(.caption)
+                        .foregroundColor(.orange)
+                        .padding(.horizontal, 40)
+                        .multilineTextAlignment(.center)
                 }
                 
                 TextField("Kullanıcı Adı", text: $username)
@@ -62,12 +76,27 @@ struct LoginView: View {
                 .padding(.horizontal, 40)
                 .padding(.top, 10)
                 
-                Button(action: {
-                    showCompanyRegistration = true
-                }) {
-                    Text("Yeni Firma Kaydet")
+                HStack(spacing: 20) {
+                    Button(action: {
+                        showCompanyRegistration = true
+                    }) {
+                        Text("Yeni Firma Kaydet")
+                            .font(.subheadline)
+                            .foregroundColor(.green)
+                    }
+                    
+                    Button(action: {
+                        Task {
+                            await companyManager.refreshCompanies()
+                        }
+                    }) {
+                        HStack {
+                            Image(systemName: "arrow.clockwise")
+                            Text("Yenile")
+                        }
                         .font(.subheadline)
-                        .foregroundColor(.green)
+                        .foregroundColor(.blue)
+                    }
                 }
                 .padding(.top, 10)
             }
@@ -88,6 +117,14 @@ struct LoginView: View {
         .onAppear {
             Task {
                 await companyManager.loadCompanies()
+            }
+        }
+        .onChange(of: showCompanyRegistration) { isShowing in
+            // Firma kaydı kapandığında firmaları yeniden yükle
+            if !isShowing {
+                Task {
+                    await companyManager.refreshCompanies()
+                }
             }
         }
     }

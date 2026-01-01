@@ -87,7 +87,11 @@ class CompanyManager: ObservableObject {
     /// Firmaları GitHub'dan yükle
     func loadCompanies() async {
         guard githubService.hasAPIURL() || githubService.hasToken() else {
+            // Token yoksa local'den yükle
             loadCompaniesFromLocal()
+            await MainActor.run {
+                lastError = "GitHub bağlantısı yok. Local veriler yüklendi."
+            }
             return
         }
         
@@ -107,20 +111,28 @@ class CompanyManager: ObservableObject {
                 await MainActor.run {
                     companies = loadedCompanies
                     saveCompaniesToLocal()
+                    lastError = nil
                 }
             } else {
+                // Dosya boşsa local'den yükle
                 loadCompaniesFromLocal()
             }
         } catch {
             await MainActor.run {
-                lastError = error.localizedDescription
+                lastError = "GitHub'dan yükleme hatası: \(error.localizedDescription). Local veriler yüklendi."
                 loadCompaniesFromLocal()
             }
+            print("Error loading companies from GitHub: \(error)")
         }
         
         await MainActor.run {
             isLoading = false
         }
+    }
+    
+    /// Firmaları manuel olarak yeniden yükle
+    func refreshCompanies() async {
+        await loadCompanies()
     }
     
     /// Firmaları GitHub'a kaydet

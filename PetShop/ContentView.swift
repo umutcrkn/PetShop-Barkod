@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var dataManager = DataManager.shared
+    @StateObject private var companyManager = CompanyManager.shared
     @State private var isLoggedIn = false
     
     var body: some View {
@@ -23,7 +24,18 @@ struct ContentView: View {
             .background(Color(.systemBackground))
         }
         .onAppear {
-            // Uygulama açıldığında GitHub'dan veri yükle
+            // Uygulama açıldığında firmaları ve verileri yükle
+            Task {
+                // Önce firmaları yükle
+                await companyManager.loadCompanies()
+                // Eğer firma seçiliyse verileri yükle
+                if companyManager.currentCompany != nil {
+                    await dataManager.loadDataFromGitHub()
+                }
+            }
+        }
+        .onChange(of: companyManager.currentCompany?.id) { _ in
+            // Firma değiştiğinde verileri yeniden yükle
             Task {
                 await dataManager.loadDataFromGitHub()
             }
