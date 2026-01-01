@@ -102,27 +102,44 @@ struct MainMenuView: View {
         
         isUpdating = true
         Task {
-            // 1. Firmaları yeniden yükle
-            await companyManager.refreshCompanies()
+            var errors: [String] = []
             
-            // 2. Encryption key'i yükle
+            // ADIM 1: GitHub'dan veri çekme işlemleri
+            print("🔄 [1/4] Firmaları GitHub'dan yüklüyor...")
+            await companyManager.refreshCompanies()
+            if let error = companyManager.lastError {
+                errors.append("Firmalar: \(error)")
+            }
+            
+            print("🔄 [2/4] Encryption key'i GitHub'dan yüklüyor...")
             await EncryptionService.shared.loadEncryptionKey(forceReload: true)
             
-            // 3. Verileri GitHub'dan yükle
+            print("🔄 [3/4] Ürünler ve satışları GitHub'dan yüklüyor...")
             await dataManager.loadDataFromGitHub()
+            if let error = dataManager.lastError {
+                errors.append("Veriler: \(error)")
+            }
             
-            // 4. Verileri GitHub'a push et (senkronize et)
-            await dataManager.syncToGitHub()
+            // ADIM 2: GitHub'a veri gönderme işlemleri (sadece çekme başarılıysa)
+            if errors.isEmpty {
+                print("🔄 [4/4] Verileri GitHub'a gönderiyor...")
+                await dataManager.syncToGitHub()
+                if let error = dataManager.lastError {
+                    errors.append("Gönderme: \(error)")
+                } else {
+                    print("✅ Tüm veriler başarıyla senkronize edildi")
+                }
+            } else {
+                print("⚠️ Veri çekme sırasında hata oluştu, gönderme atlandı")
+            }
             
-            // Hata kontrolü (lastError varsa göster)
-            let errorMessage = dataManager.lastError ?? companyManager.lastError
-            
+            // Sonuç mesajı
             await MainActor.run {
                 isUpdating = false
-                if let error = errorMessage {
-                    updateMessage = "Güncelleme sırasında hata oluştu: \(error)"
+                if errors.isEmpty {
+                    updateMessage = "Sistem başarıyla güncellendi!\n\n• Firmalar yüklendi\n• Veriler GitHub'dan çekildi\n• Veriler GitHub'a gönderildi"
                 } else {
-                    updateMessage = "Sistem başarıyla güncellendi!"
+                    updateMessage = "Güncelleme sırasında hata oluştu:\n\n\(errors.joined(separator: "\n"))"
                 }
                 showUpdateAlert = true
             }
