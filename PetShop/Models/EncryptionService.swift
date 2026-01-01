@@ -194,15 +194,18 @@ class EncryptionService {
     func decryptAsync(_ encryptedText: String) async -> String {
         guard let encryptedData = Data(base64Encoded: encryptedText) else {
             print("Decryption error: Invalid base64 data")
-            return encryptedText
+            return "" // Boş string döndür, parola eşleşmesin
         }
         
-        let encryptionKey = ensureKey()
+        // Önce mevcut key ile dene
+        var encryptionKey = ensureKey()
         
         do {
             let sealedBox = try AES.GCM.SealedBox(combined: encryptedData)
             let decryptedData = try AES.GCM.open(sealedBox, using: encryptionKey)
-            return String(data: decryptedData, encoding: .utf8) ?? encryptedText
+            let decrypted = String(data: decryptedData, encoding: .utf8) ?? ""
+            print("Decryption successful with current key")
+            return decrypted
         } catch {
             print("Decryption error: \(error)")
             print("Encrypted text length: \(encryptedText.count)")
@@ -211,25 +214,31 @@ class EncryptionService {
             // Authentication failure hatası alırsak, key yanlış olabilir
             // GitHub'dan key'i yeniden yüklemeyi dene
             if error.localizedDescription.contains("authenticationFailure") || 
-               error.localizedDescription.contains("authentication") {
+               error.localizedDescription.contains("authentication") ||
+               String(describing: error).contains("authentication") {
                 print("Authentication failure detected, reloading key from GitHub...")
                 // UserDefaults'taki key'i temizle ve GitHub'dan yeniden yükle
                 await loadEncryptionKey(forceReload: true)
                 
-                // Tekrar dene
+                // Yeni key ile tekrar dene
                 if let newKey = key {
                     do {
                         let sealedBox = try AES.GCM.SealedBox(combined: encryptedData)
                         let decryptedData = try AES.GCM.open(sealedBox, using: newKey)
-                        print("Decryption successful after key reload")
-                        return String(data: decryptedData, encoding: .utf8) ?? encryptedText
-                    } catch {
-                        print("Decryption still failed after key reload: \(error)")
+                        let decrypted = String(data: decryptedData, encoding: .utf8) ?? ""
+                        print("Decryption successful after key reload: \(decrypted.prefix(10))...")
+                        return decrypted
+                    } catch let retryError {
+                        print("Decryption still failed after key reload: \(retryError)")
+                        print("Error details: \(String(describing: retryError))")
                     }
+                } else {
+                    print("Key is still nil after reload")
                 }
             }
             
-            return encryptedText
+            // Decrypt başarısız oldu, boş string döndür (parola eşleşmesin)
+            return ""
         }
     }
 }
