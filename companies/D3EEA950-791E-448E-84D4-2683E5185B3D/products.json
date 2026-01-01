@@ -1,3 +1,26 @@
 [
-
+  {
+    "description" : "",
+    "price" : 2,
+    "barcode" : "3",
+    "id" : "F3C3744D-97C0-4888-8A20-68300DD575FA",
+    "name" : "c",
+    "stock" : 0
+  },
+  {
+    "description" : "",
+    "price" : 1111,
+    "barcode" : "2",
+    "id" : "23A196C8-8E81-4C24-A1FC-3EC0037AA307",
+    "name" : "test",
+    "stock" : 0
+  },
+  {
+    "description" : "",
+    "price" : 100000000,
+    "barcode" : "0",
+    "id" : "A6603CD6-590A-4E78-B9C8-B59509B92EE0",
+    "name" : "Umut",
+    "stock" : 1
+  }
 ]
