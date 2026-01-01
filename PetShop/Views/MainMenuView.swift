@@ -106,30 +106,29 @@ struct MainMenuView: View {
         
         isUpdating = true
         Task {
-            do {
-                // 1. Firmaları yeniden yükle
-                await companyManager.refreshCompanies()
-                
-                // 2. Encryption key'i yükle
-                await EncryptionService.shared.loadEncryptionKey(forceReload: true)
-                
-                // 3. Verileri GitHub'dan yükle
-                await dataManager.loadDataFromGitHub()
-                
-                // 4. Verileri GitHub'a push et (senkronize et)
-                await dataManager.syncToGitHub()
-                
-                await MainActor.run {
-                    isUpdating = false
+            // 1. Firmaları yeniden yükle
+            await companyManager.refreshCompanies()
+            
+            // 2. Encryption key'i yükle
+            await EncryptionService.shared.loadEncryptionKey(forceReload: true)
+            
+            // 3. Verileri GitHub'dan yükle
+            await dataManager.loadDataFromGitHub()
+            
+            // 4. Verileri GitHub'a push et (senkronize et)
+            await dataManager.syncToGitHub()
+            
+            // Hata kontrolü (lastError varsa göster)
+            let errorMessage = dataManager.lastError ?? companyManager.lastError
+            
+            await MainActor.run {
+                isUpdating = false
+                if let error = errorMessage {
+                    updateMessage = "Güncelleme sırasında hata oluştu: \(error)"
+                } else {
                     updateMessage = "Sistem başarıyla güncellendi!"
-                    showUpdateAlert = true
                 }
-            } catch {
-                await MainActor.run {
-                    isUpdating = false
-                    updateMessage = "Güncelleme sırasında hata oluştu: \(error.localizedDescription)"
-                    showUpdateAlert = true
-                }
+                showUpdateAlert = true
             }
         }
     }
