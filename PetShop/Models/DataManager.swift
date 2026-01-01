@@ -19,7 +19,7 @@ class DataManager: ObservableObject {
     private let githubService = GitHubService.shared
     private let companyManager = CompanyManager.shared
     private let passwordKey = "UserPassword"
-    private let defaultPassword = "admin"
+    private let defaultPassword = "201812055"
     
     // Local cache keys (fallback) - firma bazlı
     private var productsKey: String {
