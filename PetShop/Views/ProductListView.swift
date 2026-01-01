@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ProductListView: View {
     @StateObject private var dataManager = DataManager.shared
+    @StateObject private var companyManager = CompanyManager.shared
     @State private var searchText = ""
     @State private var selectedProduct: Product?
     @State private var showBackupSheet = false
     @State private var selectedProducts: Set<Product.ID> = []
     @State private var showDeleteConfirmation = false
     @State private var showBarcodeScanner = false
+    @State private var showCompaniesList = false
     @Environment(\.editMode) var editMode
+    
+    // Admin kontrolü: currentCompany nil ise admin kullanıcısıdır
+    private var isAdmin: Bool {
+        companyManager.currentCompany == nil
+    }
     
     var filteredProducts: [Product] {
         if searchText.isEmpty {
@@ -43,6 +50,9 @@ struct ProductListView: View {
             }
             .sheet(isPresented: $showBarcodeScanner) {
                 BarcodeScannerView(barcode: $searchText)
+            }
+            .sheet(isPresented: $showCompaniesList) {
+                CompaniesListView()
             }
             .toolbar {
                 toolbarContent
@@ -133,6 +143,18 @@ struct ProductListView: View {
         
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack {
+                if isAdmin {
+                    Button(action: {
+                        showCompaniesList = true
+                    }) {
+                        HStack {
+                            Image(systemName: "building.2.fill")
+                            Text("Firmalar")
+                        }
+                        .font(.subheadline)
+                    }
+                }
+                
                 if editMode?.wrappedValue == .active {
                     if selectedProducts.count == filteredProducts.count {
                         Button(action: {
