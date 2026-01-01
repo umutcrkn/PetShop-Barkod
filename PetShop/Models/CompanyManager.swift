@@ -331,8 +331,41 @@ class CompanyManager: ObservableObject {
         }
     }
     
-    /// Firma deneme süresini uzat (admin için)
+    /// Firma deneme süresini uzat (admin için) - 409 hatası için merge stratejisi ile
     func extendTrialPeriod(for companyId: String, days: Int) async throws {
+        // Önce GitHub'dan en güncel companies listesini çek ve merge et
+        print("🔄 Fetching latest companies from GitHub for merge...")
+        do {
+            let data = try await githubService.getFileContent(path: "companies/companies.json")
+            
+            if !data.isEmpty {
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                let remoteCompanies = try decoder.decode([Company].self, from: data)
+                
+                // Local companies ile merge et (local öncelikli - ID bazlı)
+                var mergedCompanies = remoteCompanies
+                for localCompany in companies {
+                    if let index = mergedCompanies.firstIndex(where: { $0.id == localCompany.id }) {
+                        // Local versiyon öncelikli (daha güncel)
+                        mergedCompanies[index] = localCompany
+                    } else {
+                        // Yeni local firma ekle
+                        mergedCompanies.append(localCompany)
+                    }
+                }
+                
+                await MainActor.run {
+                    companies = mergedCompanies
+                }
+                print("✅ Companies merged: \(mergedCompanies.count) companies")
+            }
+        } catch {
+            print("⚠️ Could not fetch companies from GitHub, using local: \(error)")
+            // Hata durumunda local companies kullanılacak
+        }
+        
+        // Şimdi firmayı bul ve deneme süresini uzat
         guard let index = companies.firstIndex(where: { $0.id == companyId }) else {
             throw CompanyError.companyNotFound
         }
@@ -354,7 +387,7 @@ class CompanyManager: ObservableObject {
             companies[index].trialExpiresAt = newExpiryDate
         }
         
-        // GitHub'a kaydet
+        // Merge edilmiş veriyi GitHub'a kaydet
         try await saveCompaniesToGitHub()
         
         print("✅ Extended trial period for company \(companies[index].name) by \(days) days. New expiry: \(newExpiryDate)")
