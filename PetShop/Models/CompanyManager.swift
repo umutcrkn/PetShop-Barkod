@@ -61,6 +61,11 @@ class CompanyManager: ObservableObject {
     func selectCompany(_ company: Company) {
         currentCompany = company
         UserDefaults.standard.set(company.id, forKey: currentCompanyIdKey)
+        
+        // Firma değiştiğinde DataManager'ı temizle ve yeni verileri yükle
+        Task {
+            await DataManager.shared.clearAndReloadForNewCompany()
+        }
     }
     
     /// Firma girişi

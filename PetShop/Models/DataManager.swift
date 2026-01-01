@@ -17,27 +17,55 @@ class DataManager: ObservableObject {
     @Published var lastError: String?
     
     private let githubService = GitHubService.shared
+    private let companyManager = CompanyManager.shared
     private let passwordKey = "UserPassword"
     private let defaultPassword = "admin"
     
-    // Local cache keys (fallback)
-    private let productsKey = "SavedProducts"
-    private let salesKey = "SavedSales"
+    // Local cache keys (fallback) - firma bazlı
+    private var productsKey: String {
+        if let company = companyManager.currentCompany {
+            return "SavedProducts_\(company.id)"
+        }
+        return "SavedProducts"
+    }
+    
+    private var salesKey: String {
+        if let company = companyManager.currentCompany {
+            return "SavedSales_\(company.id)"
+        }
+        return "SavedSales"
+    }
     
     private init() {
-        Task {
-            await loadDataFromGitHub()
+        // Firma seçildiğinde veriler yüklenecek
+    }
+    
+    /// Firma değiştiğinde verileri temizle ve yeniden yükle
+    func clearAndReloadForNewCompany() async {
+        await MainActor.run {
+            products = []
+            sales = []
         }
+        await loadDataFromGitHub()
     }
     
     // MARK: - GitHub Data Loading
     
-    /// GitHub'dan tüm verileri yükler
+    /// GitHub'dan tüm verileri yükler (firma bazlı)
     func loadDataFromGitHub() async {
-        guard githubService.hasToken() else {
+        guard githubService.hasAPIURL() || githubService.hasToken() else {
             // Token yoksa local'den yükle
             loadProductsFromLocal()
             loadSalesFromLocal()
+            return
+        }
+        
+        // Firma seçili değilse yükleme
+        guard companyManager.currentCompany != nil else {
+            await MainActor.run {
+                products = []
+                sales = []
+            }
             return
         }
         
@@ -47,14 +75,18 @@ class DataManager: ObservableObject {
         }
         
         do {
+            // Firma bazlı path al
+            let productsPath = companyManager.getCompanyDataPath(file: "products.json")
+            let salesPath = companyManager.getCompanyDataPath(file: "sales.json")
+            
             // Products yükle
-            let loadedProducts = try await githubService.getProducts()
+            let loadedProducts = try await githubService.getProducts(path: productsPath)
             await MainActor.run {
                 products = loadedProducts
             }
             
             // Sales yükle
-            let loadedSales = try await githubService.getSales()
+            let loadedSales = try await githubService.getSales(path: salesPath)
             await MainActor.run {
                 sales = loadedSales
                 cleanupOldSales()
@@ -79,12 +111,17 @@ class DataManager: ObservableObject {
         }
     }
     
-    /// Verileri GitHub'a kaydeder
+    /// Verileri GitHub'a kaydeder (firma bazlı)
     func syncToGitHub() async {
-        guard githubService.hasToken() else {
+        guard githubService.hasAPIURL() || githubService.hasToken() else {
             await MainActor.run {
-                lastError = "GitHub token bulunamadı"
+                lastError = "GitHub bağlantısı bulunamadı"
             }
+            return
+        }
+        
+        // Firma seçili değilse kaydetme
+        guard companyManager.currentCompany != nil else {
             return
         }
         
@@ -94,8 +131,12 @@ class DataManager: ObservableObject {
         }
         
         do {
-            try await githubService.saveProducts(products)
-            try await githubService.saveSales(sales)
+            // Firma bazlı path al
+            let productsPath = companyManager.getCompanyDataPath(file: "products.json")
+            let salesPath = companyManager.getCompanyDataPath(file: "sales.json")
+            
+            try await githubService.saveProducts(products, path: productsPath)
+            try await githubService.saveSales(sales, path: salesPath)
             
             // Local cache'e de kaydet
             saveProductsToLocal()
