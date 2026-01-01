@@ -11,10 +11,9 @@ struct MainMenuView: View {
     @Binding var isLoggedIn: Bool
     
     var body: some View {
-        ScrollView {
+        VStack(spacing: 0) {
             VStack(spacing: 30) {
                 Spacer()
-                    .frame(height: 20)
                 
                 NavigationLink(destination: AddProductView()) {
                     MenuButton(title: "Ürün Ekleme", icon: "plus.circle.fill", color: .green)
@@ -32,12 +31,19 @@ struct MainMenuView: View {
                     MenuButton(title: "Satışlarım", icon: "chart.bar.doc.horizontal", color: .purple)
                 }
                 
+                Spacer()
+            }
+            .padding(.horizontal, 40)
+            .padding(.top, 20)
+            
+            VStack(spacing: 20) {
+                Divider()
+                    .padding(.vertical, 10)
+                
                 NavigationLink(destination: SettingsView()) {
                     MenuButton(title: "Ayarlar", icon: "gearshape.fill", color: .gray)
                 }
-                
-                Spacer()
-                    .frame(height: 20)
+                .padding(.horizontal, 40)
                 
                 Button(action: {
                     isLoggedIn = false
@@ -46,11 +52,8 @@ struct MainMenuView: View {
                         .foregroundColor(.red)
                         .padding()
                 }
-                
-                Spacer()
-                    .frame(height: 20)
             }
-            .padding(.horizontal, 40)
+            .padding(.bottom, 20)
         }
         .background(Color(.systemBackground))
         .navigationBarTitleDisplayMode(.inline)
