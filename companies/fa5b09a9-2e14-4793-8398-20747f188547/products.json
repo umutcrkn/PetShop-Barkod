@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id" : "2AFBC06C-1DDE-45F9-A1F6-2E78443CF1A7",
+    "stock" : 10,
+    "description" : "Meo",
+    "price" : 110,
+    "barcode" : "1",
+    "name" : "Meo"
+  }
+]
