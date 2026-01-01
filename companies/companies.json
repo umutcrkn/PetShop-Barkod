@@ -1,10 +1,10 @@
 [
   {
-    "trialExpiresAt" : "2026-09-08T19:09:56Z",
-    "username" : "merve",
-    "id" : "F863844C-4DAC-4580-93DC-0AD514F3D0A3",
     "createdAt" : "2026-01-01T19:09:56Z",
-    "name" : "Pi Pet Shop",
-    "encryptedPassword" : "kbO\/77tS4b9YbnfrwGRxSMYTJFrA3A8Wh4RAjNJdivcx"
+    "username" : "merve",
+    "encryptedPassword" : "kbO\/77tS4b9YbnfrwGRxSMYTJFrA3A8Wh4RAjNJdivcx",
+    "id" : "F863844C-4DAC-4580-93DC-0AD514F3D0A3",
+    "trialExpiresAt" : "2026-09-15T19:09:56Z",
+    "name" : "Pi Pet Shop"
   }
 ]
