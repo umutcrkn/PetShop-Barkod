@@ -160,6 +160,8 @@ class DataManager: ObservableObject {
         saveProductsToLocal()
         Task {
             await syncToGitHub()
+            // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
+            await loadDataFromGitHub()
         }
     }
     
@@ -169,6 +171,8 @@ class DataManager: ObservableObject {
             saveProductsToLocal()
             Task {
                 await syncToGitHub()
+                // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
+                await loadDataFromGitHub()
             }
         }
     }
@@ -178,6 +182,8 @@ class DataManager: ObservableObject {
         saveProductsToLocal()
         Task {
             await syncToGitHub()
+            // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
+            await loadDataFromGitHub()
         }
     }
     
@@ -227,6 +233,8 @@ class DataManager: ObservableObject {
         cleanupOldSales()
         Task {
             await syncToGitHub()
+            // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
+            await loadDataFromGitHub()
         }
     }
     
