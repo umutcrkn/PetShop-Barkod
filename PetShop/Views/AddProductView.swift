@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AddProductView: View {
     @StateObject private var dataManager = DataManager.shared
-    @StateObject private var companyManager = CompanyManager.shared
     @Environment(\.dismiss) var dismiss
     
     @State private var productName: String = ""
@@ -22,12 +21,6 @@ struct AddProductView: View {
     @State private var showSuccess = false
     @State private var showError = false
     @State private var errorMessage = ""
-    @State private var showCompaniesList = false
-    
-    // Admin kontrolü: currentCompany nil ise admin kullanıcısıdır
-    private var isAdmin: Bool {
-        companyManager.currentCompany == nil
-    }
     
     var body: some View {
         Form {
@@ -76,28 +69,11 @@ struct AddProductView: View {
         }
         .navigationTitle("Ürün Ekleme")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            if isAdmin {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        showCompaniesList = true
-                    }) {
-                        HStack {
-                            Image(systemName: "building.2.fill")
-                            Text("Kayıtlı Firmalar")
-                        }
-                    }
-                }
-            }
-        }
         .sheet(isPresented: $showBarcodeScanner) {
             BarcodeScannerView(barcode: $productBarcode)
         }
         .sheet(isPresented: $showBulkImport) {
             BulkProductImportView()
-        }
-        .sheet(isPresented: $showCompaniesList) {
-            CompaniesListView()
         }
         .alert("Başarılı", isPresented: $showSuccess) {
             Button("Tamam", role: .cancel) {
