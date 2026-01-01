@@ -1,10 +1,10 @@
 [
   {
-    "barcode" : "4",
-    "stock" : 2,
+    "barcode" : "3",
+    "id" : "F3C3744D-97C0-4888-8A20-68300DD575FA",
     "description" : "",
-    "id" : "4E2EA926-DB02-418B-B4DB-E2A9D09D893C",
-    "price" : 3,
-    "name" : "3"
+    "name" : "c",
+    "price" : 2,
+    "stock" : 0
   }
 ]
