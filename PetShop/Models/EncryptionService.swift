@@ -25,12 +25,14 @@ class EncryptionService {
     func loadEncryptionKey(forceReload: Bool = false) async {
         // Force reload isteniyorsa UserDefaults'ı temizle
         if forceReload {
+            print("Force reload: Clearing local encryption key")
             UserDefaults.standard.removeObject(forKey: "EncryptionKey")
             self.key = nil
         }
         
         // Önce UserDefaults'tan kontrol et (force reload değilse)
         if !forceReload, let keyData = UserDefaults.standard.data(forKey: "EncryptionKey") {
+            print("Loading encryption key from UserDefaults")
             self.key = SymmetricKey(data: keyData)
             // GitHub'dan da kontrol et (key güncel mi?)
             // Bu kontrolü arka planda yap, şimdilik local key'i kullan
@@ -39,24 +41,39 @@ class EncryptionService {
         
         // GitHub'dan yükle
         guard githubService.hasAPIURL() || githubService.hasToken() else {
+            print("No GitHub connection, creating local key")
             // GitHub bağlantısı yoksa local key oluştur
             createLocalKey()
             return
         }
         
         do {
+            print("Loading encryption key from GitHub: \(encryptionKeyPath)")
             let data = try await githubService.getFileContent(path: encryptionKeyPath)
+            print("GitHub response data length: \(data.count)")
             
             if !data.isEmpty {
                 // GitHub'dan key'i yükle
                 if let keyData = try? JSONDecoder().decode(EncryptionKeyData.self, from: data) {
+                    print("Decoded key data, key string length: \(keyData.key.count)")
                     if let keyBytes = Data(base64Encoded: keyData.key) {
+                        print("Key bytes decoded, length: \(keyBytes.count)")
                         self.key = SymmetricKey(data: keyBytes)
                         // Local'e de kaydet
                         UserDefaults.standard.set(keyBytes, forKey: "EncryptionKey")
+                        print("Encryption key loaded successfully from GitHub")
                         return
+                    } else {
+                        print("Failed to decode key bytes from base64")
+                    }
+                } else {
+                    print("Failed to decode EncryptionKeyData from JSON")
+                    if let jsonString = String(data: data, encoding: .utf8) {
+                        print("JSON content: \(jsonString.prefix(100))")
                     }
                 }
+            } else {
+                print("GitHub returned empty data")
             }
             
             // GitHub'da key yoksa oluştur ve kaydet
@@ -199,29 +216,34 @@ class EncryptionService {
         
         // Önce mevcut key ile dene
         var encryptionKey = ensureKey()
+        print("Attempting decryption with current key (loaded: \(key != nil))")
         
         do {
             let sealedBox = try AES.GCM.SealedBox(combined: encryptedData)
             let decryptedData = try AES.GCM.open(sealedBox, using: encryptionKey)
             let decrypted = String(data: decryptedData, encoding: .utf8) ?? ""
-            print("Decryption successful with current key")
+            print("Decryption successful with current key: \(decrypted.prefix(10))...")
             return decrypted
         } catch {
             print("Decryption error: \(error)")
             print("Encrypted text length: \(encryptedText.count)")
             print("Key loaded: \(key != nil)")
+            print("Error type: \(type(of: error))")
+            print("Error description: \(error.localizedDescription)")
             
             // Authentication failure hatası alırsak, key yanlış olabilir
             // GitHub'dan key'i yeniden yüklemeyi dene
-            if error.localizedDescription.contains("authenticationFailure") || 
-               error.localizedDescription.contains("authentication") ||
-               String(describing: error).contains("authentication") {
+            let errorString = String(describing: error)
+            if errorString.contains("authenticationFailure") || 
+               errorString.contains("authentication") ||
+               error.localizedDescription.contains("authentication") {
                 print("Authentication failure detected, reloading key from GitHub...")
                 // UserDefaults'taki key'i temizle ve GitHub'dan yeniden yükle
                 await loadEncryptionKey(forceReload: true)
                 
                 // Yeni key ile tekrar dene
                 if let newKey = key {
+                    print("Retrying decryption with reloaded key")
                     do {
                         let sealedBox = try AES.GCM.SealedBox(combined: encryptedData)
                         let decryptedData = try AES.GCM.open(sealedBox, using: newKey)
@@ -230,10 +252,12 @@ class EncryptionService {
                         return decrypted
                     } catch let retryError {
                         print("Decryption still failed after key reload: \(retryError)")
+                        print("Error type: \(type(of: retryError))")
                         print("Error details: \(String(describing: retryError))")
+                        print("This suggests the key on GitHub may be different from the one used to encrypt this password")
                     }
                 } else {
-                    print("Key is still nil after reload")
+                    print("ERROR: Key is still nil after reload - this should not happen!")
                 }
             }
             
