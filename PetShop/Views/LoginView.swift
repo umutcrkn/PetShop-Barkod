@@ -9,13 +9,12 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject private var dataManager = DataManager.shared
+    @StateObject private var companyManager = CompanyManager.shared
     @Binding var isLoggedIn: Bool
     
     @State private var username: String = ""
     @State private var password: String = ""
-    @State private var showPasswordChange = false
-    @State private var newPassword: String = ""
-    @State private var confirmPassword: String = ""
+    @State private var showCompanyRegistration = false
     @State private var showError = false
     @State private var errorMessage = ""
     
@@ -33,6 +32,12 @@ struct LoginView: View {
             
             // Login Form
             VStack(spacing: 20) {
+                if !companyManager.companies.isEmpty {
+                    Text("Firma Girişi")
+                        .font(.headline)
+                        .padding(.bottom, 10)
+                }
+                
                 TextField("Kullanıcı Adı", text: $username)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
@@ -58,11 +63,11 @@ struct LoginView: View {
                 .padding(.top, 10)
                 
                 Button(action: {
-                    showPasswordChange = true
+                    showCompanyRegistration = true
                 }) {
-                    Text("Şifre Değiştir")
+                    Text("Yeni Firma Kaydet")
                         .font(.subheadline)
-                        .foregroundColor(.blue)
+                        .foregroundColor(.green)
                 }
                 .padding(.top, 10)
             }
@@ -77,20 +82,35 @@ struct LoginView: View {
         } message: {
             Text(errorMessage)
         }
-        .sheet(isPresented: $showPasswordChange) {
-            PasswordChangeView()
+        .sheet(isPresented: $showCompanyRegistration) {
+            CompanyRegistrationView()
+        }
+        .onAppear {
+            Task {
+                await companyManager.loadCompanies()
+            }
         }
     }
     
     private func login() {
+        // Önce firma girişi dene
+        if companyManager.loginCompany(username: username, password: password) {
+            isLoggedIn = true
+            username = ""
+            password = ""
+            return
+        }
+        
+        // Eski admin girişi (backward compatibility)
         if username.lowercased() == "admin" && dataManager.verifyPassword(password) {
             isLoggedIn = true
             username = ""
             password = ""
-        } else {
-            errorMessage = "Kullanıcı adı veya parola hatalı!"
-            showError = true
+            return
         }
+        
+        errorMessage = "Kullanıcı adı veya parola hatalı!"
+        showError = true
     }
 }
 
