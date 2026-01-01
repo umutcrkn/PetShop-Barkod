@@ -128,6 +128,20 @@ struct ProductListView: View {
                 selectedProducts.removeAll()
             }
         }
+        .onAppear {
+            // View görünür olduğunda verileri GitHub'dan yeniden yükle
+            Task {
+                await dataManager.loadDataFromGitHub()
+            }
+        }
+        .onChange(of: selectedProduct) { oldValue, newValue in
+            // Ürün düzenleme ekranı kapandığında verileri yeniden yükle
+            if newValue == nil && oldValue != nil {
+                Task {
+                    await dataManager.loadDataFromGitHub()
+                }
+            }
+        }
         .safeAreaInset(edge: .bottom) {
             if !dataManager.products.isEmpty {
                 Button(action: {
