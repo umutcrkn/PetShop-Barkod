@@ -173,12 +173,12 @@ class GitHubService {
         }
         
         // Retry mekanizması ile 409 hatasını handle et
-        let maxRetries = 3
+        let maxRetries = 5 // Retry sayısını artırdık
         var lastError: Error?
         
         for attempt in 0..<maxRetries {
             do {
-                // Önce mevcut dosyayı kontrol et (sha için)
+                // Her retry'da SHA'yı mutlaka yeniden al (409 hatası için kritik)
                 var sha: String? = nil
                 do {
                     let urlString = "\(baseURL)/repos/\(owner)/\(repo)/contents/\(path)"
@@ -196,9 +196,11 @@ class GitHubService {
                     if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
                         let json = try JSONDecoder().decode(GitHubFileResponse.self, from: data)
                         sha = json.sha
+                        print("📥 Retrieved SHA for \(path): \(sha?.prefix(10) ?? "nil") (attempt \(attempt + 1))")
                     }
                 } catch {
                     // Dosya yoksa sha nil kalır (yeni dosya oluşturulacak)
+                    print("📝 File not found, will create new file (attempt \(attempt + 1))")
                 }
                 
                 // Dosyayı yaz/güncelle
@@ -235,37 +237,52 @@ class GitHubService {
                 
                 // Başarılı
                 if httpResponse.statusCode == 200 || httpResponse.statusCode == 201 {
+                    print("✅ Successfully saved \(path) (attempt \(attempt + 1))")
                     return
                 }
                 
                 // 409 hatası - SHA hash güncel değil, tekrar dene
                 if httpResponse.statusCode == 409 {
                     lastError = GitHubError.httpError(409)
+                    print("⚠️ 409 Conflict for \(path) (attempt \(attempt + 1)/\(maxRetries))")
                     if attempt < maxRetries - 1 {
-                        // Kısa bir bekleme süresi (exponential backoff)
-                        let delay = Double(attempt + 1) * 0.5
+                        // Exponential backoff: 1s, 2s, 3s, 4s, 5s
+                        let delay = Double(attempt + 1) * 1.0
+                        print("⏳ Waiting \(delay)s before retry...")
                         try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
-                        continue
+                        continue // SHA'yı yeniden almak için döngüye devam et
                     }
                 }
                 
+                // Diğer HTTP hataları
+                print("❌ HTTP error \(httpResponse.statusCode) for \(path)")
                 throw GitHubError.httpError(httpResponse.statusCode)
             } catch let error as GitHubError {
                 lastError = error
                 // 409 hatası ise ve daha deneme hakkı varsa devam et
                 if case .httpError(409) = error, attempt < maxRetries - 1 {
-                    let delay = Double(attempt + 1) * 0.5
+                    print("⚠️ 409 Conflict caught (attempt \(attempt + 1)/\(maxRetries))")
+                    let delay = Double(attempt + 1) * 1.0
+                    print("⏳ Waiting \(delay)s before retry...")
                     try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
-                    continue
+                    continue // SHA'yı yeniden almak için döngüye devam et
                 }
                 throw error
             } catch {
                 lastError = error
+                // Network hataları için de retry yapabiliriz
+                if attempt < maxRetries - 1 {
+                    print("⚠️ Network error: \(error.localizedDescription) (attempt \(attempt + 1)/\(maxRetries))")
+                    let delay = Double(attempt + 1) * 1.0
+                    try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
+                    continue
+                }
                 throw error
             }
         }
         
         // Tüm denemeler başarısız oldu
+        print("❌ All retries failed for \(path)")
         throw lastError ?? GitHubError.httpError(409)
     }
     

@@ -130,23 +130,44 @@ class DataManager: ObservableObject {
             lastError = nil
         }
         
+        // Firma bazlı path al
+        let productsPath = companyManager.getCompanyDataPath(file: "products.json")
+        let salesPath = companyManager.getCompanyDataPath(file: "sales.json")
+        
+        var errors: [String] = []
+        
+        // Products'ı kaydet
         do {
-            // Firma bazlı path al
-            let productsPath = companyManager.getCompanyDataPath(file: "products.json")
-            let salesPath = companyManager.getCompanyDataPath(file: "sales.json")
-            
             try await githubService.saveProducts(products, path: productsPath)
+            print("✅ Products synced successfully")
+        } catch {
+            let errorMsg = "Ürünler kaydedilemedi: \(error.localizedDescription)"
+            errors.append(errorMsg)
+            print("❌ Error syncing products: \(error)")
+        }
+        
+        // Sales'ı kaydet
+        do {
             try await githubService.saveSales(sales, path: salesPath)
-            
-            // Local cache'e de kaydet
+            print("✅ Sales synced successfully")
+        } catch {
+            let errorMsg = "Satışlar kaydedilemedi: \(error.localizedDescription)"
+            errors.append(errorMsg)
+            print("❌ Error syncing sales: \(error)")
+        }
+        
+        // Hata varsa göster
+        if !errors.isEmpty {
+            await MainActor.run {
+                lastError = errors.joined(separator: "\n")
+            }
+        } else {
+            // Her iki dosya da başarılı, local cache'e de kaydet
             saveProductsToLocal()
             saveSalesToLocal()
-            
-        } catch {
             await MainActor.run {
-                lastError = error.localizedDescription
+                lastError = nil
             }
-            print("Error syncing to GitHub: \(error)")
         }
         
         await MainActor.run {
