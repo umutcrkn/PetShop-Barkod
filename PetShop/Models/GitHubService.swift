@@ -25,7 +25,10 @@ class GitHubService {
         }
     }
     
-    private init() {}
+    private init() {
+        // Token UserDefaults'tan yüklenecek
+        // Token'ı uygulama içindeki Ayarlar ekranından ekleyin
+    }
     
     // MARK: - Token Management
     func setToken(_ token: String) {
