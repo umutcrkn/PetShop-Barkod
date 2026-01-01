@@ -24,7 +24,7 @@ struct LoginView: View {
             Spacer()
             
             // Logo or Title
-            Text("Evcil Pet Malzemeleri\nSatış ve Stok Programı")
+            Text("Pet Malzeme Satış")
                 .font(.title)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
