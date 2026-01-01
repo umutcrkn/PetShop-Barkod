@@ -2,20 +2,30 @@
 //  ContentView.swift
 //  PetShop
 //
-//  Created by Umut on 30.12.2025.
+//  Main entry point - shows login or main menu
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var dataManager = DataManager.shared
+    @State private var isLoggedIn = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            Group {
+                if isLoggedIn {
+                    MainMenuView(isLoggedIn: $isLoggedIn)
+                } else {
+                    LoginView(isLoggedIn: $isLoggedIn)
+                }
+            }
+            .background(Color(.systemBackground))
         }
-        .padding()
+        .onAppear {
+            // Debug: DataManager'ın düzgün yüklendiğini kontrol et
+            print("ContentView appeared, isLoggedIn: \(isLoggedIn)")
+        }
     }
 }
 
