@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Product: Codable, Identifiable {
+struct Product: Codable, Identifiable, Equatable {
     var id: UUID
     var name: String
     var description: String
