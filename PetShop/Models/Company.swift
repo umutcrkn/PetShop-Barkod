@@ -28,4 +28,9 @@ struct Company: Codable, Identifiable {
         let decrypted = EncryptionService.shared.decrypt(encryptedPassword)
         return decrypted == password
     }
+    
+    // Parolayı güncelle
+    mutating func updatePassword(_ newPassword: String) {
+        self.encryptedPassword = EncryptionService.shared.encrypt(newPassword)
+    }
 }

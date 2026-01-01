@@ -85,6 +85,37 @@ class CompanyManager: ObservableObject {
         return false
     }
     
+    /// Firma parolasını değiştir
+    func changePassword(currentPassword: String, newPassword: String) async throws {
+        guard let company = currentCompany else {
+            throw CompanyError.companyNotFound
+        }
+        
+        // Mevcut parolayı doğrula
+        guard company.verifyPassword(currentPassword) else {
+            throw CompanyError.invalidCredentials
+        }
+        
+        // Yeni parola kontrolü
+        guard !newPassword.isEmpty else {
+            throw CompanyError.invalidCredentials
+        }
+        
+        // Firmayı bul ve güncelle
+        guard let index = companies.firstIndex(where: { $0.id == company.id }) else {
+            throw CompanyError.companyNotFound
+        }
+        
+        await MainActor.run {
+            companies[index].updatePassword(newPassword)
+            // currentCompany'yi de güncelle
+            currentCompany = companies[index]
+        }
+        
+        // GitHub'a kaydet
+        try await saveCompaniesToGitHub()
+    }
+    
     // MARK: - GitHub Operations
     
     /// Firmaları GitHub'dan yükle

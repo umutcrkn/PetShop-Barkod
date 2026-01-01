@@ -9,12 +9,14 @@ import SwiftUI
 
 struct SettingsView: View {
     @StateObject private var dataManager = DataManager.shared
+    @StateObject private var companyManager = CompanyManager.shared
     @State private var githubToken: String = ""
     @State private var showToken = false
     @State private var isSaving = false
     @State private var showAlert = false
     @State private var alertMessage = ""
     @State private var isSyncing = false
+    @State private var showPasswordChange = false
     
     var body: some View {
         Form {
@@ -135,6 +137,19 @@ struct SettingsView: View {
                 }
             }
             
+            if companyManager.currentCompany != nil {
+                Section(header: Text("Firma Ayarları")) {
+                    Button(action: {
+                        showPasswordChange = true
+                    }) {
+                        HStack {
+                            Image(systemName: "lock.rotation")
+                            Text("Parola Değiştir")
+                        }
+                    }
+                }
+            }
+            
             Section(header: Text("Bilgi")) {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("GitHub Personal Access Token Nasıl Oluşturulur?")
@@ -159,6 +174,9 @@ struct SettingsView: View {
             Button("Tamam", role: .cancel) { }
         } message: {
             Text(alertMessage)
+        }
+        .sheet(isPresented: $showPasswordChange) {
+            CompanyPasswordChangeView()
         }
     }
     
@@ -214,6 +232,116 @@ struct SettingsView: View {
                 isSaving = false
                 showAlert = true
                 alertMessage = dataManager.lastError ?? "Veriler başarıyla GitHub'a gönderildi."
+            }
+        }
+    }
+}
+
+// MARK: - Company Password Change View
+
+struct CompanyPasswordChangeView: View {
+    @StateObject private var companyManager = CompanyManager.shared
+    @Environment(\.dismiss) var dismiss
+    
+    @State private var currentPassword: String = ""
+    @State private var newPassword: String = ""
+    @State private var confirmPassword: String = ""
+    @State private var showError = false
+    @State private var errorMessage = ""
+    @State private var showSuccess = false
+    @State private var isChanging = false
+    
+    var body: some View {
+        NavigationView {
+            Form {
+                Section(header: Text("Mevcut Parola")) {
+                    SecureField("Mevcut Parola", text: $currentPassword)
+                }
+                
+                Section(header: Text("Yeni Parola")) {
+                    SecureField("Yeni Parola", text: $newPassword)
+                    SecureField("Yeni Parola (Tekrar)", text: $confirmPassword)
+                }
+                
+                if !newPassword.isEmpty && !confirmPassword.isEmpty && newPassword != confirmPassword {
+                    Section {
+                        Text("Parolalar eşleşmiyor")
+                            .foregroundColor(.red)
+                            .font(.caption)
+                    }
+                }
+                
+                Button(action: changePassword) {
+                    HStack {
+                        if isChanging {
+                            ProgressView()
+                                .scaleEffect(0.8)
+                        }
+                        Text(isChanging ? "Değiştiriliyor..." : "Parolayı Değiştir")
+                    }
+                }
+                .disabled(isChanging || currentPassword.isEmpty || newPassword.isEmpty || newPassword != confirmPassword)
+            }
+            .navigationTitle("Şifre Değiştir")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("İptal") {
+                        dismiss()
+                    }
+                }
+            }
+            .alert("Hata", isPresented: $showError) {
+                Button("Tamam", role: .cancel) { }
+            } message: {
+                Text(errorMessage)
+            }
+            .alert("Başarılı", isPresented: $showSuccess) {
+                Button("Tamam", role: .cancel) {
+                    dismiss()
+                }
+            } message: {
+                Text("Parola başarıyla değiştirildi!")
+            }
+        }
+    }
+    
+    private func changePassword() {
+        guard !newPassword.isEmpty else {
+            errorMessage = "Yeni parola boş olamaz!"
+            showError = true
+            return
+        }
+        
+        guard newPassword.count >= 4 else {
+            errorMessage = "Parola en az 4 karakter olmalıdır."
+            showError = true
+            return
+        }
+        
+        guard newPassword == confirmPassword else {
+            errorMessage = "Yeni parolalar eşleşmiyor!"
+            showError = true
+            return
+        }
+        
+        isChanging = true
+        Task {
+            do {
+                try await companyManager.changePassword(currentPassword: currentPassword, newPassword: newPassword)
+                await MainActor.run {
+                    isChanging = false
+                    showSuccess = true
+                    currentPassword = ""
+                    newPassword = ""
+                    confirmPassword = ""
+                }
+            } catch {
+                await MainActor.run {
+                    isChanging = false
+                    errorMessage = error.localizedDescription
+                    showError = true
+                }
             }
         }
     }
