@@ -36,8 +36,24 @@ class GitHubService {
     }
     
     private init() {
-        // Token UserDefaults'tan yüklenecek
-        // Token'ı uygulama içindeki Ayarlar ekranından ekleyin
+        // Token'ı otomatik yükle
+        // Önce UserDefaults'ta var mı kontrol et
+        if token == nil {
+            // Config.swift'ten token'ı oku
+            if let configToken = AppConfig.githubToken, !configToken.isEmpty {
+                self.token = configToken
+            }
+            // Alternatif: Info.plist'ten oku
+            else if let infoPlistToken = Bundle.main.object(forInfoDictionaryKey: "GitHubToken") as? String,
+                    !infoPlistToken.isEmpty {
+                self.token = infoPlistToken
+            }
+        }
+        
+        // API URL'i de otomatik yükle (varsa)
+        if apiBaseURL == nil, let configURL = AppConfig.apiBaseURL, !configURL.isEmpty {
+            self.apiBaseURL = configURL
+        }
     }
     
     // MARK: - URL Management
