@@ -102,12 +102,15 @@ struct LoginView: View {
                 .padding(.top, 10)
                 
                 // Parola değiştirme butonu (kullanıcı adı girildiyse görünür)
-                if !username.isEmpty && companyManager.companies.contains(where: { $0.username.lowercased() == username.lowercased() }) {
+                if !username.isEmpty {
                     Button(action: {
-                        // Önce firmayı seç
+                        // Firmayı kontrol et ve seç
                         if let company = companyManager.companies.first(where: { $0.username.lowercased() == username.lowercased() }) {
                             companyManager.selectCompany(company)
                             showPasswordChange = true
+                        } else {
+                            errorMessage = "Bu kullanıcı adına sahip bir firma bulunamadı."
+                            showError = true
                         }
                     }) {
                         HStack {
@@ -117,7 +120,7 @@ struct LoginView: View {
                         .font(.subheadline)
                         .foregroundColor(.orange)
                     }
-                    .padding(.top, 5)
+                    .padding(.top, 10)
                 }
             }
             
