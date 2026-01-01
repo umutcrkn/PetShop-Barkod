@@ -177,9 +177,9 @@ class GitHubService {
     
     // MARK: - Convenience Methods
     
-    /// Products dosyasını okur
-    func getProducts() async throws -> [Product] {
-        let data = try await getFileContent(path: "data/products.json")
+    /// Products dosyasını okur (firma bazlı path kullanır)
+    func getProducts(path: String = "data/products.json") async throws -> [Product] {
+        let data = try await getFileContent(path: path)
         
         if data.isEmpty {
             return []
@@ -189,18 +189,18 @@ class GitHubService {
         return try decoder.decode([Product].self, from: data)
     }
     
-    /// Products dosyasını yazar
-    func saveProducts(_ products: [Product]) async throws {
+    /// Products dosyasını yazar (firma bazlı path kullanır)
+    func saveProducts(_ products: [Product], path: String = "data/products.json") async throws {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         
         let data = try encoder.encode(products)
-        try await putFileContent(path: "data/products.json", content: data, message: "Update products")
+        try await putFileContent(path: path, content: data, message: "Update products")
     }
     
-    /// Sales dosyasını okur
-    func getSales() async throws -> [Sale] {
-        let data = try await getFileContent(path: "data/sales.json")
+    /// Sales dosyasını okur (firma bazlı path kullanır)
+    func getSales(path: String = "data/sales.json") async throws -> [Sale] {
+        let data = try await getFileContent(path: path)
         
         if data.isEmpty {
             return []
@@ -211,14 +211,14 @@ class GitHubService {
         return try decoder.decode([Sale].self, from: data)
     }
     
-    /// Sales dosyasını yazar
-    func saveSales(_ sales: [Sale]) async throws {
+    /// Sales dosyasını yazar (firma bazlı path kullanır)
+    func saveSales(_ sales: [Sale], path: String = "data/sales.json") async throws {
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .iso8601
         encoder.outputFormatting = .prettyPrinted
         
         let data = try encoder.encode(sales)
-        try await putFileContent(path: "data/sales.json", content: data, message: "Update sales")
+        try await putFileContent(path: path, content: data, message: "Update sales")
     }
 }
 
