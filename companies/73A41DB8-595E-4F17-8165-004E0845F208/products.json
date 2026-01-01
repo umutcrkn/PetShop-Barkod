@@ -1,3 +1,10 @@
 [
-
+  {
+    "id" : "C8AA4BC3-CD8A-4ABE-A9AF-C472610F1E5A",
+    "price" : 1,
+    "stock" : 9,
+    "name" : "umut1",
+    "barcode" : "8",
+    "description" : "umut1"
+  }
 ]
