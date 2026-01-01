@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "name" : "Pi Pet Shop",
+    "encryptedPassword" : "kbO\/77tS4b9YbnfrwGRxSMYTJFrA3A8Wh4RAjNJdivcx",
+    "id" : "F863844C-4DAC-4580-93DC-0AD514F3D0A3",
+    "trialExpiresAt" : "2026-01-11T19:09:56Z",
+    "createdAt" : "2026-01-01T19:09:56Z",
+    "username" : "merve"
+  }
+]
