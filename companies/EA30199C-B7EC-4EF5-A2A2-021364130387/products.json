@@ -1,10 +1,10 @@
 [
   {
-    "description" : "",
-    "price" : 1,
     "id" : "BAB2A0C0-10B5-483D-88B5-880D32787B7E",
+    "description" : "",
+    "barcode" : "4",
     "name" : "Cengiz",
     "stock" : 2,
-    "barcode" : "4"
+    "price" : 1
   }
 ]
