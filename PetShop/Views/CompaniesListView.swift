@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CompaniesListView: View {
     @StateObject private var companyManager = CompanyManager.shared
-    @StateObject private var githubService = GitHubService.shared
+    private let githubService = GitHubService.shared
     @Environment(\.dismiss) var dismiss
     
     @State private var companyProductCounts: [String: Int] = [:]
