@@ -178,7 +178,7 @@ class EncryptionService {
     func decrypt(_ encryptedText: String) -> String {
         guard let encryptedData = Data(base64Encoded: encryptedText) else {
             print("Decryption error: Invalid base64 data")
-            return encryptedText
+            return "" // Boş string döndür, parola eşleşmesin
         }
         
         let encryptionKey = ensureKey()
@@ -186,7 +186,7 @@ class EncryptionService {
         do {
             let sealedBox = try AES.GCM.SealedBox(combined: encryptedData)
             let decryptedData = try AES.GCM.open(sealedBox, using: encryptionKey)
-            return String(data: decryptedData, encoding: .utf8) ?? encryptedText
+            return String(data: decryptedData, encoding: .utf8) ?? ""
         } catch {
             print("Decryption error: \(error)")
             print("Encrypted text length: \(encryptedText.count)")
@@ -203,7 +203,8 @@ class EncryptionService {
                 }
             }
             
-            return encryptedText
+            // Decrypt başarısız oldu, boş string döndür (parola eşleşmesin)
+            return ""
         }
     }
     

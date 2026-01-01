@@ -259,8 +259,10 @@ class DataManager: ObservableObject {
             sale.date < threeDaysAgo
         }
         
+        // Eğer satış silindi ise kaydet
         if sales.count != initialCount {
             saveSalesToLocal()
+            // GitHub sync'i arka planda yap (non-blocking)
             Task {
                 await syncToGitHub()
             }
