@@ -189,20 +189,27 @@ struct ProductListView: View {
     }
     
     private func deleteProducts(at offsets: IndexSet) {
-        for index in offsets {
-            let product = filteredProducts[index]
-            dataManager.deleteProduct(product)
+        let productsToDelete = offsets.map { filteredProducts[$0] }
+        Task {
+            for product in productsToDelete {
+                await dataManager.deleteProduct(product)
+            }
         }
     }
     
     private func deleteSelectedProducts() {
-        for productId in selectedProducts {
-            if let product = dataManager.products.first(where: { $0.id == productId }) {
-                dataManager.deleteProduct(product)
+        let productsToDelete = selectedProducts.compactMap { productId in
+            dataManager.products.first(where: { $0.id == productId })
+        }
+        Task {
+            for product in productsToDelete {
+                await dataManager.deleteProduct(product)
+            }
+            await MainActor.run {
+                selectedProducts.removeAll()
+                editMode?.wrappedValue = .inactive
             }
         }
-        selectedProducts.removeAll()
-        editMode?.wrappedValue = .inactive
     }
 }
 

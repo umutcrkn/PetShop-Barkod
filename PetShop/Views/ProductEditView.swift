@@ -134,8 +134,12 @@ struct ProductEditView: View {
             .alert("Ürünü Sil", isPresented: $showDeleteConfirmation) {
                 Button("İptal", role: .cancel) { }
                 Button("Sil", role: .destructive) {
-                    dataManager.deleteProduct(product)
-                    dismiss()
+                    Task {
+                        await dataManager.deleteProduct(product)
+                        await MainActor.run {
+                            dismiss()
+                        }
+                    }
                 }
             } message: {
                 Text("Bu ürünü silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.")

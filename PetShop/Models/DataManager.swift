@@ -177,14 +177,13 @@ class DataManager: ObservableObject {
         }
     }
     
-    func deleteProduct(_ product: Product) {
-        products.removeAll { $0.id == product.id }
-        saveProductsToLocal()
-        Task {
-            await syncToGitHub()
-            // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
-            await loadDataFromGitHub()
+    func deleteProduct(_ product: Product) async {
+        await MainActor.run {
+            products.removeAll { $0.id == product.id }
+            saveProductsToLocal()
         }
+        // GitHub'a kaydet (yeniden yükleme yapma, silme işlemi zaten yapıldı)
+        await syncToGitHub()
     }
     
     func findProduct(byBarcode barcode: String) -> Product? {
