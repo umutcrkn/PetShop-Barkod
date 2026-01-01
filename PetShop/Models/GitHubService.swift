@@ -85,8 +85,14 @@ class GitHubService {
     
     // MARK: - File Operations
     
-    /// GitHub'dan dosya içeriğini okur
+    /// GitHub'dan dosya içeriğini okur (API URL veya direkt GitHub API)
     func getFileContent(path: String) async throws -> Data {
+        // Eğer API URL varsa, backend servisini kullan
+        if let apiURL = apiBaseURL {
+            return try await getFileContentFromAPI(baseURL: apiURL, path: path)
+        }
+        
+        // Yoksa direkt GitHub API kullan
         guard let token = token else {
             throw GitHubError.noToken
         }
@@ -125,8 +131,43 @@ class GitHubService {
         return contentData
     }
     
-    /// GitHub'a dosya yazar veya günceller
+    /// Backend API'den dosya içeriğini okur
+    private func getFileContentFromAPI(baseURL: String, path: String) async throws -> Data {
+        // Backend API endpoint: {baseURL}/api/file?path=companies/companies.json
+        let urlString = "\(baseURL)/api/file?path=\(path.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? path)"
+        
+        guard let url = URL(string: urlString) else {
+            throw GitHubError.invalidURL
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let (data, response) = try await URLSession.shared.data(for: request)
+        
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw GitHubError.invalidResponse
+        }
+        
+        guard httpResponse.statusCode == 200 else {
+            if httpResponse.statusCode == 404 {
+                return Data()
+            }
+            throw GitHubError.httpError(httpResponse.statusCode)
+        }
+        
+        return data
+    }
+    
+    /// GitHub'a dosya yazar veya günceller (API URL veya direkt GitHub API)
     func putFileContent(path: String, content: Data, message: String) async throws {
+        // Eğer API URL varsa, backend servisini kullan
+        if let apiURL = apiBaseURL {
+            return try await putFileContentToAPI(baseURL: apiURL, path: path, content: content)
+        }
+        
+        // Yoksa direkt GitHub API kullan
         guard let token = token else {
             throw GitHubError.noToken
         }
@@ -178,6 +219,40 @@ class GitHubService {
         request.setValue("token \(token)", forHTTPHeaderField: "Authorization")
         request.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+        
+        let (_, response) = try await URLSession.shared.data(for: request)
+        
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw GitHubError.invalidResponse
+        }
+        
+        guard httpResponse.statusCode == 200 || httpResponse.statusCode == 201 else {
+            throw GitHubError.httpError(httpResponse.statusCode)
+        }
+    }
+    
+    /// Backend API'ye dosya yazar
+    private func putFileContentToAPI(baseURL: String, path: String, content: Data) async throws {
+        // Backend API endpoint: {baseURL}/api/file
+        let urlString = "\(baseURL)/api/file"
+        
+        guard let url = URL(string: urlString) else {
+            throw GitHubError.invalidURL
+        }
+        
+        let body: [String: Any] = [
+            "path": path,
+            "content": content.base64EncodedString(),
+            "message": "Update file"
+        ]
+        
+        let jsonData = try JSONSerialization.data(withJSONObject: body)
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.httpBody = jsonData
         
         let (_, response) = try await URLSession.shared.data(for: request)

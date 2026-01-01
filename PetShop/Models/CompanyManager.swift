@@ -125,9 +125,11 @@ class CompanyManager: ObservableObject {
     
     /// Firmaları GitHub'a kaydet
     func saveCompaniesToGitHub() async throws {
+        // Token veya API URL kontrolü - yoksa hata fırlat
         guard githubService.hasAPIURL() || githubService.hasToken() else {
+            // Local'e kaydet ama hata da fırlat ki kullanıcı bilsin
             saveCompaniesToLocal()
-            return
+            throw CompanyError.githubConnectionFailed
         }
         
         let encoder = JSONEncoder()
@@ -137,6 +139,7 @@ class CompanyManager: ObservableObject {
         let data = try encoder.encode(companies)
         try await githubService.putFileContent(path: "companies/companies.json", content: data, message: "Update companies")
         
+        // Başarılı olduysa local'e de kaydet
         saveCompaniesToLocal()
     }
     
@@ -207,6 +210,7 @@ enum CompanyError: LocalizedError {
     case usernameExists
     case invalidCredentials
     case companyNotFound
+    case githubConnectionFailed
     
     var errorDescription: String? {
         switch self {
@@ -216,6 +220,8 @@ enum CompanyError: LocalizedError {
             return "Kullanıcı adı veya parola hatalı."
         case .companyNotFound:
             return "Firma bulunamadı."
+        case .githubConnectionFailed:
+            return "GitHub bağlantısı kurulamadı. Lütfen token veya API URL ayarlarını kontrol edin."
         }
     }
 }
