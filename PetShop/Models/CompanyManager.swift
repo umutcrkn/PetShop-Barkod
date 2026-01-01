@@ -71,14 +71,14 @@ class CompanyManager: ObservableObject {
         }
     }
     
-    /// Firma girişi
-    func loginCompany(username: String, password: String) async -> Bool {
+    /// Firma girişi - deneme süresi kontrolü ile
+    func loginCompany(username: String, password: String) async throws -> Bool {
         // Encryption key'i GitHub'dan zorla yükle (local key'i atla)
         await EncryptionService.shared.loadEncryptionKey(forceReload: true)
         
         guard let company = companies.first(where: { $0.username.lowercased() == username.lowercased() }) else {
             print("Login failed: Company not found for username: \(username)")
-            return false
+            throw CompanyError.companyNotFound
         }
         
         // Deneme süresi bitmiş mi kontrol et
@@ -91,7 +91,7 @@ class CompanyManager: ObservableObject {
             } catch {
                 print("❌ Error deleting expired company: \(error)")
             }
-            return false
+            throw CompanyError.trialExpired
         }
         
         let isValid = await company.verifyPassword(password)
@@ -103,7 +103,7 @@ class CompanyManager: ObservableObject {
         }
         
         print("Login failed: Invalid password for username: \(username)")
-        return false
+        throw CompanyError.invalidCredentials
     }
     
     /// Firma parolasını değiştir
@@ -349,6 +349,7 @@ enum CompanyError: LocalizedError {
     case invalidCredentials
     case companyNotFound
     case githubConnectionFailed
+    case trialExpired
     
     var errorDescription: String? {
         switch self {
@@ -360,6 +361,8 @@ enum CompanyError: LocalizedError {
             return "Firma bulunamadı."
         case .githubConnectionFailed:
             return "GitHub bağlantısı kurulamadı. Lütfen token veya API URL ayarlarını kontrol edin."
+        case .trialExpired:
+            return "Deneme süreniz dolmuş. Firma bilgileri ve verileri silindi."
         }
     }
 }

@@ -167,11 +167,25 @@ struct LoginView: View {
             await companyManager.refreshCompanies()
             
             // Firma girişi dene
-            if await companyManager.loginCompany(username: username, password: password) {
+            do {
+                if try await companyManager.loginCompany(username: username, password: password) {
+                    await MainActor.run {
+                        isLoggedIn = true
+                        username = ""
+                        password = ""
+                    }
+                    return
+                }
+            } catch let error as CompanyError {
                 await MainActor.run {
-                    isLoggedIn = true
-                    username = ""
-                    password = ""
+                    errorMessage = error.localizedDescription
+                    showError = true
+                }
+                return
+            } catch {
+                await MainActor.run {
+                    errorMessage = "Giriş yapılırken bir hata oluştu: \(error.localizedDescription)"
+                    showError = true
                 }
                 return
             }
