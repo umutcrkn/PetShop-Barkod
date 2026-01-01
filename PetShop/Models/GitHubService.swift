@@ -172,64 +172,102 @@ class GitHubService {
             throw GitHubError.noToken
         }
         
-        // Önce mevcut dosyayı kontrol et (sha için)
-        var sha: String? = nil
-        do {
-            let urlString = "\(baseURL)/repos/\(owner)/\(repo)/contents/\(path)"
-            guard let url = URL(string: urlString) else {
-                throw GitHubError.invalidURL
+        // Retry mekanizması ile 409 hatasını handle et
+        let maxRetries = 3
+        var lastError: Error?
+        
+        for attempt in 0..<maxRetries {
+            do {
+                // Önce mevcut dosyayı kontrol et (sha için)
+                var sha: String? = nil
+                do {
+                    let urlString = "\(baseURL)/repos/\(owner)/\(repo)/contents/\(path)"
+                    guard let url = URL(string: urlString) else {
+                        throw GitHubError.invalidURL
+                    }
+                    
+                    var request = URLRequest(url: url)
+                    request.httpMethod = "GET"
+                    request.setValue("token \(token)", forHTTPHeaderField: "Authorization")
+                    request.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
+                    
+                    let (data, response) = try await URLSession.shared.data(for: request)
+                    
+                    if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                        let json = try JSONDecoder().decode(GitHubFileResponse.self, from: data)
+                        sha = json.sha
+                    }
+                } catch {
+                    // Dosya yoksa sha nil kalır (yeni dosya oluşturulacak)
+                }
+                
+                // Dosyayı yaz/güncelle
+                let urlString = "\(baseURL)/repos/\(owner)/\(repo)/contents/\(path)"
+                guard let url = URL(string: urlString) else {
+                    throw GitHubError.invalidURL
+                }
+                
+                let base64Content = content.base64EncodedString()
+                
+                var body: [String: Any] = [
+                    "message": message,
+                    "content": base64Content
+                ]
+                
+                if let sha = sha {
+                    body["sha"] = sha
+                }
+                
+                let jsonData = try JSONSerialization.data(withJSONObject: body)
+                
+                var request = URLRequest(url: url)
+                request.httpMethod = "PUT"
+                request.setValue("token \(token)", forHTTPHeaderField: "Authorization")
+                request.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+                request.httpBody = jsonData
+                
+                let (_, response) = try await URLSession.shared.data(for: request)
+                
+                guard let httpResponse = response as? HTTPURLResponse else {
+                    throw GitHubError.invalidResponse
+                }
+                
+                // Başarılı
+                if httpResponse.statusCode == 200 || httpResponse.statusCode == 201 {
+                    return
+                }
+                
+                // 409 hatası - SHA hash güncel değil, tekrar dene
+                if httpResponse.statusCode == 409 {
+                    lastError = GitHubError.httpError(409)
+                    if attempt < maxRetries - 1 {
+                        // Kısa bir bekleme süresi (exponential backoff)
+                        let delay = Double(attempt + 1) * 0.5
+                        try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
+                        continue
+                    }
+                }
+                
+                throw GitHubError.httpError(httpResponse.statusCode)
+            } catch {
+                lastError = error
+                // 409 hatası değilse veya son denemeyse hata fırlat
+                if !(error is GitHubError && case .httpError(409) = error as! GitHubError) || attempt == maxRetries - 1 {
+                    throw error
+                }
+                // 409 hatası ise ve daha deneme hakkı varsa devam et
+                if let gitHubError = error as? GitHubError, case .httpError(409) = gitHubError {
+                    let delay = Double(attempt + 1) * 0.5
+                    try await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
+                    continue
+                }
+                throw error
             }
-            
-            var request = URLRequest(url: url)
-            request.httpMethod = "GET"
-            request.setValue("token \(token)", forHTTPHeaderField: "Authorization")
-            request.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
-            
-            let (data, response) = try await URLSession.shared.data(for: request)
-            
-            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
-                let json = try JSONDecoder().decode(GitHubFileResponse.self, from: data)
-                sha = json.sha
-            }
-        } catch {
-            // Dosya yoksa sha nil kalır (yeni dosya oluşturulacak)
         }
         
-        // Dosyayı yaz/güncelle
-        let urlString = "\(baseURL)/repos/\(owner)/\(repo)/contents/\(path)"
-        guard let url = URL(string: urlString) else {
-            throw GitHubError.invalidURL
-        }
-        
-        let base64Content = content.base64EncodedString()
-        
-        var body: [String: Any] = [
-            "message": message,
-            "content": base64Content
-        ]
-        
-        if let sha = sha {
-            body["sha"] = sha
-        }
-        
-        let jsonData = try JSONSerialization.data(withJSONObject: body)
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = "PUT"
-        request.setValue("token \(token)", forHTTPHeaderField: "Authorization")
-        request.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = jsonData
-        
-        let (_, response) = try await URLSession.shared.data(for: request)
-        
-        guard let httpResponse = response as? HTTPURLResponse else {
-            throw GitHubError.invalidResponse
-        }
-        
-        guard httpResponse.statusCode == 200 || httpResponse.statusCode == 201 else {
-            throw GitHubError.httpError(httpResponse.statusCode)
-        }
+        // Tüm denemeler başarısız oldu
+        throw lastError ?? GitHubError.httpError(409)
     }
     
     /// Backend API'ye dosya yazar

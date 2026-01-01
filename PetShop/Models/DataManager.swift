@@ -156,9 +156,11 @@ class DataManager: ObservableObject {
     
     // MARK: - Products Management
     func addProduct(_ product: Product) {
-        products.append(product)
-        saveProductsToLocal()
-        Task {
+        Task { @MainActor in
+            products.append(product)
+            saveProductsToLocal()
+        }
+        Task.detached {
             await syncToGitHub()
             // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
             await loadDataFromGitHub()
@@ -166,14 +168,16 @@ class DataManager: ObservableObject {
     }
     
     func updateProduct(_ product: Product) {
-        if let index = products.firstIndex(where: { $0.id == product.id }) {
-            products[index] = product
-            saveProductsToLocal()
-            Task {
-                await syncToGitHub()
-                // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
-                await loadDataFromGitHub()
+        Task { @MainActor in
+            if let index = products.firstIndex(where: { $0.id == product.id }) {
+                products[index] = product
+                saveProductsToLocal()
             }
+        }
+        Task.detached {
+            await syncToGitHub()
+            // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
+            await loadDataFromGitHub()
         }
     }
     
