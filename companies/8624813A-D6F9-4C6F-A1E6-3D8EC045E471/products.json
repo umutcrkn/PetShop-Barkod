@@ -1,26 +1,3 @@
 [
-  {
-    "id" : "C1253ACC-479A-4C81-9657-9717046A4BB8",
-    "price" : 123,
-    "barcode" : "1",
-    "stock" : 11,
-    "name" : "mama",
-    "description" : "mamaa"
-  },
-  {
-    "id" : "15D042D2-D155-422F-AA01-50396236323A",
-    "price" : 155,
-    "barcode" : "666",
-    "stock" : 250,
-    "name" : "Aaa",
-    "description" : "Aaa"
-  },
-  {
-    "id" : "48CDB2D8-37D5-4A19-8A5C-7FC019218E3E",
-    "price" : 123456,
-    "barcode" : "12345",
-    "stock" : 12,
-    "name" : "cccccc",
-    "description" : "ccc"
-  }
+
 ]
