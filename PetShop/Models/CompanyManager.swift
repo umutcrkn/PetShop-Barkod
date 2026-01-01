@@ -73,18 +73,23 @@ class CompanyManager: ObservableObject {
     
     /// Firma girişi
     func loginCompany(username: String, password: String) async -> Bool {
-        // Encryption key'in yüklendiğinden emin ol
-        await EncryptionService.shared.loadEncryptionKey()
+        // Encryption key'i GitHub'dan zorla yükle (local key'i atla)
+        await EncryptionService.shared.loadEncryptionKey(forceReload: true)
         
         guard let company = companies.first(where: { $0.username.lowercased() == username.lowercased() }) else {
+            print("Login failed: Company not found for username: \(username)")
             return false
         }
         
-        if await company.verifyPassword(password) {
+        let isValid = await company.verifyPassword(password)
+        print("Password verification result for \(username): \(isValid)")
+        
+        if isValid {
             selectCompany(company)
             return true
         }
         
+        print("Login failed: Invalid password for username: \(username)")
         return false
     }
     

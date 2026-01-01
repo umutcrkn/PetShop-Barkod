@@ -26,7 +26,9 @@ struct Company: Codable, Identifiable {
     // Parolayı doğrula
     func verifyPassword(_ password: String) async -> Bool {
         let decrypted = await EncryptionService.shared.decryptAsync(encryptedPassword)
-        return decrypted == password
+        let isValid = decrypted == password
+        print("Password verification - Encrypted: \(encryptedPassword.prefix(20))..., Decrypted: \(decrypted), Expected: \(password), Match: \(isValid)")
+        return isValid
     }
     
     // Parolayı güncelle

@@ -142,8 +142,8 @@ struct LoginView: View {
         }
         .onAppear {
             Task {
-                // Önce encryption key'i yükle
-                await EncryptionService.shared.loadEncryptionKey()
+                // Önce encryption key'i GitHub'dan zorla yükle (local key'i atla)
+                await EncryptionService.shared.loadEncryptionKey(forceReload: true)
                 // Sonra firmaları yükle
                 await companyManager.loadCompanies()
             }
@@ -160,8 +160,11 @@ struct LoginView: View {
     
     private func login() {
         Task {
-            // Önce encryption key'in yüklendiğinden emin ol
-            await EncryptionService.shared.loadEncryptionKey()
+            // Önce encryption key'i GitHub'dan zorla yükle (local key'i atla)
+            await EncryptionService.shared.loadEncryptionKey(forceReload: true)
+            
+            // Firmaları da yeniden yükle (güncel olmalı)
+            await companyManager.refreshCompanies()
             
             // Firma girişi dene
             if await companyManager.loginCompany(username: username, password: password) {
