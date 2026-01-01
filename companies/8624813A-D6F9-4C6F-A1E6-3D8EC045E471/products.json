@@ -1,10 +1,18 @@
 [
   {
-    "name" : "mama",
     "description" : "mamaa",
-    "stock" : 11,
     "barcode" : "1",
+    "stock" : 11,
     "id" : "C1253ACC-479A-4C81-9657-9717046A4BB8",
+    "name" : "mama",
     "price" : 123
+  },
+  {
+    "description" : "Aaa",
+    "barcode" : "666",
+    "stock" : 250,
+    "id" : "15D042D2-D155-422F-AA01-50396236323A",
+    "name" : "Aaa",
+    "price" : 155
   }
 ]
