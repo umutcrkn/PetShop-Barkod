@@ -1,18 +1,42 @@
 [
   {
-    "barcode" : "1",
-    "price" : 1,
-    "id" : "995AC8BA-E3F9-43A7-9707-E40B01271102",
-    "name" : "mama",
     "description" : "Mama",
-    "stock" : 10
+    "stock" : 10,
+    "price" : 1,
+    "barcode" : "1",
+    "id" : "995AC8BA-E3F9-43A7-9707-E40B01271102",
+    "name" : "mama"
   },
   {
-    "barcode" : "2",
-    "price" : 2,
-    "id" : "838004F7-1394-48CF-BD56-D29BFFAC6FA9",
-    "name" : "mama2",
     "description" : "mama2",
-    "stock" : 20
+    "stock" : 20,
+    "price" : 2,
+    "barcode" : "2",
+    "id" : "838004F7-1394-48CF-BD56-D29BFFAC6FA9",
+    "name" : "mama2"
+  },
+  {
+    "description" : "",
+    "stock" : 100,
+    "price" : 160,
+    "barcode" : "10",
+    "id" : "7EDCB9CA-6ECD-488E-8BEF-47F3020D886D",
+    "name" : "meo"
+  },
+  {
+    "description" : "",
+    "stock" : 10,
+    "price" : 100,
+    "barcode" : "86868686",
+    "id" : "308C7EC5-B3DC-4FC4-8A3D-0B8D102FF006",
+    "name" : "Kedi kumu 5 lt"
+  },
+  {
+    "description" : "",
+    "stock" : 100,
+    "price" : 50,
+    "barcode" : "8690605066215",
+    "id" : "F55DD3F4-D6A3-42BF-9AF1-5509BB614AE5",
+    "name" : "Dalin"
   }
 ]
