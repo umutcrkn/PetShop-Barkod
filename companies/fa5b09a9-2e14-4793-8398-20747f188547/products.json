@@ -1,10 +1,1 @@
-[
-  {
-    "id" : "2AFBC06C-1DDE-45F9-A1F6-2E78443CF1A7",
-    "stock" : 10,
-    "description" : "Meo",
-    "price" : 110,
-    "barcode" : "1",
-    "name" : "Meo"
-  }
-]
+[{"barcode":"1","description":"Meo","id":"2AFBC06C-1DDE-45F9-A1F6-2E78443CF1A7","name":"Meo","price":110.0,"stock":10},{"barcode":"2","description":"","id":"4e9e1f10-39fa-4983-885a-e611baed64a8","name":"dalin","price":120.0,"stock":20}]
