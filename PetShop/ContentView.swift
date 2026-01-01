@@ -34,7 +34,7 @@ struct ContentView: View {
                 }
             }
         }
-        .onChange(of: companyManager.currentCompany?.id) { _ in
+        .onChange(of: companyManager.currentCompany?.id) { oldValue, newValue in
             // Firma değiştiğinde verileri yeniden yükle
             Task {
                 await dataManager.loadDataFromGitHub()

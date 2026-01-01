@@ -119,9 +119,9 @@ struct LoginView: View {
                 await companyManager.loadCompanies()
             }
         }
-        .onChange(of: showCompanyRegistration) { isShowing in
+        .onChange(of: showCompanyRegistration) { oldValue, newValue in
             // Firma kaydı kapandığında firmaları yeniden yükle
-            if !isShowing {
+            if !newValue {
                 Task {
                     await companyManager.refreshCompanies()
                 }
