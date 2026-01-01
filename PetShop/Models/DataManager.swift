@@ -156,9 +156,14 @@ class DataManager: ObservableObject {
     
     // MARK: - Products Management
     func addProduct(_ product: Product) {
-        // Ürünü hemen ekle (UI otomatik güncellenecek @Published sayesinde)
-        products.append(product)
-        saveProductsToLocal()
+        // Ürünü hemen ekle (MainActor'da @Published değişkeni güncelle)
+        // Senkron olarak main thread'de çalıştır ki UI anında güncellensin
+        Task { @MainActor [weak self] in
+            guard let self = self else { return }
+            self.products.append(product)
+            self.saveProductsToLocal()
+            print("✅ Product added to list: \(product.name) (Total: \(self.products.count))")
+        }
         // GitHub'a push et (arka planda, yeniden yükleme yapma)
         Task {
             await syncToGitHub()
@@ -166,14 +171,19 @@ class DataManager: ObservableObject {
     }
     
     func updateProduct(_ product: Product) {
-        // Ürünü hemen güncelle (UI otomatik güncellenecek @Published sayesinde)
-        if let index = products.firstIndex(where: { $0.id == product.id }) {
-            products[index] = product
-            saveProductsToLocal()
-            // GitHub'a push et (arka planda, yeniden yükleme yapma)
-            Task {
-                await syncToGitHub()
+        // Ürünü hemen güncelle (MainActor'da @Published değişkeni güncelle)
+        // Senkron olarak main thread'de çalıştır ki UI anında güncellensin
+        Task { @MainActor [weak self] in
+            guard let self = self else { return }
+            if let index = self.products.firstIndex(where: { $0.id == product.id }) {
+                self.products[index] = product
+                self.saveProductsToLocal()
+                print("✅ Product updated in list: \(product.name)")
             }
+        }
+        // GitHub'a push et (arka planda, yeniden yükleme yapma)
+        Task {
+            await syncToGitHub()
         }
     }
     

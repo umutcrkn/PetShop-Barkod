@@ -61,9 +61,11 @@ struct ProductListView: View {
                 }
             }
             .onAppear {
-                // View görünür olduğunda verileri GitHub'dan yeniden yükle
-                Task {
-                    await dataManager.loadDataFromGitHub()
+                // İlk açılışta verileri GitHub'dan yükle (sadece boşsa)
+                if dataManager.products.isEmpty {
+                    Task {
+                        await dataManager.loadDataFromGitHub()
+                    }
                 }
             }
             .onChange(of: selectedProduct) { oldValue, newValue in
@@ -88,7 +90,6 @@ struct ProductListView: View {
                 productsList
             }
         }
-        .navigationTitle("Ürün Listesi")
     }
     
     private var emptyStateView: some View {
