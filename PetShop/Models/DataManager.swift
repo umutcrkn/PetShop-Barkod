@@ -111,7 +111,7 @@ class DataManager: ObservableObject {
         }
     }
     
-    /// Verileri GitHub'a kaydeder (firma bazlı)
+    /// Verileri GitHub'a kaydeder (firma bazlı) - 409 hatası için merge stratejisi ile
     func syncToGitHub() async {
         guard githubService.hasAPIURL() || githubService.hasToken() else {
             await MainActor.run {
@@ -136,20 +136,98 @@ class DataManager: ObservableObject {
         
         var errors: [String] = []
         
-        // Products'ı kaydet
+        // Products'ı kaydet (409 hatası için merge stratejisi)
         do {
             try await githubService.saveProducts(products, path: productsPath)
             print("✅ Products synced successfully")
+        } catch let error as GitHubError {
+            // 409 hatası alırsak, GitHub'dan en güncel veriyi çek ve merge et
+            if case .httpError(409) = error {
+                print("⚠️ 409 Conflict for products, fetching latest and merging...")
+                do {
+                    // GitHub'dan en güncel products'ı çek
+                    let remoteProducts = try await githubService.getProducts(path: productsPath)
+                    
+                    // Local products ile merge et (local öncelikli - ID bazlı)
+                    var mergedProducts = remoteProducts
+                    for localProduct in products {
+                        if let index = mergedProducts.firstIndex(where: { $0.id == localProduct.id }) {
+                            // Local versiyon öncelikli
+                            mergedProducts[index] = localProduct
+                        } else {
+                            // Yeni ürün ekle
+                            mergedProducts.append(localProduct)
+                        }
+                    }
+                    
+                    // Merge edilmiş veriyi kaydet
+                    await MainActor.run {
+                        self.products = mergedProducts
+                        self.saveProductsToLocal()
+                    }
+                    
+                    // Tekrar GitHub'a gönder
+                    try await githubService.saveProducts(mergedProducts, path: productsPath)
+                    print("✅ Products merged and synced successfully")
+                } catch {
+                    let errorMsg = "Ürünler merge edilemedi: \(error.localizedDescription)"
+                    errors.append(errorMsg)
+                    print("❌ Error merging products: \(error)")
+                }
+            } else {
+                let errorMsg = "Ürünler kaydedilemedi: \(error.localizedDescription)"
+                errors.append(errorMsg)
+                print("❌ Error syncing products: \(error)")
+            }
         } catch {
             let errorMsg = "Ürünler kaydedilemedi: \(error.localizedDescription)"
             errors.append(errorMsg)
             print("❌ Error syncing products: \(error)")
         }
         
-        // Sales'ı kaydet
+        // Sales'ı kaydet (409 hatası için merge stratejisi)
         do {
             try await githubService.saveSales(sales, path: salesPath)
             print("✅ Sales synced successfully")
+        } catch let error as GitHubError {
+            // 409 hatası alırsak, GitHub'dan en güncel veriyi çek ve merge et
+            if case .httpError(409) = error {
+                print("⚠️ 409 Conflict for sales, fetching latest and merging...")
+                do {
+                    // GitHub'dan en güncel sales'i çek
+                    let remoteSales = try await githubService.getSales(path: salesPath)
+                    
+                    // Local sales ile merge et (local öncelikli - ID bazlı)
+                    var mergedSales = remoteSales
+                    for localSale in sales {
+                        if let index = mergedSales.firstIndex(where: { $0.id == localSale.id }) {
+                            // Local versiyon öncelikli
+                            mergedSales[index] = localSale
+                        } else {
+                            // Yeni satış ekle
+                            mergedSales.append(localSale)
+                        }
+                    }
+                    
+                    // Merge edilmiş veriyi kaydet
+                    await MainActor.run {
+                        self.sales = mergedSales
+                        self.saveSalesToLocal()
+                    }
+                    
+                    // Tekrar GitHub'a gönder
+                    try await githubService.saveSales(mergedSales, path: salesPath)
+                    print("✅ Sales merged and synced successfully")
+                } catch {
+                    let errorMsg = "Satışlar merge edilemedi: \(error.localizedDescription)"
+                    errors.append(errorMsg)
+                    print("❌ Error merging sales: \(error)")
+                }
+            } else {
+                let errorMsg = "Satışlar kaydedilemedi: \(error.localizedDescription)"
+                errors.append(errorMsg)
+                print("❌ Error syncing sales: \(error)")
+            }
         } catch {
             let errorMsg = "Satışlar kaydedilemedi: \(error.localizedDescription)"
             errors.append(errorMsg)
@@ -185,10 +263,7 @@ class DataManager: ObservableObject {
             self.saveProductsToLocal()
             print("✅ Product added to list: \(product.name) (Total: \(self.products.count))")
         }
-        // GitHub'a push et (sadece products, sales ayrı kaydedilecek)
-        Task {
-            await syncProductsToGitHub()
-        }
+        // GitHub'a push etme - "Sistemi Güncelle" butonuna basıldığında gönderilecek
     }
     
     func updateProduct(_ product: Product) {
@@ -202,50 +277,16 @@ class DataManager: ObservableObject {
                 print("✅ Product updated in list: \(product.name)")
             }
         }
-        // GitHub'a push et (sadece products, sales ayrı kaydedilecek)
-        Task {
-            await syncProductsToGitHub()
-        }
-    }
-    
-    /// Sadece products'ı GitHub'a kaydeder (sales'i kaydetmez)
-    private func syncProductsToGitHub() async {
-        guard githubService.hasAPIURL() || githubService.hasToken() else {
-            await MainActor.run {
-                lastError = "GitHub bağlantısı bulunamadı"
-            }
-            return
-        }
-        
-        // Firma seçili değilse kaydetme
-        guard companyManager.currentCompany != nil else {
-            return
-        }
-        
-        let productsPath = companyManager.getCompanyDataPath(file: "products.json")
-        
-        do {
-            try await githubService.saveProducts(products, path: productsPath)
-            print("✅ Products synced successfully")
-            await MainActor.run {
-                lastError = nil
-            }
-        } catch {
-            let errorMsg = "Ürünler kaydedilemedi: \(error.localizedDescription)"
-            await MainActor.run {
-                lastError = errorMsg
-            }
-            print("❌ Error syncing products: \(error)")
-        }
+        // GitHub'a push etme - "Sistemi Güncelle" butonuna basıldığında gönderilecek
     }
     
     func deleteProduct(_ product: Product) async {
         await MainActor.run {
             products.removeAll { $0.id == product.id }
             saveProductsToLocal()
+            print("✅ Product deleted from list: \(product.name)")
         }
-        // GitHub'a kaydet (yeniden yükleme yapma, silme işlemi zaten yapıldı)
-        await syncToGitHub()
+        // GitHub'a push etme - "Sistemi Güncelle" butonuna basıldığında gönderilecek
     }
     
     func findProduct(byBarcode barcode: String) -> Product? {
@@ -297,11 +338,7 @@ class DataManager: ObservableObject {
             self.cleanupOldSales()
             print("✅ Sale added to list: \(sale.items.count) items, Total: \(sale.totalAmount) (Total sales: \(self.sales.count))")
         }
-        
-        // GitHub'a push et (sadece sales, products ayrı kaydedilecek)
-        Task {
-            await syncSalesToGitHub()
-        }
+        // GitHub'a push etme - "Sistemi Güncelle" butonuna basıldığında gönderilecek
     }
     
     /// Sadece sales'i GitHub'a kaydeder (products'ı kaydetmez)
