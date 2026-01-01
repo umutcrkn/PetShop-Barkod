@@ -177,6 +177,26 @@ struct CompanyRowView: View {
                 Text(company.createdAt, style: .date)
                     .font(.caption)
             }
+            
+            HStack {
+                if company.isTrialExpired {
+                    Label("Deneme Süresi:", systemImage: "exclamationmark.triangle.fill")
+                        .font(.caption)
+                        .foregroundColor(.red)
+                    Text("Süresi Dolmuş")
+                        .font(.caption)
+                        .fontWeight(.medium)
+                        .foregroundColor(.red)
+                } else {
+                    Label("Deneme Süresi:", systemImage: "clock.fill")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                    Text("\(company.remainingTrialDays) gün kaldı")
+                        .font(.caption)
+                        .fontWeight(.medium)
+                        .foregroundColor(company.remainingTrialDays <= 3 ? .orange : .primary)
+                }
+            }
         }
         .padding(.vertical, 4)
     }
