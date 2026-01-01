@@ -1,42 +1,50 @@
 [
   {
-    "description" : "Mama",
-    "stock" : 10,
     "price" : 1,
+    "stock" : 10,
     "barcode" : "1",
+    "description" : "Mama",
     "id" : "995AC8BA-E3F9-43A7-9707-E40B01271102",
     "name" : "mama"
   },
   {
-    "description" : "mama2",
-    "stock" : 20,
     "price" : 2,
+    "stock" : 20,
     "barcode" : "2",
+    "description" : "mama2",
     "id" : "838004F7-1394-48CF-BD56-D29BFFAC6FA9",
     "name" : "mama2"
   },
   {
-    "description" : "",
-    "stock" : 100,
     "price" : 160,
+    "stock" : 100,
     "barcode" : "10",
+    "description" : "",
     "id" : "7EDCB9CA-6ECD-488E-8BEF-47F3020D886D",
     "name" : "meo"
   },
   {
-    "description" : "",
-    "stock" : 10,
     "price" : 100,
+    "stock" : 10,
     "barcode" : "86868686",
+    "description" : "",
     "id" : "308C7EC5-B3DC-4FC4-8A3D-0B8D102FF006",
     "name" : "Kedi kumu 5 lt"
   },
   {
-    "description" : "",
-    "stock" : 100,
     "price" : 50,
+    "stock" : 100,
     "barcode" : "8690605066215",
+    "description" : "",
     "id" : "F55DD3F4-D6A3-42BF-9AF1-5509BB614AE5",
     "name" : "Dalin"
+  },
+  {
+    "price" : 120,
+    "stock" : 9,
+    "barcode" : "7622100744030",
+    "description" : "",
+    "id" : "8A3461E7-DAF2-4E1F-ADC7-C6B3AF06BB2B",
+    "name" : "Terea"
   }
 ]
