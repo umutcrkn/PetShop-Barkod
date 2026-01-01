@@ -156,23 +156,23 @@ class DataManager: ObservableObject {
     
     // MARK: - Products Management
     func addProduct(_ product: Product) {
+        // Ürünü hemen ekle (UI otomatik güncellenecek @Published sayesinde)
         products.append(product)
         saveProductsToLocal()
+        // GitHub'a push et (arka planda, yeniden yükleme yapma)
         Task {
             await syncToGitHub()
-            // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
-            await loadDataFromGitHub()
         }
     }
     
     func updateProduct(_ product: Product) {
+        // Ürünü hemen güncelle (UI otomatik güncellenecek @Published sayesinde)
         if let index = products.firstIndex(where: { $0.id == product.id }) {
             products[index] = product
             saveProductsToLocal()
+            // GitHub'a push et (arka planda, yeniden yükleme yapma)
             Task {
                 await syncToGitHub()
-                // GitHub'a kaydettikten sonra otomatik olarak yeniden yükle
-                await loadDataFromGitHub()
             }
         }
     }

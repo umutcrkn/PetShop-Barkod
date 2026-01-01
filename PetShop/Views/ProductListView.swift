@@ -88,6 +88,7 @@ struct ProductListView: View {
                 productsList
             }
         }
+        .navigationTitle("Ürün Listesi")
     }
     
     private var emptyStateView: some View {
