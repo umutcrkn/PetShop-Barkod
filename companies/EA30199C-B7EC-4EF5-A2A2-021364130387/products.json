@@ -1,3 +1,10 @@
 [
-
+  {
+    "price" : 1,
+    "id" : "8F67323B-3DD5-42D3-A4A8-C44BAA28627F",
+    "barcode" : "11",
+    "stock" : 100,
+    "name" : "Test",
+    "description" : "Test"
+  }
 ]
