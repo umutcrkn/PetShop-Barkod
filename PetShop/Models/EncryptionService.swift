@@ -54,20 +54,26 @@ class EncryptionService {
             
             if !data.isEmpty {
                 // GitHub'dan key'i yükle
-                if let keyData = try? JSONDecoder().decode(EncryptionKeyData.self, from: data) {
+                do {
+                    let keyData = try JSONDecoder().decode(EncryptionKeyData.self, from: data)
                     print("Decoded key data, key string length: \(keyData.key.count)")
                     if let keyBytes = Data(base64Encoded: keyData.key) {
                         print("Key bytes decoded, length: \(keyBytes.count)")
+                        // Key boyutunu kontrol et (256 bit = 32 byte olmalı)
+                        guard keyBytes.count == 32 else {
+                            print("ERROR: Invalid key size: \(keyBytes.count) bytes (expected 32)")
+                            throw NSError(domain: "EncryptionService", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid key size"])
+                        }
                         self.key = SymmetricKey(data: keyBytes)
                         // Local'e de kaydet
                         UserDefaults.standard.set(keyBytes, forKey: "EncryptionKey")
                         print("Encryption key loaded successfully from GitHub")
                         return
                     } else {
-                        print("Failed to decode key bytes from base64")
+                        print("ERROR: Failed to decode key bytes from base64")
                     }
-                } else {
-                    print("Failed to decode EncryptionKeyData from JSON")
+                } catch {
+                    print("ERROR: Failed to decode EncryptionKeyData from JSON: \(error)")
                     if let jsonString = String(data: data, encoding: .utf8) {
                         print("JSON content: \(jsonString.prefix(100))")
                     }
