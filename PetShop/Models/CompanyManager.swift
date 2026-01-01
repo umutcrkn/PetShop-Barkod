@@ -22,6 +22,9 @@ class CompanyManager: ObservableObject {
     
     private init() {
         Task {
+            // Önce encryption key'i yükle (firmaları yüklemeden önce)
+            await EncryptionService.shared.loadEncryptionKey()
+            // Sonra firmaları yükle
             await loadCompanies()
             // Son kullanılan firmayı yükle
             if let companyId = UserDefaults.standard.string(forKey: currentCompanyIdKey) {
