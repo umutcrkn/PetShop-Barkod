@@ -1,3 +1,10 @@
 [
-
+  {
+    "stock" : 3,
+    "id" : "48349171-F811-4B50-B915-91E6A6D523A0",
+    "description" : "mero",
+    "barcode" : "1",
+    "name" : "meo",
+    "price" : 100
+  }
 ]
