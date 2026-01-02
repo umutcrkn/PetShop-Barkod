@@ -1,3 +1,17 @@
 [
-
+  {
+    "totalAmount" : 1,
+    "id" : "B745224C-0F27-4853-A185-4AD32B5788F3",
+    "date" : "2026-01-02T23:35:57Z",
+    "items" : [
+      {
+        "productBarcode" : "1",
+        "productName" : "11",
+        "id" : "432C25B6-54AB-49F7-8610-227FEC9211A8",
+        "quantity" : 1,
+        "unitPrice" : 1,
+        "totalPrice" : 1
+      }
+    ]
+  }
 ]
