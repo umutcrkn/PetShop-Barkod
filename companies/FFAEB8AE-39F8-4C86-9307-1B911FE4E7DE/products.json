@@ -1,3 +1,10 @@
 [
-
+  {
+    "name" : "11",
+    "description" : "1",
+    "id" : "509B3E99-A58F-4CCC-91AE-51B3EED663A3",
+    "stock" : 10,
+    "price" : 1,
+    "barcode" : "1"
+  }
 ]
