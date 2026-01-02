@@ -1,3 +1,17 @@
 [
-
+  {
+    "totalAmount" : 130,
+    "date" : "2026-01-02T21:31:24Z",
+    "id" : "5AE2275F-9993-4308-8418-46401740F329",
+    "items" : [
+      {
+        "productName" : "Meo",
+        "id" : "41D10464-A372-41A7-BB40-C500E5267E74",
+        "productBarcode" : "1",
+        "totalPrice" : 130,
+        "quantity" : 1,
+        "unitPrice" : 130
+      }
+    ]
+  }
 ]
