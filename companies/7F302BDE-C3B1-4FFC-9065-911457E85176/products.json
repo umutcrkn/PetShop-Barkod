@@ -1,10 +1,10 @@
 [
   {
-    "description" : "Meo",
-    "stock" : 9,
-    "id" : "E6414F74-9464-4FA0-83E5-6DEB49263B99",
     "barcode" : "1",
+    "description" : "Meo",
+    "id" : "E6414F74-9464-4FA0-83E5-6DEB49263B99",
     "name" : "Meo",
+    "stock" : 9,
     "price" : 130
   }
 ]
