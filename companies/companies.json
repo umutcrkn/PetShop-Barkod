@@ -1,18 +1,18 @@
 [
   {
-    "encryptedPassword" : "kbO\/77tS4b9YbnfrwGRxSMYTJFrA3A8Wh4RAjNJdivcx",
-    "username" : "merve",
-    "id" : "F863844C-4DAC-4580-93DC-0AD514F3D0A3",
-    "createdAt" : "2026-01-01T22:09:56Z",
+    "trialExpiresAt" : "2026-11-07T22:09:56Z",
     "name" : "Pi Pet Shop",
-    "trialExpiresAt" : "2026-11-07T22:09:56Z"
+    "id" : "F863844C-4DAC-4580-93DC-0AD514F3D0A3",
+    "encryptedPassword" : "kbO\/77tS4b9YbnfrwGRxSMYTJFrA3A8Wh4RAjNJdivcx",
+    "createdAt" : "2026-01-01T22:09:56Z",
+    "username" : "merve"
   },
   {
-    "encryptedPassword" : "seVjzTY4Br5dk3Fh1gZNAxgeTbJQmA95CDdw1hUGVnNq",
-    "username" : "bilo",
-    "id" : "fa5b09a9-2e14-4793-8398-20747f188547",
-    "createdAt" : "2026-01-02T00:03:46Z",
+    "trialExpiresAt" : "2026-05-12T00:03:46Z",
     "name" : "biloo",
-    "trialExpiresAt" : "2026-03-13T00:03:46Z"
+    "id" : "fa5b09a9-2e14-4793-8398-20747f188547",
+    "encryptedPassword" : "seVjzTY4Br5dk3Fh1gZNAxgeTbJQmA95CDdw1hUGVnNq",
+    "createdAt" : "2026-01-02T00:03:46Z",
+    "username" : "bilo"
   }
 ]
